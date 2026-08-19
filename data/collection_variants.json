@@ -1,681 +1,1920 @@
 {
-  "collection": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
+  "status": 200,
+  "meta": {
+    "current_page": 1,
+    "next_page": 2,
+    "previous_page": null,
+    "total_pages": 5,
+    "total_count": 486,
+    "per_page": 100
   },
-  "/collections/trending/films": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Father Mother Sister Brother",
-      "Dazed and Confused",
-      "Alpha",
-      "Phantoms of July",
-      "La grazia",
-      "Sentimental Value",
-      "Die My Love",
-      "No Other Choice",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent",
-      "Sirât",
-      "Northwest Passage",
-      "The Mastermind",
-      "It Was Just an Accident",
-      "The Fall",
-      "Group Marriage",
-      "Aftersun",
-      "Perfect Days",
-      "To Wong Foo, Thanks for Everything! Julie Newmar",
-      "Orphan",
-      "Do the Right Thing",
-      "The Substance",
-      "Moonage Daydream",
-      "Portrait of a Lady on Fire",
-      "Self-Criticism of a Bourgeois Dog",
-      "Paris, Texas",
-      "Shiva Baby",
-      "My Father's Shadow",
-      "The Working Girls",
-      "Titane",
-      "2015",
-      "Hot Milk",
-      "Phoenix",
-      "God is Shy",
-      "Transit",
-      "The Girl with the Needle",
-      "Close",
-      "Drop Dead Gorgeous",
-      "Bones and All",
-      "Afternoons of Solitude",
-      "The Golden Glove",
-      "The Worst Person in the World",
-      "Terminal Island",
-      "La ciénaga",
-      "Revanche",
-      "Magic Farm",
-      "We Need to Talk About Kevin",
-      "How to Have Sex",
-      "Decision to Leave",
-      "Solo Sunny",
-      "Barbara",
-      "Queer",
-      "Witches",
-      "Passages",
-      "Jerichow",
-      "Fallen Leaves",
-      "Crossing",
-      "Reprise",
-      "The Settlers",
-      "7 piano sketches",
-      "Priscilla",
-      "The Edge of Heaven",
-      "The Five Devils",
-      "Thelma & Louise",
-      "Lars and the Real Girl",
-      "The Fall of Sir Douglas Weatherford",
-      "Sound of Falling",
-      "The Handmaiden",
-      "Silvia Prieto",
-      "Part 1",
-      "Pleasure",
-      "The Watermelon Woman",
-      "Blow Out",
-      "Bird",
-      "The Piano Accident",
-      "Winter in Sokcho",
-      "The Adventures of Priscilla, Queen of the Desert",
-      "The Apartment",
-      "Ancestral Visions of the Future",
-      "The Practice",
-      "Bring Them Down",
-      "The Delinquents",
-      "Carlito's Way",
-      "Sorry, Baby",
-      "Pompei: Below the Clouds",
-      "Rotting in the Sun",
-      "Pepi, Luci, Bom",
-      "Undine",
-      "Alcarràs",
-      "Kes",
-      "Heaven's Gate",
-      "Megalopolis",
-      "Shithouse",
-      "Good Time",
-      "Soul Kitchen",
-      "High & Low - John Galliano",
-      "Not a Pretty Picture"
-    ],
-    "keys": [
-      "films",
-      "meta"
-    ],
-    "prefix": "{\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills\":{\"small\":\"https://assets.mubicdn.net/images/film/432956/image-w256.jpg?1783462670\",\"medium\":\"https://assets.mubicdn.net/images/film/432956/image-w448.jpg?1783462670\",\"standard\":\"https://assets.mubicdn.net/images/film/432956/image-w856.jpg?1783462670\",\"retina\":\"https://assets.mubicdn.net/images/film/432956/i"
-  },
-  "/collections/trending/film_items": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/collection_items": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/film_group_items": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/items": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/contents": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/entries": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/movies": {
-    "status": 406,
-    "titles": [],
-    "keys": [
-      "status",
-      "error"
-    ],
-    "prefix": "{\"status\":406,\"error\":\"Not Acceptable\"}"
-  },
-  "/collections/trending/films.json": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Father Mother Sister Brother",
-      "Dazed and Confused",
-      "Alpha",
-      "Phantoms of July",
-      "La grazia",
-      "Sentimental Value",
-      "Die My Love",
-      "No Other Choice",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent",
-      "Sirât",
-      "Northwest Passage",
-      "The Mastermind",
-      "It Was Just an Accident",
-      "The Fall",
-      "Group Marriage",
-      "Aftersun",
-      "Perfect Days",
-      "To Wong Foo, Thanks for Everything! Julie Newmar",
-      "Orphan",
-      "Do the Right Thing",
-      "The Substance",
-      "Moonage Daydream",
-      "Portrait of a Lady on Fire",
-      "Self-Criticism of a Bourgeois Dog",
-      "Paris, Texas",
-      "Shiva Baby",
-      "My Father's Shadow",
-      "The Working Girls",
-      "Titane",
-      "2015",
-      "Hot Milk",
-      "Phoenix",
-      "God is Shy",
-      "Transit",
-      "The Girl with the Needle",
-      "Close",
-      "Drop Dead Gorgeous",
-      "Bones and All",
-      "Afternoons of Solitude",
-      "The Golden Glove",
-      "The Worst Person in the World",
-      "Terminal Island",
-      "La ciénaga",
-      "Revanche",
-      "Magic Farm",
-      "We Need to Talk About Kevin",
-      "How to Have Sex",
-      "Decision to Leave",
-      "Solo Sunny",
-      "Barbara",
-      "Queer",
-      "Witches",
-      "Passages",
-      "Jerichow",
-      "Fallen Leaves",
-      "Crossing",
-      "Reprise",
-      "The Settlers",
-      "7 piano sketches",
-      "Priscilla",
-      "The Edge of Heaven",
-      "The Five Devils",
-      "Thelma & Louise",
-      "Lars and the Real Girl",
-      "The Fall of Sir Douglas Weatherford",
-      "Sound of Falling",
-      "The Handmaiden",
-      "Silvia Prieto",
-      "Part 1",
-      "Pleasure",
-      "The Watermelon Woman",
-      "Blow Out",
-      "Bird",
-      "The Piano Accident",
-      "Winter in Sokcho",
-      "The Adventures of Priscilla, Queen of the Desert",
-      "The Apartment",
-      "Ancestral Visions of the Future",
-      "The Practice",
-      "Bring Them Down",
-      "The Delinquents",
-      "Carlito's Way",
-      "Sorry, Baby",
-      "Pompei: Below the Clouds",
-      "Rotting in the Sun",
-      "Pepi, Luci, Bom",
-      "Undine",
-      "Alcarràs",
-      "Kes",
-      "Heaven's Gate",
-      "Megalopolis",
-      "Shithouse",
-      "Good Time",
-      "Soul Kitchen",
-      "High & Low - John Galliano",
-      "Not a Pretty Picture"
-    ],
-    "keys": [
-      "films",
-      "meta"
-    ],
-    "prefix": "{\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills\":{\"small\":\"https://assets.mubicdn.net/images/film/432956/image-w256.jpg?1783462670\",\"medium\":\"https://assets.mubicdn.net/images/film/432956/image-w448.jpg?1783462670\",\"standard\":\"https://assets.mubicdn.net/images/film/432956/image-w856.jpg?1783462670\",\"retina\":\"https://assets.mubicdn.net/images/film/432956/i"
-  },
-  "/collections/trending.json": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "include_films": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "include_items": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "expand_films": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "with_films": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "all_films": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "full": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "limit100": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "per_page100": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "page_size100": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "count100": {
-    "status": 200,
-    "titles": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "prefix": "{\"title\":\"TRENDING\",\"total_items\":100,\"slug\":\"trending\",\"header_image\":\"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg\",\"links_to_details\":true,\"description\":null,\"description_html\":null,\"web_url\":\"https://mubi.com/collections/trending\",\"type\":\"default\",\"automated\":true,\"films\":[{\"id\":432956,\"slug\":\"the-non-actor\",\"title\":\"The Non-Actor\",\"title_locale\":\"en-US\",\"title_upcase\":\"THE NON-ACTOR\",\"original_title\":\"The Non-Actor\",\"year\":2025,\"duration\":18,\"stills"
-  },
-  "options_items": {
-    "status": 204,
-    "titles": [],
-    "keys": [],
-    "prefix": ""
-  },
-  "options_films": {
-    "status": 204,
-    "titles": [],
-    "keys": [],
-    "prefix": ""
-  }
+  "rows": [
+    {
+      "rank": 1,
+      "id": 432956,
+      "slug": "the-non-actor",
+      "title": "The Non-Actor",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 2,
+      "id": 123,
+      "slug": "amores-perros",
+      "title": "Amores Perros",
+      "year": 2000,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 3,
+      "id": 398054,
+      "slug": "father-mother-sister-brother",
+      "title": "Father Mother Sister Brother",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 4,
+      "id": 314,
+      "slug": "dazed-and-confused",
+      "title": "Dazed and Confused",
+      "year": 1993,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 5,
+      "id": 411747,
+      "slug": "alpha",
+      "title": "Alpha",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 6,
+      "id": 450009,
+      "slug": "phantoms-of-july",
+      "title": "Phantoms of July",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 7,
+      "id": 437598,
+      "slug": "la-grazia",
+      "title": "La grazia",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 8,
+      "id": 400360,
+      "slug": "sentimental-value",
+      "title": "Sentimental Value",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 9,
+      "id": 360569,
+      "slug": "die-my-love",
+      "title": "Die My Love",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 10,
+      "id": 255497,
+      "slug": "no-other-choice",
+      "title": "No Other Choice",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 11,
+      "id": 440746,
+      "slug": "the-mysterious-gaze-of-the-flamingo",
+      "title": "The Mysterious Gaze of the Flamingo",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 12,
+      "id": 440946,
+      "slug": "a-useful-ghost",
+      "title": "A Useful Ghost",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 13,
+      "id": 411498,
+      "slug": "the-secret-agent-2025",
+      "title": "The Secret Agent",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 14,
+      "id": 301059,
+      "slug": "sirat",
+      "title": "Sirât",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 15,
+      "id": 433422,
+      "slug": "northwest-passage-david-lynch",
+      "title": "Northwest Passage",
+      "year": 1990,
+      "episode": {
+        "label": "Season 1 - Episode 1",
+        "number": 1,
+        "series_title": "Twin Peaks",
+        "season_number": 1,
+        "season_title": "Season 1",
+        "fotd_show_episode": false,
+        "episode_label_color": null,
+        "film_group_id": null,
+        "film_group_slug": null,
+        "episode_title": "Northwest Passage",
+        "series_id": 7,
+        "season_id": 13,
+        "episode_label": "E1",
+        "episode_season_label": "SEASON 1: E1"
+      },
+      "series": {
+        "id": 7,
+        "title": "Twin Peaks",
+        "title_upcase": "TWIN PEAKS",
+        "original_title": "Twin Peaks",
+        "slug": "twin-peaks",
+        "limited": false,
+        "rating_comments_count": 126,
+        "episode_count": 30,
+        "season_count": 2,
+        "content_rating": {
+          "label": "mature",
+          "rating_code": "MATURE",
+          "description": "Contains material and themes suitable only for mature audiences.",
+          "icon_url": null,
+          "label_hex_color": "dd2323"
+        },
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Crime",
+          "Mystery",
+          "TV Series",
+          "Cult"
+        ],
+        "web_url": "https://mubi.com/series/twin-peaks",
+        "average_rating": 4.8,
+        "average_rating_out_of_ten": 9.5,
+        "number_of_ratings": 28521,
+        "info_label": "SERIES",
+        "availability": "live",
+        "availability_message": {
+          "detail": null,
+          "tile": null
+        },
+        "short_synopsis": "F.B.I. Agent Dale Cooper comes to the logging town of Twin Peaks to investigate the murder of Laura Palmer, a popular high school student. While investigating, Agent Cooper comes to know the town’s inhabitants, their odd behaviors, and slowly learns that strange things are happening.",
+        "short_synopsis_html": "<p>F.B.I. Agent Dale Cooper comes to the logging town of Twin Peaks to investigate the murder of Laura Palmer, a popular high school student. While investigating, Agent Cooper comes to know the town&#8217;s inhabitants, their odd behaviors, and slowly learns that strange things are happening.</p>",
+        "default_editorial": "Refracting primetime soap operas and cop shows into a one-of-a-kind cosmic melodrama, showrunners Mark Frost and David Lynch captured lightning in a bottle. Cloaking its dark secrets in a down-home slice of winsome Americana, Twin Peaks is the pop-cultural juggernaut that captivated a generation.",
+        "default_editorial_html": "<p>Refracting primetime soap operas and cop shows into a one-of-a-kind cosmic melodrama, showrunners Mark Frost and David Lynch captured lightning in a bottle. Cloaking its dark secrets in a down-home slice of winsome Americana, <em>Twin Peaks</em> is the pop-cultural juggernaut that captivated a generation.</p>",
+        "seasons": [
+          {
+            "id": 13,
+            "title_upcase": "SEASON 1",
+            "original_title": "Season 1",
+            "season_number": 1,
+            "release_year": 1990,
+            "slug": "season-1",
+            "web_url": "https://mubi.com/series/twin-peaks/season/season-1",
+            "trailer_url": "https://trailers.mubicdn.net/seasons/13/optimised/1080p-t-13_en_us_1749828150.mp4",
+            "trailer_id": 127527,
+            "critic_review_rating": 4.1667,
+            "short_synopsis": "The sensational murder of the high school homecoming queen strips the veneer of respectable gentility from the rural community of Twin Peaks to expose its seething undercurrents. FBI agent Dale Cooper and Sheriff Harry S Truman join forces to investigate—and discover a town full of secrets. ",
+            "short_synopsis_html": "<p>The sensational murder of the high school homecoming queen strips the veneer of respectable gentility from the rural community of Twin Peaks to expose its seething undercurrents. FBI agent Dale Cooper and Sheriff Harry S Truman join forces to investigate&#8212;and discover a town full of secrets. </p>",
+            "episode_count": 8,
+            "title": "Season 1",
+            "industry_events_count": 8,
+            "cast_members_count": 68,
+            "default_editorial": "An ancient terror lurks beneath the homey facades of sleepy diners and cozy cabins in the iconic first season of Twin Peaks. Tread carefully, travelers, through this place where secrets and lies come wrapped in plastic. The picture-perfect image of small-town America is about to go up in flames.",
+            "default_editorial_html": "<p>An ancient terror lurks beneath the homey facades of sleepy diners and cozy cabins in the iconic first season of <em>Twin Peaks</em>. Tread carefully, travelers, through this place where secrets and lies come wrapped in plastic. The picture-perfect image of small-town America is about to go up in flames.</p>",
+            "optimised_trailers": [
+              {
+                "url": "https://trailers.mubicdn.net/seasons/13/optimised/240p-t-13_en_us_1749828150.mp4",
+                "profile": "240p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/13/optimised/720p-t-13_en_us_1749828150.mp4",
+                "profile": "720p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/13/optimised/1080p-t-13_en_us_1749828150.mp4",
+                "profile": "1080p"
+              }
+            ],
+            "artworks": [
+              {
+                "format": "tile_artwork",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/923040/cache-923040-1770978089/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_horizontal",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/781785/cache-781785-1749748645/images-original.jpg",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_vertical",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/781786/cache-781786-1749748697/images-original.jpg",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782019/cache-782019-1749806404/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background_small",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782020/cache-782020-1749806408/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782037/cache-782037-1749806514/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_episode",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782018/cache-782018-1749806399/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "tvos_cover_artwork",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782046/cache-782046-1749806566/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_textless",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/777852/cache-777852-1770978150/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_series",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782055/cache-782055-1749806577/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "title_upcase": "SEASON 2",
+            "original_title": "Season 2",
+            "season_number": 2,
+            "release_year": 1990,
+            "slug": "season-2",
+            "web_url": "https://mubi.com/series/twin-peaks/season/season-2",
+            "trailer_url": "https://trailers.mubicdn.net/seasons/14/optimised/1080p-t-14_en_us_1749828198.mp4",
+            "trailer_id": 127534,
+            "critic_review_rating": 4.0769,
+            "short_synopsis": "FBI Agent Dale Cooper continues his investigation into Laura Palmer’s murder. As secrets surface and new threats emerge, the town of Twin Peaks grows ever stranger and more dangerous.",
+            "short_synopsis_html": "<p>FBI Agent Dale Cooper continues his investigation into Laura Palmer&#8217;s murder. As secrets surface and new threats emerge, the town of Twin Peaks grows ever stranger and more dangerous.</p>",
+            "episode_count": 22,
+            "title": "Season 2",
+            "industry_events_count": 4,
+            "cast_members_count": 118,
+            "default_editorial": "As Laura Palmer’s furtive past continues to unravel in mysterious ways, the second season of Twin Peaks takes an unsettling detour into the mystical and supernatural. With a Pandora’s box containing the wicked truth now pried open, the moral darkness that haunts the American dream is soon unbound.",
+            "default_editorial_html": "<p>As Laura Palmer&#8217;s furtive past continues to unravel in mysterious ways, the second season of <em>Twin Peaks</em> takes an unsettling detour into the mystical and supernatural. With a Pandora&#8217;s box containing the wicked truth now pried open, the moral darkness that haunts the American dream is soon unbound.</p>",
+            "optimised_trailers": [
+              {
+                "url": "https://trailers.mubicdn.net/seasons/14/optimised/240p-t-14_en_us_1749828198.mp4",
+                "profile": "240p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/14/optimised/720p-t-14_en_us_1749828198.mp4",
+                "profile": "720p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/14/optimised/1080p-t-14_en_us_1749828198.mp4",
+                "profile": "1080p"
+              }
+            ],
+            "artworks": [
+              {
+                "format": "tile_artwork",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/777349/cache-777349-1747243835/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_horizontal",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/781787/cache-781787-1749748727/images-original.jpg",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_vertical",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/781788/cache-781788-1749748755/images-original.jpg",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782065/cache-782065-1749806944/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background_small",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782066/cache-782066-1749806947/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782083/cache-782083-1749807063/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_episode",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782064/cache-782064-1749806939/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "tvos_cover_artwork",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782092/cache-782092-1749807118/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_textless",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/777794/cache-777794-1747649956/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_series",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782101/cache-782101-1749807129/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "artworks": [
+          {
+            "format": "tile_artwork",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/777348/cache-777348-1749638915/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_horizontal",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782007/cache-782007-1749805914/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_vertical",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782008/cache-782008-1749805888/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "centered_background",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/782005/cache-782005-1749805795/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "centered_background_small",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/782006/cache-782006-1749805799/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "content_logo_monochromatic",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/779752/cache-779752-1748365686/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782009/cache-782009-1749805817/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_episode",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/782004/cache-782004-1749805790/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "tvos_cover_artwork",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782010/cache-782010-1749805819/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_textless",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/777793/cache-777793-1749639052/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_series",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/781791/cache-781791-1749749171/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "onboarding_horizontal",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/955925/cache-955925-1774007593/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "onboarding_square",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/955926/cache-955926-1774007615/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 16,
+      "id": 422583,
+      "slug": "the-mastermind",
+      "title": "The Mastermind",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 17,
+      "id": 441162,
+      "slug": "it-was-just-an-accident",
+      "title": "It Was Just an Accident",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 18,
+      "id": 8696,
+      "slug": "the-fall",
+      "title": "The Fall",
+      "year": 2006,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 19,
+      "id": 98557,
+      "slug": "group-marriage",
+      "title": "Group Marriage",
+      "year": 1973,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 20,
+      "id": 340287,
+      "slug": "aftersun",
+      "title": "Aftersun",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 21,
+      "id": 343977,
+      "slug": "perfect-days",
+      "title": "Perfect Days",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 22,
+      "id": 28974,
+      "slug": "to-wong-foo-thanks-for-everything-julie-newmar",
+      "title": "To Wong Foo, Thanks for Everything! Julie Newmar",
+      "year": 1995,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 23,
+      "id": 414484,
+      "slug": "orphan-2025",
+      "title": "Orphan",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 24,
+      "id": 286,
+      "slug": "do-the-right-thing",
+      "title": "Do the Right Thing",
+      "year": 1989,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 25,
+      "id": 332868,
+      "slug": "the-substance",
+      "title": "The Substance",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 26,
+      "id": 339432,
+      "slug": "moonage-daydream",
+      "title": "Moonage Daydream",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 27,
+      "id": 224497,
+      "slug": "portrait-de-la-jeune-fille-en-feu",
+      "title": "Portrait of a Lady on Fire",
+      "year": 2019,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 28,
+      "id": 163418,
+      "slug": "self-criticism-of-a-bourgeois-dog",
+      "title": "Self-Criticism of a Bourgeois Dog",
+      "year": 2017,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 29,
+      "id": 1502,
+      "slug": "paris-texas",
+      "title": "Paris, Texas",
+      "year": 1984,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 30,
+      "id": 254618,
+      "slug": "shiva-baby-2020",
+      "title": "Shiva Baby",
+      "year": 2020,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 31,
+      "id": 410994,
+      "slug": "my-father-s-shadow",
+      "title": "My Father's Shadow",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 32,
+      "id": 153720,
+      "slug": "the-working-girls",
+      "title": "The Working Girls",
+      "year": 1974,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 33,
+      "id": 244680,
+      "slug": "titane",
+      "title": "Titane",
+      "year": 2021,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 34,
+      "id": 448214,
+      "slug": "episode-1-2015",
+      "title": "2015",
+      "year": 2024,
+      "episode": {
+        "label": "The New Years - Episode 1",
+        "number": 1,
+        "series_title": "The New Years",
+        "season_number": 1,
+        "season_title": "The New Years",
+        "fotd_show_episode": false,
+        "episode_label_color": null,
+        "film_group_id": null,
+        "film_group_slug": null,
+        "episode_title": "2015",
+        "series_id": 14,
+        "season_id": 23,
+        "episode_label": "E1",
+        "episode_season_label": "E1"
+      },
+      "series": {
+        "id": 14,
+        "title": "The New Years",
+        "title_upcase": "THE NEW YEARS",
+        "original_title": "Los años nuevos",
+        "slug": "the-new-years",
+        "limited": true,
+        "rating_comments_count": 77,
+        "episode_count": 10,
+        "season_count": 1,
+        "content_rating": {
+          "label": "mature",
+          "rating_code": "MATURE",
+          "description": "Contains material and themes suitable only for mature audiences.",
+          "icon_url": null,
+          "label_hex_color": "dd2323"
+        },
+        "genres": [
+          "Drama",
+          "TV Mini-series"
+        ],
+        "web_url": "https://mubi.com/series/the-new-years",
+        "average_rating": 4.7,
+        "average_rating_out_of_ten": 9.4,
+        "number_of_ratings": 19794,
+        "info_label": "LIMITED SERIES",
+        "availability": "live",
+        "availability_message": {
+          "detail": null,
+          "tile": null
+        },
+        "short_synopsis": "Madrid, New Year’s Eve. Ana and Óscar meet for the first time on the night they both turn thirty. That night, their worlds collide in an unexpected romance that will unfold over an entire decade of New Year’s Eves.",
+        "short_synopsis_html": "<p>Madrid, New Year&#8217;s Eve. Ana and Óscar meet for the first time on the night they both turn thirty. That night, their worlds collide in an unexpected romance that will unfold over an entire decade of New Year&#8217;s Eves.</p>",
+        "default_editorial": "",
+        "default_editorial_html": "",
+        "seasons": [
+          {
+            "id": 23,
+            "title_upcase": "THE NEW YEARS",
+            "original_title": "Los años nuevos",
+            "season_number": 1,
+            "release_year": 2024,
+            "slug": "season-1",
+            "web_url": "https://mubi.com/series/the-new-years/season/season-1",
+            "trailer_url": "https://trailers.mubicdn.net/seasons/23/optimised/1080p-t-23_en_us_1764696598.mp4",
+            "trailer_id": 137661,
+            "critic_review_rating": 4.6923,
+            "short_synopsis": "",
+            "short_synopsis_html": "",
+            "episode_count": 10,
+            "title": "The New Years",
+            "industry_events_count": 19,
+            "cast_members_count": 26,
+            "default_editorial": "Catching fleeting glimpses of a relationship in motion, this innovative episodic drama is as profoundly moving as it is conceptually daring. Devastatingly observed realism and a novelistic evocation of time create an intimate portrait of two lovers across a decade, in all their messy imperfection.",
+            "default_editorial_html": "<p>Catching fleeting glimpses of a relationship in motion, this innovative episodic drama is as profoundly moving as it is conceptually daring. Devastatingly observed realism and a novelistic evocation of time create an intimate portrait of two lovers across a decade, in all their messy imperfection.</p>",
+            "optimised_trailers": [
+              {
+                "url": "https://trailers.mubicdn.net/seasons/23/optimised/240p-t-23_en_us_1764696598.mp4",
+                "profile": "240p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/23/optimised/720p-t-23_en_us_1764696598.mp4",
+                "profile": "720p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/23/optimised/1080p-t-23_en_us_1764696598.mp4",
+                "profile": "1080p"
+              }
+            ],
+            "artworks": [
+              {
+                "format": "tile_artwork",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/870982/cache-870982-1760109372/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_horizontal",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/902204/cache-902204-1767811423/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_vertical",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/902213/cache-902213-1767811469/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/902202/cache-902202-1767811415/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background_small",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/902203/cache-902203-1767811419/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/902222/cache-902222-1767811507/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_episode",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/902201/cache-902201-1767811411/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "tvos_cover_artwork",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/902231/cache-902231-1767811546/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_textless",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/870983/cache-870983-1760109383/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_series",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/902240/cache-902240-1767811556/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "artworks": [
+          {
+            "format": "tile_artwork",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/870980/cache-870980-1764700019/images-original.png",
+            "focal_point": {
+              "x": 0.64,
+              "y": 0.53
+            }
+          },
+          {
+            "format": "cover_artwork_horizontal",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/905974/cache-905974-1768488348/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_vertical",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/905983/cache-905983-1768488399/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "centered_background",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/905972/cache-905972-1768488340/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "centered_background_small",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/905973/cache-905973-1768488344/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "content_logo_polychromatic",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/888372/cache-888372-1764690051/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "content_logo_monochromatic",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/889889/cache-889889-1764958968/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/905992/cache-905992-1768488441/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_episode",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/905971/cache-905971-1768488336/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "tvos_cover_artwork",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/906001/cache-906001-1768488484/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_textless",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/870981/cache-870981-1764699493/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_series",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/906010/cache-906010-1768488493/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 35,
+      "id": 332978,
+      "slug": "hot-milk-2023",
+      "title": "Hot Milk",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 36,
+      "id": 116508,
+      "slug": "phoenix-2014",
+      "title": "Phoenix",
+      "year": 2014,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 37,
+      "id": 445143,
+      "slug": "god-is-shy",
+      "title": "God is Shy",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 38,
+      "id": 179875,
+      "slug": "transit-2018",
+      "title": "Transit",
+      "year": 2018,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 39,
+      "id": 401325,
+      "slug": "the-girl-with-the-needle",
+      "title": "The Girl with the Needle",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 40,
+      "id": 339480,
+      "slug": "close-2022",
+      "title": "Close",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 41,
+      "id": 2013,
+      "slug": "drop-dead-gorgeous",
+      "title": "Drop Dead Gorgeous",
+      "year": 1999,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 42,
+      "id": 292832,
+      "slug": "bones-and-all",
+      "title": "Bones and All",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 43,
+      "id": 304153,
+      "slug": "tardes-de-soledad",
+      "title": "Afternoons of Solitude",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 44,
+      "id": 209655,
+      "slug": "the-golden-glove",
+      "title": "The Golden Glove",
+      "year": 2019,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 45,
+      "id": 235851,
+      "slug": "the-worst-person-in-the-world",
+      "title": "The Worst Person in the World",
+      "year": 2021,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 46,
+      "id": 68217,
+      "slug": "terminal-island",
+      "title": "Terminal Island",
+      "year": 1973,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 47,
+      "id": 259,
+      "slug": "la-cienaga",
+      "title": "La ciénaga",
+      "year": 2001,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 48,
+      "id": 85,
+      "slug": "revanche",
+      "title": "Revanche",
+      "year": 2008,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 49,
+      "id": 418722,
+      "slug": "magic-farm",
+      "title": "Magic Farm",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 50,
+      "id": 39858,
+      "slug": "we-need-to-talk-about-kevin",
+      "title": "We Need to Talk About Kevin",
+      "year": 2011,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 51,
+      "id": 374522,
+      "slug": "how-to-have-sex",
+      "title": "How to Have Sex",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 52,
+      "id": 281688,
+      "slug": "decision-to-leave",
+      "title": "Decision to Leave",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 53,
+      "id": 11864,
+      "slug": "solo-sunny",
+      "title": "Solo Sunny",
+      "year": 1980,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 54,
+      "id": 94834,
+      "slug": "barbara-2012",
+      "title": "Barbara",
+      "year": 2012,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 55,
+      "id": 391610,
+      "slug": "queer",
+      "title": "Queer",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 56,
+      "id": 411752,
+      "slug": "witches",
+      "title": "Witches",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 57,
+      "id": 325455,
+      "slug": "passages-2022",
+      "title": "Passages",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 58,
+      "id": 3827,
+      "slug": "jerichow",
+      "title": "Jerichow",
+      "year": 2008,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 59,
+      "id": 346537,
+      "slug": "fallen-leaves-2023",
+      "title": "Fallen Leaves",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 60,
+      "id": 374529,
+      "slug": "crossing-2023-levan-akin",
+      "title": "Crossing",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 61,
+      "id": 3197,
+      "slug": "reprise",
+      "title": "Reprise",
+      "year": 2006,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 62,
+      "id": 376083,
+      "slug": "the-settlers-2023",
+      "title": "The Settlers",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 63,
+      "id": 466794,
+      "slug": "7-piano-sketches",
+      "title": "7 piano sketches",
+      "year": 2026,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 64,
+      "id": 354432,
+      "slug": "priscilla",
+      "title": "Priscilla",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 65,
+      "id": 126,
+      "slug": "the-edge-of-heaven",
+      "title": "The Edge of Heaven",
+      "year": 2007,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 66,
+      "id": 289223,
+      "slug": "les-cinq-diables",
+      "title": "The Five Devils",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 67,
+      "id": 17147,
+      "slug": "thelma-louise",
+      "title": "Thelma & Louise",
+      "year": 1991,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 68,
+      "id": 20106,
+      "slug": "lars-and-the-real-girl",
+      "title": "Lars and the Real Girl",
+      "year": 2007,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 69,
+      "id": 407615,
+      "slug": "the-fall-of-sir-douglas-weatherford",
+      "title": "The Fall of Sir Douglas Weatherford",
+      "year": 2026,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 70,
+      "id": 436826,
+      "slug": "sound-of-falling",
+      "title": "Sound of Falling",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 71,
+      "id": 149904,
+      "slug": "the-handmaiden",
+      "title": "The Handmaiden",
+      "year": 2016,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 72,
+      "id": 23535,
+      "slug": "silvia-prieto",
+      "title": "Silvia Prieto",
+      "year": 1999,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 73,
+      "id": 433459,
+      "slug": "part-1",
+      "title": "Part 1",
+      "year": 2017,
+      "episode": {
+        "label": "The Return - Episode 1",
+        "number": 1,
+        "series_title": "Twin Peaks: A Limited Event Series",
+        "season_number": 1,
+        "season_title": "The Return",
+        "fotd_show_episode": false,
+        "episode_label_color": null,
+        "film_group_id": null,
+        "film_group_slug": null,
+        "episode_title": "Part 1",
+        "series_id": 8,
+        "season_id": 15,
+        "episode_label": "E1",
+        "episode_season_label": "E1"
+      },
+      "series": {
+        "id": 8,
+        "title": "Twin Peaks: A Limited Event Series",
+        "title_upcase": "TWIN PEAKS: A LIMITED EVENT SERIES",
+        "original_title": "Twin Peaks: A Limited Event Series",
+        "slug": "twin-peaks-a-limited-event-series",
+        "limited": true,
+        "rating_comments_count": 55,
+        "episode_count": 18,
+        "season_count": 1,
+        "content_rating": {
+          "label": "mature",
+          "rating_code": "MATURE",
+          "description": "Contains material and themes suitable only for mature audiences.",
+          "icon_url": null,
+          "label_hex_color": "dd2323"
+        },
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Thriller",
+          "Crime",
+          "Mystery",
+          "TV Mini-series"
+        ],
+        "web_url": "https://mubi.com/series/twin-peaks-a-limited-event-series",
+        "average_rating": 4.7,
+        "average_rating_out_of_ten": 9.4,
+        "number_of_ratings": 12858,
+        "info_label": "LIMITED SERIES",
+        "availability": "live",
+        "availability_message": {
+          "detail": null,
+          "tile": null
+        },
+        "short_synopsis": "One of the most groundbreaking and influential broadcast series of all time, Twin Peaks followed the residents of a northwestern town stunned by the murder of homecoming queen Laura Palmer. Twenty-five years later, the story continues…",
+        "short_synopsis_html": "<p>One of the most groundbreaking and influential broadcast series of all time, <em>Twin Peaks</em> followed the residents of a northwestern town stunned by the murder of homecoming queen Laura Palmer. Twenty-five years later, the story continues&#8230;</p>",
+        "default_editorial": "",
+        "default_editorial_html": "",
+        "seasons": [
+          {
+            "id": 15,
+            "title_upcase": "THE RETURN",
+            "original_title": "The Return",
+            "season_number": 1,
+            "release_year": 2017,
+            "slug": "season-1",
+            "web_url": "https://mubi.com/series/twin-peaks-a-limited-event-series/season/season-1",
+            "trailer_url": "https://trailers.mubicdn.net/seasons/15/optimised/1080p-t-15_en_us_1749752841.mp4",
+            "trailer_id": 128941,
+            "critic_review_rating": 4.7021,
+            "short_synopsis": "One of the most groundbreaking and influential broadcast series of all time, Twin Peaks followed the residents of a northwestern town stunned by the murder of homecoming queen Laura Palmer. Twenty-five years later, the story continues…",
+            "short_synopsis_html": "<p>One of the most groundbreaking and influential broadcast series of all time, <em>Twin Peaks</em> followed the residents of a northwestern town stunned by the murder of homecoming queen Laura Palmer. Twenty-five years later, the story continues&#8230;</p>",
+            "episode_count": 18,
+            "title": "The Return",
+            "industry_events_count": 8,
+            "cast_members_count": 132,
+            "default_editorial": "Dreams nest in nightmares, and nightmares in dreams, in Mark Frost and David Lynch’s electrifying return to the world of Twin Peaks. A monumental work of novelistic scope and grandeur, this limited series event slips the boundaries of space and time to prowl the charged line between good and evil.",
+            "default_editorial_html": "<p>Dreams nest in nightmares, and nightmares in dreams, in Mark Frost and David Lynch&#8217;s electrifying return to the world of Twin Peaks. A monumental work of novelistic scope and grandeur, this limited series event slips the boundaries of space and time to prowl the charged line between good and evil.</p>",
+            "optimised_trailers": [
+              {
+                "url": "https://trailers.mubicdn.net/seasons/15/optimised/240p-t-15_en_us_1749752841.mp4",
+                "profile": "240p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/15/optimised/720p-t-15_en_us_1749752841.mp4",
+                "profile": "720p"
+              },
+              {
+                "url": "https://trailers.mubicdn.net/seasons/15/optimised/1080p-t-15_en_us_1749752841.mp4",
+                "profile": "1080p"
+              }
+            ],
+            "artworks": [
+              {
+                "format": "tile_artwork",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/778550/cache-778550-1747761231/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_horizontal",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/781789/cache-781789-1749748798/images-original.jpg",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_vertical",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/781790/cache-781790-1749748824/images-original.jpg",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782111/cache-782111-1749807499/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "centered_background_small",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782112/cache-782112-1749807502/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782113/cache-782113-1749807507/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_episode",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/782110/cache-782110-1749807494/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "tvos_cover_artwork",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782114/cache-782114-1749807510/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_textless",
+                "locale": null,
+                "image_url": "https://images.mubicdn.net/images/artworks/778551/cache-778551-1747761245/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              },
+              {
+                "format": "cover_artwork_box_series",
+                "locale": "en-US",
+                "image_url": "https://images.mubicdn.net/images/artworks/782115/cache-782115-1749807514/images-original.png",
+                "focal_point": {
+                  "x": 0.5,
+                  "y": 0.0
+                }
+              }
+            ]
+          }
+        ],
+        "artworks": [
+          {
+            "format": "tile_artwork",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/778552/cache-778552-1749640947/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_horizontal",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782014/cache-782014-1749806197/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_vertical",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782015/cache-782015-1749806215/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "centered_background",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/782012/cache-782012-1749806006/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "centered_background_small",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/782013/cache-782013-1749806010/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "content_logo_polychromatic",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/779784/cache-779784-1748424988/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "content_logo_monochromatic",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/779768/cache-779768-1748424822/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782016/cache-782016-1749806029/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_episode",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/782011/cache-782011-1749806000/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "tvos_cover_artwork",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/782017/cache-782017-1749806031/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_textless",
+            "locale": null,
+            "image_url": "https://images.mubicdn.net/images/artworks/778553/cache-778553-1749640458/images-original.png",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          },
+          {
+            "format": "cover_artwork_box_series",
+            "locale": "en-US",
+            "image_url": "https://images.mubicdn.net/images/artworks/781784/cache-781784-1749748587/images-original.jpg",
+            "focal_point": {
+              "x": 0.5,
+              "y": 0.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "rank": 74,
+      "id": 269720,
+      "slug": "pleasure-2020",
+      "title": "Pleasure",
+      "year": 2021,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 75,
+      "id": 23121,
+      "slug": "the-watermelon-woman",
+      "title": "The Watermelon Woman",
+      "year": 1996,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 76,
+      "id": 27590,
+      "slug": "blow-out",
+      "title": "Blow Out",
+      "year": 1981,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 77,
+      "id": 391623,
+      "slug": "bird",
+      "title": "Bird",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 78,
+      "id": 447318,
+      "slug": "l-accident-de-piano",
+      "title": "The Piano Accident",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 79,
+      "id": 419387,
+      "slug": "winter-in-sokcho",
+      "title": "Winter in Sokcho",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 80,
+      "id": 19644,
+      "slug": "the-adventures-of-priscilla-queen-of-the-desert",
+      "title": "The Adventures of Priscilla, Queen of the Desert",
+      "year": 1994,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 81,
+      "id": 1694,
+      "slug": "the-apartment",
+      "title": "The Apartment",
+      "year": 1960,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 82,
+      "id": 434147,
+      "slug": "ancestral-visions-of-the-future",
+      "title": "Ancestral Visions of the Future",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 83,
+      "id": 385526,
+      "slug": "the-practice-2023",
+      "title": "The Practice",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 84,
+      "id": 369358,
+      "slug": "bring-them-down",
+      "title": "Bring Them Down",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 85,
+      "id": 376078,
+      "slug": "los-delincuentes",
+      "title": "The Delinquents",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 86,
+      "id": 5264,
+      "slug": "carlito-s-way",
+      "title": "Carlito's Way",
+      "year": 1993,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 87,
+      "id": 431122,
+      "slug": "sorry-baby-2025",
+      "title": "Sorry, Baby",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 88,
+      "id": 440441,
+      "slug": "pompei-below-the-clouds",
+      "title": "Pompei: Below the Clouds",
+      "year": 2025,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 89,
+      "id": 364307,
+      "slug": "rotting-in-the-sun",
+      "title": "Rotting in the Sun",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 90,
+      "id": 5138,
+      "slug": "pepi-luci-bom",
+      "title": "Pepi, Luci, Bom",
+      "year": 1980,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 91,
+      "id": 240424,
+      "slug": "undine-2020",
+      "title": "Undine",
+      "year": 2020,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 92,
+      "id": 332332,
+      "slug": "alcarras",
+      "title": "Alcarràs",
+      "year": 2022,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 93,
+      "id": 2682,
+      "slug": "kes",
+      "title": "Kes",
+      "year": 1969,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 94,
+      "id": 493,
+      "slug": "heaven-s-gate-1980",
+      "title": "Heaven's Gate",
+      "year": 1980,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 95,
+      "id": 278115,
+      "slug": "megalopolis-2021",
+      "title": "Megalopolis",
+      "year": 2024,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 96,
+      "id": 255674,
+      "slug": "shithouse",
+      "title": "Shithouse",
+      "year": 2020,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 97,
+      "id": 151966,
+      "slug": "good-time",
+      "title": "Good Time",
+      "year": 2017,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 98,
+      "id": 4311,
+      "slug": "soul-kitchen",
+      "title": "Soul Kitchen",
+      "year": 2009,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 99,
+      "id": 380148,
+      "slug": "high-low-john-galliano",
+      "title": "High & Low - John Galliano",
+      "year": 2023,
+      "episode": null,
+      "series": null
+    },
+    {
+      "rank": 100,
+      "id": 213551,
+      "slug": "not-a-pretty-picture",
+      "title": "Not a Pretty Picture",
+      "year": 1976,
+      "episode": null,
+      "series": null
+    }
+  ]
 }
