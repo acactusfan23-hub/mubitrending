@@ -16,26 +16,24 @@ S = mubi_trending.S
 
 MUBI_API = os.getenv('MUBI_API_URL', 'https://api.mubi.com/v4')
 MUBI_COUNTRY = os.getenv('MUBI_COUNTRY', 'GB').upper()
+RUN_DEVICE_ID = str(uuid.uuid4())
 
 
 def api_headers():
-    # MUBI's documented web API uses these browser-like headers for catalogue/collection browsing.
+    # Mirrors MUBI's anonymous web-client catalogue headers. Client-Country is the
+    # important part here: the playable catalogue and its popularity order are
+    # territory-specific.
     return {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
-        'Accept': 'application/json',
-        'Accept-Language': 'en-GB,en;q=0.9',
-        'Client': 'web',
-        'Client-Country': MUBI_COUNTRY,
-        'Client-Accept-Audio-Codecs': 'eac3,aac',
-        'Client-Accept-Video-Codecs': 'h265,vp9,h264',
-        'Anonymous_user_id': str(uuid.uuid4()),
+        'Referer': 'https://mubi.com',
         'Origin': 'https://mubi.com',
-        'Referer': 'https://mubi.com/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0',
+        'Accept': 'application/json',
+        'Client': 'web',
+        'Client-Accept-Video-Codecs': 'h265,vp9,h264',
+        'Client-Country': MUBI_COUNTRY,
+        'Accept-Language': 'en-GB,en;q=0.9',
+        'Anonymous_user_id': RUN_DEVICE_ID,
     }
-
-
-def norm(s):
-    return re.sub(r'[^a-z0-9]+', ' ', html.unescape(s or '').lower()).strip()
 
 
 def api_get(path, params=None, timeout=60):
@@ -44,92 +42,86 @@ def api_get(path, params=None, timeout=60):
     return r.json()
 
 
-def find_trending_group():
-    """Find the MUBI collection actually named Trending through MUBI's collection API."""
-    hits = []
-    for page in range(1, 11):
-        data = api_get('/browse/film_groups', {
-            'sort': 'title',
-            'page': page,
-            'per_page': 100,
-        })
-        groups = data.get('film_groups') or []
-        if not groups:
-            break
-        for g in groups:
-            title = g.get('title') or ''
-            full = g.get('full_title') or ''
-            key_title = norm(title)
-            key_full = norm(full)
-            if key_title == 'trending' or key_full == 'trending' or key_full.endswith(' trending'):
-                hits.append(g)
-        meta = data.get('meta') or {}
-        if not meta.get('next_page') and page > 1:
-            break
-    if not hits:
-        raise RuntimeError('MUBI API returned no film group named Trending for country ' + MUBI_COUNTRY)
-    # Prefer an exact title match over a longer descriptive full title.
-    hits.sort(key=lambda g: (norm(g.get('title')) != 'trending', len(g.get('full_title') or '')))
-    group = hits[0]
-    print(f"MUBI API: found Trending collection id={group.get('id')} title={group.get('title')!r} full_title={group.get('full_title')!r} country={MUBI_COUNTRY}")
-    return group
-
-
 def scrape_mubi_via_api():
-    group = find_trending_group()
-    group_id = group.get('id')
-    if group_id is None:
-        raise RuntimeError('MUBI Trending collection had no id.')
+    """Read MUBI GB's playable catalogue in MUBI popularity order.
 
+    The public /collections/trending page is a popularity view, not a normal
+    film_group. /browse/films?sort=popularity is therefore the appropriate
+    country-aware API source. Series/episodes are skipped because the destination
+    MDBList is a movie list; their presence on the webpage must not displace films.
+    """
     items = []
     seen = set()
-    for page in range(1, 11):
-        data = api_get(f'/film_groups/{group_id}/film_group_items', {
-            'include_upcoming': 'true',
+    page = 1
+
+    while page and page <= 20 and len(items) < MAX_ITEMS:
+        data = api_get('/browse/films', {
+            'sort': 'popularity',
+            'playable': 'true',
             'page': page,
-            'per_page': 24,
+            'per_page': 48,
         })
-        batch = data.get('film_group_items') or []
-        if not batch:
+        films = data.get('films') or []
+        meta = data.get('meta') or {}
+        if not films:
             break
+
         before = len(items)
-        for entry in batch:
-            film = entry.get('film') if isinstance(entry, dict) else None
+        skipped_series = 0
+        for film in films:
             if not isinstance(film, dict):
                 continue
-            slug = str(film.get('slug') or '').strip()
-            if not slug or slug in seen:
+
+            # MUBI's browse endpoint can include series episodes. The user's
+            # Aggregarr destination is explicitly a movie list, so skip them while
+            # preserving the relative order of the films around them.
+            if film.get('episode') is not None or film.get('series') is not None:
+                skipped_series += 1
                 continue
-            seen.add(slug)
+
+            slug = str(film.get('slug') or '').strip()
+            fid = film.get('id')
+            dedupe_key = slug or str(fid or '')
+            if not dedupe_key or dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+
             raw_title = (film.get('title') or film.get('title_locale') or film.get('original_title') or slug.replace('-', ' ')).strip()
-            clean, year = mubi_trending.title_and_year(raw_title)
-            # API film objects normally include the year separately, which is preferable to parsing card text.
-            api_year = film.get('year')
-            if isinstance(api_year, int):
-                year = api_year
+            year = film.get('year') if isinstance(film.get('year'), int) else None
             items.append({
                 'rank': len(items) + 1,
-                'title': clean,
+                'title': raw_title,
                 'raw_title': raw_title,
                 'mubi_year': year,
                 'slug': slug,
+                'mubi_id': fid,
+                'mubi_popularity': film.get('popularity'),
                 'url': film.get('web_url') or f'https://mubi.com/en/gb/films/{urllib.parse.quote(slug)}',
             })
             if len(items) >= MAX_ITEMS:
                 break
-        print(f'MUBI API Trending: page {page}; received {len(batch)}; added {len(items)-before}; total {len(items)}')
-        meta = data.get('meta') or {}
-        if len(items) >= MAX_ITEMS or not meta.get('next_page') or len(items) == before:
+
+        print(
+            f'MUBI GB popularity API: page {page}; received {len(films)}; '
+            f'skipped series/episodes {skipped_series}; added {len(items)-before}; total {len(items)}'
+        )
+
+        next_page = meta.get('next_page')
+        if len(items) >= MAX_ITEMS or not next_page or len(items) == before:
             break
-    if not items:
-        raise RuntimeError('MUBI API Trending returned no films.')
-    print('MUBI source ranking captured (DIRECT API, GB):')
-    for item in items[:15]:
-        print(f"  {item['rank']:02d}. {item['title']}")
+        page = int(next_page)
+
+    if len(items) < 20:
+        raise RuntimeError(f'MUBI GB popularity API returned only {len(items)} movies; refusing to trust it.')
+
+    print('MUBI source ranking captured (DIRECT GB POPULARITY API):')
+    for item in items[:20]:
+        suffix = f" ({item['mubi_year']})" if item.get('mubi_year') else ''
+        print(f"  {item['rank']:02d}. {item['title']}{suffix}")
     return items[:MAX_ITEMS]
 
 
-# --- Existing Jina scraper retained as a fallback only. ---
+# --- Existing proven Jina scraper retained unchanged as fallback only. ---
 class AnchorParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -262,8 +254,8 @@ def improved_source():
     try:
         return scrape_mubi_via_api()
     except Exception as api_exc:
-        print(f'MUBI DIRECT API unavailable: {api_exc}')
-        print('Falling back to the existing Jina source without changing the matching/update pipeline.')
+        print(f'MUBI GB POPULARITY API unavailable: {api_exc}')
+        print('Falling back to the existing Jina source; no MDBList update occurs until downstream safety checks pass.')
         return scrape_mubi_via_jina_fallback()
 
 
