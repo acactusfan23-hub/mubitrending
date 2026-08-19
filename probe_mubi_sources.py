@@ -11,97 +11,72 @@ BASE={
     'Client':'web',
     'Client-Country':'GB',
     'Client-Accept-Video-Codecs':'h265,vp9,h264',
-    'Origin':'https://mubi.com','Referer':'https://mubi.com/'
+    'Origin':'https://mubi.com','Referer':'https://mubi.com/en/gb/collections/trending'
 }
 
 def norm(x): return re.sub(r'[^a-z0-9]+',' ',str(x or '').lower()).strip()
-
-def film_titles(data):
-    films=data.get('films') if isinstance(data,dict) else None
-    if not isinstance(films,list): return []
-    return [str(x.get('title') or x.get('original_title') or x.get('slug') or '') for x in films if isinstance(x,dict)]
-
-def list_field_summary(data):
-    out={}
-    if not isinstance(data,dict): return out
-    for k,v in data.items():
-        if isinstance(v,list):
-            vals=[]
-            for x in v[:30]:
-                if isinstance(x,dict): vals.append(x.get('title') or x.get('name') or x.get('slug') or list(x.keys())[:5])
-                else: vals.append(x)
-            out[k]={'count':len(v),'sample':vals}
-    return out
-
-def positions(titles):
-    n=[norm(x) for x in titles]
+def titles(data):
+    rows=(data.get('films') or []) if isinstance(data,dict) else []
+    return [str(x.get('title') or x.get('original_title') or x.get('slug') or '') for x in rows if isinstance(x,dict)]
+def positions(ts):
+    n=[norm(x) for x in ts]
     return {e:(n.index(norm(e))+1 if norm(e) in n else None) for e in EXPECTED}
+def h(extra=None,country='GB'):
+    x=dict(BASE); x['Client-Country']=country; x['Anonymous_user_id']='8bd3ee8c-8610-40af-82a3-51c6caef8f2b'
+    if extra: x.update(extra)
+    return x
 
-def headers(anon='fixed',country='GB'):
-    h=dict(BASE); h['Client-Country']=country
-    if anon=='random': h['Anonymous_user_id']=str(uuid.uuid4())
-    elif anon=='zero': h['Anonymous_user_id']='00000000-0000-0000-0000-000000000000'
-    elif anon=='fixed': h['Anonymous_user_id']='8bd3ee8c-8610-40af-82a3-51c6caef8f2b'
-    return h
+def fetch(label,params=None,extra_headers=None,country='GB'):
+    try:
+        r=S.get(API+'/collections/trending',headers=h(extra_headers,country),params=params or {},timeout=30)
+        print('\n===',label,'===')
+        print('STATUS',r.status_code,'URL',r.url)
+        print('PAGINATION_HEADERS',json.dumps({k:v for k,v in r.headers.items() if any(s in k.lower() for s in ['link','page','cursor','offset','next','total'])},ensure_ascii=False))
+        print('BODY_PREFIX',r.text[:160].replace('\n',' '))
+        if not r.ok:return None
+        d=r.json(); ts=titles(d)
+        print('KEYS',list(d.keys()))
+        print('COUNT',len(ts),'TOTAL_ITEMS',d.get('total_items'))
+        print('TOP30',json.dumps(ts[:30],ensure_ascii=False))
+        print('POSITIONS',json.dumps(positions(ts),ensure_ascii=False))
+        return d
+    except Exception as e:
+        print('\n===',label,'=== ERROR',repr(e)); return None
 
-def fetch_variant(label,anon='random',params=None,country='GB'):
-    h=headers(anon,country)
-    if anon=='none': h.pop('Anonymous_user_id',None)
-    r=S.get(API+'/collections/trending',headers=h,params=params or {},timeout=30)
-    print('\n===',label,'===',r.status_code,r.url)
-    print('BODY_PREFIX',r.text[:180].replace('\n',' '))
-    if not r.ok: return {'status':r.status_code,'body':r.text[:500]}
-    d=r.json(); ts=film_titles(d)
-    print('TOP_KEYS',list(d.keys()))
-    print('FILM_GROUP_META',json.dumps(d.get('film_group'),ensure_ascii=False)[:4000])
-    print('LIST_FIELDS',json.dumps(list_field_summary(d),ensure_ascii=False))
-    print('FILMS_COUNT',len(ts))
-    print('FILMS_TOP30',json.dumps(ts[:30],ensure_ascii=False))
-    print('POSITIONS',json.dumps(positions(ts),ensure_ascii=False))
-    return {'status':r.status_code,'keys':list(d.keys()),'lists':list_field_summary(d),'films':ts,'positions':positions(ts),'raw':d}
+results={}
+# Baseline and likely pagination styles.
+cases=[
+ ('baseline',{}),
+ ('limit100',{'limit':100}),
+ ('limit48',{'limit':48}),
+ ('offset12',{'offset':12}),
+ ('offset12limit12',{'offset':12,'limit':12}),
+ ('offset12limit48',{'offset':12,'limit':48}),
+ ('page2',{'page':2}),
+ ('page2per12',{'page':2,'per_page':12}),
+ ('page2per48',{'page':2,'per_page':48}),
+ ('page_number2',{'page_number':2,'page_size':12}),
+ ('jsonapi_page2',{'page[number]':2,'page[size]':12}),
+ ('start12',{'start':12,'count':12}),
+ ('from12',{'from':12,'size':12}),
+ ('skip12',{'skip':12,'take':12}),
+ ('cursor12',{'cursor':12}),
+ ('include_all',{'include_all':'true','limit':100}),
+]
+for label,params in cases: results[label]=fetch(label,params)
 
-def probe_group(group_id):
-    all_titles=[]; seen=set(); page=1
-    while page<=10 and len(all_titles)<120:
-        r=S.get(f'{API}/film_groups/{group_id}/film_group_items',headers=headers('fixed'),params={'page':page,'per_page':48,'include_upcoming':'true'},timeout=30)
-        print(f'GROUP {group_id} PAGE {page} STATUS {r.status_code} URL {r.url}')
-        if not r.ok:
-            print('GROUP_BODY',r.text[:500]); break
-        d=r.json(); batch=d.get('film_group_items') or []
-        before=len(all_titles)
-        for entry in batch:
-            if not isinstance(entry,dict): continue
-            film=entry.get('film') if isinstance(entry.get('film'),dict) else entry
-            if not isinstance(film,dict): continue
-            title=film.get('title') or film.get('original_title') or film.get('slug')
-            key=str(film.get('id') or film.get('slug') or title)
-            if not title or key in seen: continue
-            seen.add(key); all_titles.append(str(title))
-        print('GROUP_PAGE_ADDED',len(all_titles)-before,'TOTAL',len(all_titles))
-        meta=d.get('meta') or {}; nxt=meta.get('next_page')
-        if not nxt or len(all_titles)==before: break
-        page=int(nxt)
-    print('GROUP_TOP40',json.dumps(all_titles[:40],ensure_ascii=False))
-    print('GROUP_POSITIONS',json.dumps(positions(all_titles),ensure_ascii=False))
-    return all_titles
-
-variants={}
-variants['random_1']=fetch_variant('GB random anonymous 1','random')
-variants['random_2']=fetch_variant('GB random anonymous 2','random')
-variants['no_anon']=fetch_variant('GB no anonymous id','none')
-variants['fixed_anon']=fetch_variant('GB fixed anonymous id','fixed')
-variants['us_control']=fetch_variant('US control','fixed',country='US')
-
-raw=variants.get('fixed_anon',{}).get('raw') or {}
-fg=raw.get('film_group') if isinstance(raw,dict) else None
-group_id=fg.get('id') if isinstance(fg,dict) else None
-group_titles=probe_group(group_id) if group_id else []
+# Geo/header variations. These are harmless read-only diagnostics.
+for label,extra,country in [
+ ('gb_referer',{},'GB'),
+ ('gb_cf_country',{'CF-IPCountry':'GB'},'GB'),
+ ('gb_forwarded_country',{'X-Country-Code':'GB','X-Client-Country':'GB'},'GB'),
+ ('gb_forwarded_ip',{'X-Forwarded-For':'81.2.69.142','X-Real-IP':'81.2.69.142'},'GB'),
+ ('uk_country_value',{},'UK'),
+ ('us_control',{},'US'),
+]: results[label]=fetch(label,{},extra,country)
 
 os.makedirs('data',exist_ok=True)
-compact={k:{kk:vv for kk,vv in v.items() if kk!='raw'} for k,v in variants.items()}
-compact['film_group_id']=group_id
-compact['film_group_titles']=group_titles
-compact['film_group_positions']=positions(group_titles)
-with open('data/collection_variants.json','w',encoding='utf-8') as f: json.dump(compact,f,ensure_ascii=False,indent=2)
-if raw:
-    with open('data/trending_collection.json','w',encoding='utf-8') as f: json.dump(raw,f,ensure_ascii=False,indent=2)
+compact={k:{'films':titles(v),'positions':positions(titles(v)),'keys':list(v.keys()) if isinstance(v,dict) else []} for k,v in results.items() if v}
+with open('data/collection_variants.json','w',encoding='utf-8') as f:json.dump(compact,f,ensure_ascii=False,indent=2)
+if results.get('baseline'):
+    with open('data/trending_collection.json','w',encoding='utf-8') as f:json.dump(results['baseline'],f,ensure_ascii=False,indent=2)
