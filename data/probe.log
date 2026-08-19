@@ -4,8 +4,11 @@ URL https://api.mubi.com/v4/lists/trending/list_films?page=1&per_page=48 STATUS 
 BODY_PREFIX {"code":404,"message":"Missing List","user_message":"Can't find List with id trending"}
 
 === browse lists ===
-URL https://api.mubi.com/v4/browse/lists?sort=title&page=1&per_page=100 STATUS 422 CT application/json; charset=utf-8
-BODY_PREFIX {"code":2,"message":"Invalid params","user_message":"An unexpected error occurred (#2)","fatal":false,"details":"Invalid sort: \"title\" - Valid values: [\"popularity\", \"updated_
+URL https://api.mubi.com/v4/browse/lists?sort=popularity&page=1&per_page=100 STATUS 200 CT application/json; charset=utf-8
+BODY_PREFIX {"lists":[{"id":138118,"title":"The MUBI Top 1000","slug":"the-top-1000","average_colour_hex":"797270","created_at":"2021-05-03T10:48:45Z","updated_at":"2026-08-19T10:46:20Z","comm
+TOP30 ["The MUBI Top 1000", "100 DIRECTORS' ESSENTIAL FILMS", "The Best Films of EVERY Year", "Edgar Wright's 1000 Favorite Movies", "ZYX Erotica & sex", "hysterical in a floral dress", "ESSENTIAL FILMS BY WOMEN", "Forget Filmschool! Learn from this...", "Fox and His (Queer) Friends", "Best LGBTQi+ films of all time", "THE PHENOMENOLOGICAL HEIRLOOMS OF GENEALOGICAL STRATA: an inflated inheritance ", "ESSENTIAL FRENCH FILMS", "of Asian Cinema", "What the fuck?!: Weird films.", "törkİŞ", "ESSENTIAL JAPANESE FILMS ", "Essential Movies for a Student of Philosophy", "I Love Scİ-Fİ", "Movies to trip/smoke/drink to!", "melancholy", "Films Directed By Women", "Feminist CINEMA", "ESSENTIAL SHORT FILMS & FEATURETTES", "Colors of the Brush: The Cinematography Collection"]
+ANCHORS {"the non-actor": null, "amores perros": null, "father mother sister brother": null, "dazed and confused": null, "alpha": null, "a useful ghost": null, "orphan": null}
+TRENDING_LIST_CANDIDATES []
 
 === browse film groups ===
 URL https://api.mubi.com/v4/browse/film_groups?sort=title&page=1&per_page=100 STATUS 200 CT application/json; charset=utf-8
@@ -53,6 +56,21 @@ ANCHORS {"the non-actor": 6, "amores perros": 8, "father mother sister brother":
 === collections trending ===
 URL https://api.mubi.com/v4/collections/trending STATUS 200 CT application/json; charset=utf-8
 BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+SAVED data/trending_collection.json
+TOP30 ["TRENDING", "The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+ANCHORS {"the non-actor": 2, "amores perros": 3, "father mother sister brother": null, "dazed and confused": 4, "alpha": 5, "a useful ghost": 12, "orphan": null}
+
+=== collections trending page1 ===
+URL https://api.mubi.com/v4/collections/trending?page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+SAVED data/trending_collection_page1.json
+TOP30 ["TRENDING", "The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+ANCHORS {"the non-actor": 2, "amores perros": 3, "father mother sister brother": null, "dazed and confused": 4, "alpha": 5, "a useful ghost": 12, "orphan": null}
+
+=== collections trending page2 ===
+URL https://api.mubi.com/v4/collections/trending?page=2&per_page=48 STATUS 200 CT application/json; charset=utf-8
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+SAVED data/trending_collection_page2.json
 TOP30 ["TRENDING", "The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
 ANCHORS {"the non-actor": 2, "amores perros": 3, "father mother sister brother": null, "dazed and confused": 4, "alpha": 5, "a useful ghost": 12, "orphan": null}
 
