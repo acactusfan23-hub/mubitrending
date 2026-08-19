@@ -24,7 +24,7 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
           MDBLIST_LIST_NAME: MUBI UK Trending
-        run: python src/mubi_trending.py
+        run: python mubi_trending.py
       - name: Commit snapshot
         run: |
           git config user.name 'mubi-trending-bot'
