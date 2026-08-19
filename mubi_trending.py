@@ -28,10 +28,15 @@ def variants(title):
         if k and k not in seen: seen.add(k); out.append(v)
     return out
 
+def film_slug_from_href(href):
+    if not isinstance(href,str): return None
+    m=re.search(r'/films/([^/?#]+)', href)
+    return m.group(1) if m else None
+
 def scrape_mubi_web():
     items=[]; seen=set()
     with sync_playwright() as p:
-        browser=p.chromium.launch(channel='chrome',headless=True)
+        browser=p.chromium.launch(channel='chrome',headless=True,args=['--disable-blink-features=AutomationControlled'])
         context=browser.new_context(locale='en-GB',extra_http_headers={'Accept-Language':'en-GB,en;q=0.9'})
         page=context.new_page()
         for page_num in range(1,11):
@@ -40,29 +45,43 @@ def scrape_mubi_web():
             page.goto(url,wait_until='domcontentloaded',timeout=90000)
             try: page.wait_for_load_state('networkidle',timeout=20000)
             except PlaywrightTimeoutError: pass
-            page.wait_for_timeout(3000)
+            page.wait_for_timeout(5000)
             for selector in ['button:has-text("Accept all")','button:has-text("Accept")','button:has-text("Allow all")','button:has-text("I agree")']:
                 try: page.locator(selector).first.click(timeout=1200); break
                 except Exception: pass
-            for _ in range(8): page.mouse.wheel(0,4500); page.wait_for_timeout(500)
-            links=page.locator('a[href*="/films/"]').evaluate_all("""
-                els=>els.map(a=>({href:a.href,text:(a.innerText||a.textContent||'').trim(),aria:a.getAttribute('aria-label')||'',title:a.getAttribute('title')||'',visible:!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)})).filter(x=>x.visible)
+            for _ in range(10):
+                page.mouse.wheel(0,4000)
+                page.wait_for_timeout(600)
+            rows=page.locator('[href*="/films/"]').evaluate_all("""
+                els=>els.map((el,index)=>({
+                    href: el.href || el.getAttribute('href') || '',
+                    text:(el.innerText||el.textContent||'').trim(),
+                    aria:el.getAttribute('aria-label')||'',
+                    title:el.getAttribute('title')||'',
+                    alt:(el.querySelector('img')?.getAttribute('alt')||''),
+                    visible:!!(el.offsetWidth||el.offsetHeight||el.getClientRects().length),
+                    index
+                })).filter(x=>x.visible)
             """)
+            if not rows:
+                print('  no film-link elements found; page body sample:', re.sub(r'\s+',' ',page.locator('body').inner_text())[:500])
             before=len(items)
-            for x in links:
-                m=re.search(r'https?://mubi\.com/(?:en/)?(?:[a-z]{2}/)?films/([^/?#]+)$',x.get('href',''))
-                if not m: continue
-                slug=m.group(1)
-                if slug in seen: continue
-                title=(x.get('aria') or x.get('title') or x.get('text') or '').strip() or slug.replace('-',' ')
-                seen.add(slug); items.append({'rank':len(items)+1,'title':html.unescape(title),'slug':slug,'url':x['href']})
+            for x in rows:
+                slug=film_slug_from_href(x.get('href',''))
+                if not slug or slug in seen: continue
+                title=(x.get('text') or x.get('aria') or x.get('title') or x.get('alt') or '').strip()
+                if not title: title=slug.replace('-',' ')
+                bad={'watch now','play','trailer','share','details','add to watchlist'}
+                if norm(title) in {norm(v) for v in bad}: continue
+                seen.add(slug)
+                items.append({'rank':len(items)+1,'title':html.unescape(title),'slug':slug,'url':x['href']})
                 if len(items)>=MAX_ITEMS: break
             print(f'  page {page_num}: added {len(items)-before}; total {len(items)}')
             if len(items)>=MAX_ITEMS or len(items)==before: break
         browser.close()
     if not items: raise RuntimeError('MUBI webpage returned no film links. Refusing to modify MDBList.')
     print('MUBI webpage ranking captured:')
-    for x in items[:10]: print(f"  {x['rank']:02d}. {x['title']}")
+    for x in items[:15]: print(f"  {x['rank']:02d}. {x['title']}")
     return items[:MAX_ITEMS]
 
 def tmdb_search(q):
@@ -114,7 +133,7 @@ def enrich_mubi_page(item,page):
 def match_all(items):
     matched=[]; unresolved=[]
     with sync_playwright() as p:
-        browser=p.chromium.launch(channel='chrome',headless=True)
+        browser=p.chromium.launch(channel='chrome',headless=True,args=['--disable-blink-features=AutomationControlled'])
         page=browser.new_page(locale='en-GB')
         for item in items:
             hit=choose_tmdb(item)
