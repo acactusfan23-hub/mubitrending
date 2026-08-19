@@ -25,6 +25,12 @@ jobs:
           MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
           MDBLIST_LIST_NAME: MUBI UK Trending
         run: python mubi_trending.py
+      - name: Second-pass unresolved title matching
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          MDBLIST_API_KEY: ${{ secrets.MDBLIST_API_KEY }}
+          MDBLIST_LIST_NAME: MUBI UK Trending
+        run: python resolve_unmatched.py
       - name: Commit snapshot
         run: |
           git config user.name 'mubi-trending-bot'
