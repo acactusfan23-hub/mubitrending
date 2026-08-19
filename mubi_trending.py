@@ -103,8 +103,15 @@ def tmdb_search(title):
 def mdb_params():return {'apikey':MDBLIST_API_KEY}
 def resolve_list_id():
     if MDBLIST_LIST_ID:return str(MDBLIST_LIST_ID)
-    r=S.get(f'{MDB_API}/lists/user',params=mdb_params(),timeout=30); r.raise_for_status(); data=r.json(); lists=data.get('lists',data if isinstance(data,list) else [])
+    r=S.get(f'{MDB_API}/lists/user',params=mdb_params(),timeout=30); r.raise_for_status(); data=r.json()
+    if isinstance(data, list):
+        lists = data
+    elif isinstance(data, dict):
+        lists = data.get('lists', [])
+    else:
+        lists = []
     for x in lists:
+        if not isinstance(x, dict): continue
         if (x.get('name') or x.get('title'))==MDBLIST_LIST_NAME:
             lid=x.get('id') or x.get('list_id')
             if lid is not None:return str(lid)
