@@ -89,9 +89,22 @@ def resolve_list_id():
             lid=x.get('id') or x.get('list_id')
             if lid is not None:return str(lid)
     raise RuntimeError(f'Could not find an MDBList list named {MDBLIST_LIST_NAME!r}. Create one public static list with that exact name.')
+
 def mdb_get_list():
     global MDBLIST_LIST_ID
-    MDBLIST_LIST_ID=resolve_list_id(); r=S.get(f'{MDB_API}/list',params={**mdb_params(),'id':MDBLIST_LIST_ID},timeout=30); r.raise_for_status(); return r.json()
+    MDBLIST_LIST_ID=resolve_list_id()
+    # MDBList replaced the old /list?id=... route with the documented
+    # /lists/{id}/items route. The old route now returns 404.
+    r=S.get(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items',params={**mdb_params(),'limit':1000},timeout=30)
+    r.raise_for_status()
+    data=r.json()
+    # Current API returns an object containing items; tolerate a bare list too.
+    if isinstance(data,list):
+        return {'items':data}
+    if isinstance(data,dict):
+        return data
+    raise RuntimeError(f'Unexpected MDBList response for list {MDBLIST_LIST_ID}: {type(data).__name__}')
+
 def extract_existing_ids(data):
     out=[]
     for x in data.get('items',[]):
@@ -99,20 +112,24 @@ def extract_existing_ids(data):
         if not tmdb and isinstance(x.get('ids'),dict):tmdb=x['ids'].get('tmdb')
         out.append({'imdb_id':x.get('imdb_id'),'tmdb_id':tmdb})
     return out
+
 def mdb_add(tmdb_id):
     r=S.post(f'{MDB_API}/list/add',params=mdb_params(),json={'list_id':MDBLIST_LIST_ID,'tmdb_id':tmdb_id},timeout=30)
     if r.status_code>=400:raise RuntimeError(f'MDBList add {tmdb_id} failed: {r.status_code} {r.text[:500]}')
+
 def mdb_remove(item):
     payload={'list_id':MDBLIST_LIST_ID}; payload['imdb_id' if item.get('imdb_id') else 'tmdb_id']=item.get('imdb_id') or item.get('tmdb_id')
     if not payload.get('imdb_id') and not payload.get('tmdb_id'):return
     r=S.post(f'{MDB_API}/list/remove',params=mdb_params(),json=payload,timeout=30)
     if r.status_code>=400:raise RuntimeError(f'MDBList remove failed: {r.status_code} {r.text[:500]}')
+
 def replace_mdb_list(movies):
     current=extract_existing_ids(mdb_get_list()); wanted=[m['tmdb_id'] for m in movies]; wanted_set=set(wanted); current_tmdb={x['tmdb_id'] for x in current if x.get('tmdb_id')}
     for x in current:
         if x.get('tmdb_id') and x['tmdb_id'] not in wanted_set:mdb_remove(x);time.sleep(.15)
     for tid in wanted:
         if tid not in current_tmdb:mdb_add(tid);time.sleep(.15)
+
 def main():
     raw=get_mubi_films(); matched=[]; unmatched=[]
     for item in raw:
@@ -125,4 +142,5 @@ def main():
     replace_mdb_list(matched);os.makedirs('data',exist_ok=True)
     with open('data/latest.json','w',encoding='utf-8') as f:json.dump({'updated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'source':MUBI_URL,'items':matched,'unmatched':unmatched,'mdblist_list_id':MDBLIST_LIST_ID},f,ensure_ascii=False,indent=2)
     print(f'Updated MDBList static list {MDBLIST_LIST_ID} with {len(matched)} titles.')
+
 if __name__=='__main__':main()
