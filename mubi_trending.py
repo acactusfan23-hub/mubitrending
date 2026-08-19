@@ -99,8 +99,7 @@ def extract_films_from_group_payload(data):
         if isinstance(web_url,str) and web_url and '/films/' not in web_url: continue
         title=film.get('title') or film.get('original_title')
         if not title: continue
-        seen.add(slug)
-        films.append({'title':html.unescape(title),'slug':slug,'url':web_url or f'https://mubi.com/en/gb/films/{slug}'})
+        seen.add(slug); films.append({'title':html.unescape(title),'slug':slug,'url':web_url or f'https://mubi.com/en/gb/films/{slug}'})
     return films
 
 def get_mubi_films_api():
@@ -117,9 +116,7 @@ def get_mubi_films_api():
             if not detail:
                 print(f'SKIP non-film/unavailable MUBI item: {item["title"]}')
                 continue
-            titles=extract_titles(detail,item['title'])
-            year=extract_year(detail)
-            tmdb_id,imdb_id=extract_ids(detail)
+            titles=extract_titles(detail,item['title']); year=extract_year(detail); tmdb_id,imdb_id=extract_ids(detail)
             item.update({'mubi_titles':titles,'mubi_year':year,'mubi_tmdb_id':tmdb_id,'mubi_imdb_id':imdb_id})
             seen.add(item['slug']); films.append(item)
             if len(films)>=MAX_ITEMS: break
@@ -136,14 +133,26 @@ def get_mubi_films():
 def tmdb_search(query,year=None):
     params={'api_key':TMDB_API_KEY,'query':query,'language':'en-GB','include_adult':'false','region':'GB'}
     if year: params['primary_release_year']=year
-    r=S.get('https://api.themoviedb.org/3/search/movie',params=params,timeout=30); r.raise_for_status()
-    return r.json().get('results',[])
+    r=S.get('https://api.themoviedb.org/3/search/movie',params=params,timeout=30); r.raise_for_status(); return r.json().get('results',[])
+
+def tmdb_find_imdb(imdb_id):
+    if not imdb_id: return None
+    r=S.get(f'https://api.themoviedb.org/3/find/{imdb_id}',params={'api_key':TMDB_API_KEY,'external_source':'imdb_id','language':'en-GB'},timeout=30)
+    if not r.ok:return None
+    results=r.json().get('movie_results',[])
+    return results[0] if results else None
 
 def choose_tmdb_match(item):
     if item.get('mubi_tmdb_id'):
         r=S.get(f'https://api.themoviedb.org/3/movie/{item["mubi_tmdb_id"]}',params={'api_key':TMDB_API_KEY,'language':'en-GB'},timeout=30)
         if r.ok:
             movie=r.json(); return {'tmdb_id':movie['id'],'title':movie.get('title'),'year':(movie.get('release_date') or '')[:4],'match_method':'mubi-tmdb-id'}
+    if item.get('mubi_imdb_id'):
+        found=tmdb_find_imdb(item['mubi_imdb_id'])
+        if found:
+            year=(found.get('release_date') or '')[:4]
+            if not item.get('mubi_year') or not year or not year.isdigit() or int(year)==item['mubi_year']:
+                return {'tmdb_id':found['id'],'title':found.get('title'),'year':year,'match_method':'mubi-imdb-id'}
     variants=item.get('mubi_titles') or [item['title']]; mubi_year=item.get('mubi_year'); candidates={}
     for title in variants:
         for result in tmdb_search(title,mubi_year): candidates[result['id']]=result
@@ -184,7 +193,7 @@ def extract_existing_ids(data):
     for media_type in ('movies','shows'):
         for x in data.get(media_type,[]):
             if not isinstance(x,dict):continue
-            tmdb=x.get('id') or x.get('tmdb_id') or (x.get('ids') or {}).get('tmdb') if isinstance(x.get('ids'),dict) else (x.get('id') or x.get('tmdb_id'))
+            ids=x.get('ids') if isinstance(x.get('ids'),dict) else {}; tmdb=x.get('id') or x.get('tmdb_id') or ids.get('tmdb') or ids.get('tmdbid')
             out.append({'imdb_id':x.get('imdb_id'),'tmdb_id':tmdb,'mediatype':media_type[:-1]})
     for x in data.get('items',[]):
         if not isinstance(x,dict):continue
