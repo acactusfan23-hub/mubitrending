@@ -77,50 +77,42 @@ def mdb_params():return {'apikey':MDBLIST_API_KEY}
 def resolve_list_id():
     if MDBLIST_LIST_ID:return str(MDBLIST_LIST_ID)
     r=S.get(f'{MDB_API}/lists/user',params=mdb_params(),timeout=30); r.raise_for_status(); data=r.json()
-    if isinstance(data, list):
-        lists = data
-    elif isinstance(data, dict):
-        lists = data.get('lists', [])
-    else:
-        lists = []
+    lists = data if isinstance(data,list) else (data.get('lists',[]) if isinstance(data,dict) else [])
     for x in lists:
-        if not isinstance(x, dict): continue
+        if not isinstance(x,dict): continue
         if (x.get('name') or x.get('title'))==MDBLIST_LIST_NAME:
             lid=x.get('id') or x.get('list_id')
             if lid is not None:return str(lid)
     raise RuntimeError(f'Could not find an MDBList list named {MDBLIST_LIST_NAME!r}. Create one public static list with that exact name.')
-
 def mdb_get_list():
     global MDBLIST_LIST_ID
     MDBLIST_LIST_ID=resolve_list_id()
-    # MDBList replaced the old /list?id=... route with the documented
-    # /lists/{id}/items route. The old route now returns 404.
     r=S.get(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items',params={**mdb_params(),'limit':1000},timeout=30)
     r.raise_for_status()
-    data=r.json()
-    # Current API returns an object containing items; tolerate a bare list too.
-    if isinstance(data,list):
-        return {'items':data}
-    if isinstance(data,dict):
-        return data
-    raise RuntimeError(f'Unexpected MDBList response for list {MDBLIST_LIST_ID}: {type(data).__name__}')
-
+    return r.json()
 def extract_existing_ids(data):
+    if not isinstance(data,dict): return []
     out=[]
+    for media_type in ('movies','shows'):
+        for x in data.get(media_type,[]):
+            if not isinstance(x,dict): continue
+            tmdb=x.get('id') or x.get('tmdb_id')
+            if not tmdb and isinstance(x.get('ids'),dict):tmdb=x['ids'].get('tmdb') or x['ids'].get('tmdbid')
+            out.append({'imdb_id':x.get('imdb_id'),'tmdb_id':tmdb,'mediatype':media_type[:-1]})
     for x in data.get('items',[]):
-        tmdb=x.get('tmdb_id')
-        if not tmdb and isinstance(x.get('ids'),dict):tmdb=x['ids'].get('tmdb')
-        out.append({'imdb_id':x.get('imdb_id'),'tmdb_id':tmdb})
+        if not isinstance(x,dict): continue
+        tmdb=x.get('tmdb_id') or x.get('id')
+        if not tmdb and isinstance(x.get('ids'),dict):tmdb=x['ids'].get('tmdb') or x['ids'].get('tmdbid')
+        out.append({'imdb_id':x.get('imdb_id'),'tmdb_id':tmdb,'mediatype':x.get('mediatype','movie')})
     return out
 
 def mdb_add(tmdb_id):
-    r=S.post(f'{MDB_API}/list/add',params=mdb_params(),json={'list_id':MDBLIST_LIST_ID,'tmdb_id':tmdb_id},timeout=30)
+    r=S.post(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items/add',params=mdb_params(),json={'movies':[{'tmdb':tmdb_id}]},timeout=30)
     if r.status_code>=400:raise RuntimeError(f'MDBList add {tmdb_id} failed: {r.status_code} {r.text[:500]}')
 
 def mdb_remove(item):
-    payload={'list_id':MDBLIST_LIST_ID}; payload['imdb_id' if item.get('imdb_id') else 'tmdb_id']=item.get('imdb_id') or item.get('tmdb_id')
-    if not payload.get('imdb_id') and not payload.get('tmdb_id'):return
-    r=S.post(f'{MDB_API}/list/remove',params=mdb_params(),json=payload,timeout=30)
+    payload={'movies':[{'tmdb':item.get('tmdb_id')}]} if item.get('tmdb_id') else {'movies':[{'imdb':item.get('imdb_id')}]}
+    r=S.post(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items/remove',params=mdb_params(),json=payload,timeout=30)
     if r.status_code>=400:raise RuntimeError(f'MDBList remove failed: {r.status_code} {r.text[:500]}')
 
 def replace_mdb_list(movies):
@@ -142,5 +134,4 @@ def main():
     replace_mdb_list(matched);os.makedirs('data',exist_ok=True)
     with open('data/latest.json','w',encoding='utf-8') as f:json.dump({'updated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'source':MUBI_URL,'items':matched,'unmatched':unmatched,'mdblist_list_id':MDBLIST_LIST_ID},f,ensure_ascii=False,indent=2)
     print(f'Updated MDBList static list {MDBLIST_LIST_ID} with {len(matched)} titles.')
-
 if __name__=='__main__':main()
