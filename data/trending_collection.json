@@ -1,0 +1,3094 @@
+{
+  "title": "TRENDING",
+  "total_items": 100,
+  "slug": "trending",
+  "header_image": "https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg",
+  "links_to_details": true,
+  "description": null,
+  "description_html": null,
+  "web_url": "https://mubi.com/collections/trending",
+  "type": "default",
+  "automated": true,
+  "films": [
+    {
+      "id": 432956,
+      "slug": "the-non-actor",
+      "title": "The Non-Actor",
+      "title_locale": "en-US",
+      "title_upcase": "THE NON-ACTOR",
+      "original_title": "The Non-Actor",
+      "year": 2025,
+      "duration": 18,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/432956/image-w256.jpg?1783462670",
+        "medium": "https://assets.mubicdn.net/images/film/432956/image-w448.jpg?1783462670",
+        "standard": "https://assets.mubicdn.net/images/film/432956/image-w856.jpg?1783462670",
+        "retina": "https://assets.mubicdn.net/images/film/432956/image-w1280.jpg?1783462670",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/432956/image-w512_overlaid.jpg?1783462670",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/432956/image-w1504_overlaid.jpg?1783462670",
+        "standard_push": "https://assets.mubicdn.net/images/film/432956/image-w856_two_one.jpg?1783462670"
+      },
+      "still_focal_point": {
+        "x": 0.52,
+        "y": 0.31
+      },
+      "hd": true,
+      "average_colour_hex": "5C5151",
+      "trailer_url": null,
+      "trailer_id": null,
+      "popularity": 1819,
+      "web_url": "https://mubi.com/films/the-non-actor",
+      "genres": [
+        "Short",
+        "Drama"
+      ],
+      "average_rating": 4.2,
+      "average_rating_out_of_ten": 8.3,
+      "number_of_ratings": 6841,
+      "mubi_release": false,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/432956/cache-1135097-1783462670/image-w1280.jpg",
+      "critic_review_rating": 0,
+      "content_rating": {
+        "label": "caution",
+        "rating_code": "CAUTION",
+        "description": "Contains material that may not be suitable for children or young adults.",
+        "icon_url": null,
+        "label_hex_color": "e05d04"
+      },
+      "episode": null,
+      "short_synopsis": "Elliot is staying with her ex’s new girlfriend while attending a medical trial for her recent, unexplained loss of hearing. As she reconfigures her relationship with her (sonic) environment and herself, an intimate connection sparks between the two women.",
+      "short_synopsis_html": "<p>Elliot is staying with her ex&#8217;s new girlfriend while attending a medical trial for her recent, unexplained loss of hearing. As she reconfigures her relationship with her (sonic) environment and herself, an intimate connection sparks between the two women.</p>",
+      "historic_countries": [
+        "United States"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/1006021/cache-1006021-1783463126/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Based on her award-winning, autobiographical novel, Eliza Barry Callahan’s graceful debut short explores the entwinement of the self and the senses. Working with the assured delicacy of miniaturists, indie darlings Maya Hawke and Victoria Pedretti helm this intimate two-hander.",
+      "default_editorial_html": "<p>Based on her award-winning, autobiographical novel, Eliza Barry Callahan&#8217;s graceful debut short explores the entwinement of the self and the senses. Working with the assured delicacy of miniaturists, indie darlings Maya Hawke and Victoria Pedretti helm this intimate two-hander.</p>",
+      "cast_members_count": 23,
+      "industry_events_count": 6,
+      "comments_count": 38,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": null,
+      "directors": [
+        {
+          "name": "Eliza Barry Callahan",
+          "name_upcase": "ELIZA BARRY CALLAHAN",
+          "slug": "eliza-barry-callahan"
+        }
+      ],
+      "consumable": {
+        "film_id": 432956,
+        "available_at": "2026-07-09T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2028-01-10T00:00:00Z",
+        "expires_at": "2028-01-10T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "English"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Dutch",
+            "French",
+            "German",
+            "Italian",
+            "Portuguese",
+            "Spanish (Latin America)",
+            "Thai",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 1061,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "English (5.1)"
+          ],
+          "original_audio_language": "English"
+        }
+      },
+      "press_quote": null,
+      "star_rating": null,
+      "award": null,
+      "series": null,
+      "content_warnings": [],
+      "artworks": [
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1006012/cache-1006012-1783462786/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1006013/cache-1006013-1783462792/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1006014/cache-1006014-1783462798/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1006015/cache-1006015-1783462802/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1006016/cache-1006016-1783462808/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1006017/cache-1006017-1783462815/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1006018/cache-1006018-1783462822/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1006019/cache-1006019-1783462824/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1006020/cache-1006020-1783462830/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1006021/cache-1006021-1783463126/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 123,
+      "slug": "amores-perros",
+      "title": "Amores Perros",
+      "title_locale": "en-US",
+      "title_upcase": "AMORES PERROS",
+      "original_title": "Amores perros",
+      "year": 2000,
+      "duration": 155,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/123/image-w256.jpg?1781621283",
+        "medium": "https://assets.mubicdn.net/images/film/123/image-w448.jpg?1781621283",
+        "standard": "https://assets.mubicdn.net/images/film/123/image-w856.jpg?1781621283",
+        "retina": "https://assets.mubicdn.net/images/film/123/image-w1280.jpg?1781621283",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/123/image-w512_overlaid.jpg?1781621283",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/123/image-w1504_overlaid.jpg?1781621283",
+        "standard_push": "https://assets.mubicdn.net/images/film/123/image-w856_two_one.jpg?1781621283"
+      },
+      "still_focal_point": {
+        "x": 0.41,
+        "y": 0.35
+      },
+      "hd": true,
+      "average_colour_hex": "496D78",
+      "trailer_url": "https://trailers.mubicdn.net/123/optimised/1080p-t-amores-perros_en_us_1781794456.mp4",
+      "trailer_id": 144842,
+      "popularity": 9276,
+      "web_url": "https://mubi.com/films/amores-perros",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Anthology",
+        "Crime",
+        "Cult"
+      ],
+      "average_rating": 4.3,
+      "average_rating_out_of_ten": 8.7,
+      "number_of_ratings": 25454,
+      "mubi_release": true,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/123/cache-1138586-1781621283/image-w1280.jpg",
+      "critic_review_rating": 4.294117647058823,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "A teenager risks it all to run away with his brother’s wife. A model loses everything after moving in with her lover. A homeless man unearths the ghosts of his past. As their stories unfold, human chaos, cruelty, and tenderness come to light – revealing they are more connected than they seem.",
+      "short_synopsis_html": "<p>A teenager risks it all to run away with his brother&#8217;s wife. A model loses everything after moving in with her lover. A homeless man unearths the ghosts of his past. As their stories unfold, human chaos, cruelty, and tenderness come to light – revealing they are more connected than they seem.</p>",
+      "historic_countries": [
+        "Mexico"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/1001633/cache-1001633-1781868569/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Alejandro González Iñárritu charged out of the gates with this combustible debut feature, planting the flag for a new golden age of Mexican cinema. A Cannes prizewinner that made a star of Gael García Bernal, Amores Perros is a feral urban odyssey with a bite to match the ferocity of its bark.",
+      "default_editorial_html": "<p>Alejandro González Iñárritu charged out of the gates with this combustible debut feature, planting the flag for a new golden age of Mexican cinema. A Cannes prizewinner that made a star of Gael García Bernal, <em>Amores Perros</em> is a feral urban odyssey with a bite to match the ferocity of its bark.</p>",
+      "cast_members_count": 34,
+      "industry_events_count": 71,
+      "comments_count": 317,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/123/optimised/240p-t-amores-perros_en_us_1781794456.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/123/optimised/720p-t-amores-perros_en_us_1781794456.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/123/optimised/1080p-t-amores-perros_en_us_1781794456.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Alejandro González Iñárritu",
+          "name_upcase": "ALEJANDRO GONZÁLEZ IÑÁRRITU",
+          "slug": "alejandro-gonzalez-inarritu"
+        }
+      ],
+      "consumable": {
+        "film_id": 123,
+        "available_at": "2026-07-09T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2035-10-08T23:00:00Z",
+        "expires_at": "2035-10-09T11:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Spanish (Latin America)"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Dutch",
+            "French",
+            "German",
+            "Italian",
+            "Portuguese (SDH)",
+            "Spanish (European)",
+            "Spanish (Latin America)",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 9289,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "Spanish (Latin America) (5.1)"
+          ],
+          "original_audio_language": "Spanish (Latin America)"
+        }
+      },
+      "press_quote": null,
+      "star_rating": null,
+      "award": null,
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 1,
+          "name": "sexual assault",
+          "key": "sexual_assault"
+        },
+        {
+          "id": 2,
+          "name": "domestic violence",
+          "key": "domestic_violence"
+        },
+        {
+          "id": 4,
+          "name": "animal cruelty",
+          "key": "animal_cruelty"
+        },
+        {
+          "id": 17,
+          "name": "injury detail",
+          "key": "injury_detail"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997399/cache-997399-1780593882/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997406/cache-997406-1780594019/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997413/cache-997413-1780594131/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1000932/cache-1000932-1781621459/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1000933/cache-1000933-1781621464/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1000934/cache-1000934-1781621469/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1000935/cache-1000935-1781621473/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1000936/cache-1000936-1781621474/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1000945/cache-1000945-1781621485/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_polychromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001633/cache-1001633-1781868569/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1013096/cache-1013096-1785923538/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1013097/cache-1013097-1785923578/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 314,
+      "slug": "dazed-and-confused",
+      "title": "Dazed and Confused",
+      "title_locale": "en-US",
+      "title_upcase": "DAZED AND CONFUSED",
+      "original_title": "Dazed and Confused",
+      "year": 1993,
+      "duration": 102,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/314/image-w256.jpg?1780480407",
+        "medium": "https://assets.mubicdn.net/images/film/314/image-w448.jpg?1780480407",
+        "standard": "https://assets.mubicdn.net/images/film/314/image-w856.jpg?1780480407",
+        "retina": "https://assets.mubicdn.net/images/film/314/image-w1280.jpg?1780480407",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/314/image-w512_overlaid.jpg?1780480407",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/314/image-w1504_overlaid.jpg?1780480407",
+        "standard_push": "https://assets.mubicdn.net/images/film/314/image-w856_two_one.jpg?1780480407"
+      },
+      "still_focal_point": {
+        "x": 0.37,
+        "y": 0.32
+      },
+      "hd": true,
+      "average_colour_hex": "484035",
+      "trailer_url": "https://trailers.mubicdn.net/314/optimised/720p-t-dazed-and-confused_en_us_1181.726_1280_720_1578649922.mp4",
+      "trailer_id": 7460,
+      "popularity": 2929,
+      "web_url": "https://mubi.com/films/dazed-and-confused",
+      "genres": [
+        "Comedy",
+        "Cult"
+      ],
+      "average_rating": 3.8,
+      "average_rating_out_of_ten": 7.6,
+      "number_of_ratings": 13311,
+      "mubi_release": false,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/314/cache-107994-1780480407/image-w1280.jpg",
+      "critic_review_rating": 4.533333333333333,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "A group of rowdy teenagers in Austin, Texas, celebrate their last day of high school in 1976. The graduating class heads for a popular pool hall and joins an impromptu keg party. Meanwhile, the incoming freshmen try to avoid being hazed by the seniors, most notably the sadistic bully Fred.",
+      "short_synopsis_html": "<p>A group of rowdy teenagers in Austin, Texas, celebrate their last day of high school in 1976. The graduating class heads for a popular pool hall and joins an impromptu keg party. Meanwhile, the incoming freshmen try to avoid being hazed by the seniors, most notably the sadistic bully Fred.</p>",
+      "historic_countries": [
+        "United States"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/997393/cache-997393-1780400150/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "An incomparable ensemble—ranging from Matthew McConaughey to Parker Posey—drives agreeably loose plotting through a day in the life of the American teenager in Linklater’s cult classic. Though made in ’93 and set in ’76, Dazed and Confused remains peerless on the subject of high school & rock music.",
+      "default_editorial_html": "<p>An incomparable ensemble&#8212;ranging from Matthew McConaughey to Parker Posey&#8212;drives agreeably loose plotting through a day in the life of the American teenager in Linklater&#8217;s cult classic. Though made in &#8217;93 and set in &#8217;76, <em>Dazed and Confused</em> remains peerless on the subject of high school &amp; rock music.</p>",
+      "cast_members_count": 26,
+      "industry_events_count": 6,
+      "comments_count": 288,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/314/optimised/240p-t-dazed-and-confused_en_us_1181.726_1280_720_1578649922.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/314/optimised/720p-t-dazed-and-confused_en_us_1181.726_1280_720_1578649922.mp4",
+          "profile": "720p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Richard Linklater",
+          "name_upcase": "RICHARD LINKLATER",
+          "slug": "richard-linklater"
+        }
+      ],
+      "consumable": {
+        "film_id": 314,
+        "available_at": "2026-06-30T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2026-11-01T00:00:00Z",
+        "expires_at": "2026-11-01T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": false,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "English"
+          ],
+          "subtitle_options": [
+            "English"
+          ],
+          "media_options": {
+            "duration": 6131,
+            "hd": true
+          },
+          "media_features": [
+            "HD",
+            "stereo"
+          ],
+          "extended_audio_options": [
+            "English"
+          ],
+          "original_audio_language": "English"
+        }
+      },
+      "press_quote": null,
+      "star_rating": null,
+      "award": null,
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 17,
+          "name": "injury detail",
+          "key": "injury_detail"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "content_logo_polychromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997393/cache-997393-1780400150/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/997974/cache-997974-1780554369/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/997975/cache-997975-1780554373/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/997976/cache-997976-1780554379/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/997977/cache-997977-1780554382/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997981/cache-997981-1780554405/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997989/cache-997989-1780554447/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/997997/cache-997997-1780554483/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/998005/cache-998005-1780554506/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/998013/cache-998013-1780554527/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 411747,
+      "slug": "alpha",
+      "title": "Alpha",
+      "title_locale": "en-US",
+      "title_upcase": "ALPHA",
+      "original_title": "Alpha",
+      "year": 2025,
+      "duration": 128,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/411747/image-w256.jpg?1747833599",
+        "medium": "https://assets.mubicdn.net/images/film/411747/image-w448.jpg?1747833599",
+        "standard": "https://assets.mubicdn.net/images/film/411747/image-w856.jpg?1747833599",
+        "retina": "https://assets.mubicdn.net/images/film/411747/image-w1280.jpg?1747833599",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/411747/image-w512_overlaid.jpg?1747833599",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/411747/image-w1504_overlaid.jpg?1747833599",
+        "standard_push": "https://assets.mubicdn.net/images/film/411747/image-w856_two_one.jpg?1747833599"
+      },
+      "still_focal_point": {
+        "x": 0.46,
+        "y": 0.26
+      },
+      "hd": true,
+      "average_colour_hex": "A27866",
+      "trailer_url": "https://trailers.mubicdn.net/411747/optimised/1080p-t-alpha_en_us_1778079471.mp4",
+      "trailer_id": 143460,
+      "popularity": 865,
+      "web_url": "https://mubi.com/films/alpha",
+      "genres": [
+        "Drama",
+        "Horror"
+      ],
+      "average_rating": 4.0,
+      "average_rating_out_of_ten": 7.9,
+      "number_of_ratings": 3239,
+      "mubi_release": false,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/411747/cache-1055563-1747833599/image-w1280.jpg",
+      "critic_review_rating": 3.6296296296296298,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "Alpha, a troubled thirteen-year-old, lives with her single mom. Their world collapses the day she returns from school with a tattoo on her arm.",
+      "short_synopsis_html": "<p>Alpha, a troubled thirteen-year-old, lives with her single mom. Their world collapses the day she returns from school with a tattoo on her arm.</p>",
+      "historic_countries": [
+        "France",
+        "Belgium"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/1013454/cache-1013454-1786002016/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Finding ghastly echoes between the AIDS epidemic and body horror’s dark imaginary, Julia Ducournau erases the gap between life and art with merciless precision. The hotly anticipated follow-up to the Palme d’Or–winning Titane, Alpha is another operatic provocation from an inimitable auteur.",
+      "default_editorial_html": "<p>Finding ghastly echoes between the AIDS epidemic and body horror&#8217;s dark imaginary, Julia Ducournau erases the gap between life and art with merciless precision. The hotly anticipated follow-up to the Palme d&#8217;Or–winning <em>Titane</em>, <em>Alpha</em> is another operatic provocation from an inimitable auteur.</p>",
+      "cast_members_count": 19,
+      "industry_events_count": 25,
+      "comments_count": 52,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/411747/optimised/240p-t-alpha_en_us_1778079471.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/411747/optimised/720p-t-alpha_en_us_1778079471.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/411747/optimised/1080p-t-alpha_en_us_1778079471.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Julia Ducournau",
+          "name_upcase": "JULIA DUCOURNAU",
+          "slug": "julia-ducournau"
+        }
+      ],
+      "consumable": {
+        "film_id": 411747,
+        "available_at": "2026-07-16T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2028-01-17T00:00:00Z",
+        "expires_at": "2028-01-17T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "French"
+          ],
+          "subtitle_options": [
+            "English"
+          ],
+          "media_options": {
+            "duration": 7684,
+            "hd": true
+          },
+          "media_features": [
+            "HD",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "French (5.1)"
+          ],
+          "original_audio_language": "French"
+        }
+      },
+      "press_quote": {
+        "quote": "Bold. Original. Striking.",
+        "source": "The Times"
+      },
+      "star_rating": null,
+      "award": {
+        "prize_image_url": "https://images.mubicdn.net/images/carousel_takeover/463/cache-1143568-1783533391/prize_image_en_us-original.png",
+        "prize_text": "Festival de Cannes 2025"
+      },
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 3,
+          "name": "self harm",
+          "key": "self_harm"
+        },
+        {
+          "id": 5,
+          "name": "strobe lighting",
+          "key": "strobe_lighting"
+        },
+        {
+          "id": 17,
+          "name": "injury detail",
+          "key": "injury_detail"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001123/cache-1001123-1781689243/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001124/cache-1001124-1781689248/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001125/cache-1001125-1781689253/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001126/cache-1001126-1781689257/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001127/cache-1001127-1781689263/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001128/cache-1001128-1781689268/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001129/cache-1001129-1781689274/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001130/cache-1001130-1781689276/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001132/cache-1001132-1781689281/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_polychromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1009734/cache-1009734-1784812722/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1013094/cache-1013094-1785923448/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1013095/cache-1013095-1785923470/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1013454/cache-1013454-1786002016/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 255497,
+      "slug": "no-other-choice",
+      "title": "No Other Choice",
+      "title_locale": "en-US",
+      "title_upcase": "NO OTHER CHOICE",
+      "original_title": "어쩔수가없다",
+      "year": 2025,
+      "duration": 139,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/255497/image-w256.jpg?1753801050",
+        "medium": "https://assets.mubicdn.net/images/film/255497/image-w448.jpg?1753801050",
+        "standard": "https://assets.mubicdn.net/images/film/255497/image-w856.jpg?1753801050",
+        "retina": "https://assets.mubicdn.net/images/film/255497/image-w1280.jpg?1753801050",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/255497/image-w512_overlaid.jpg?1753801050",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/255497/image-w1504_overlaid.jpg?1753801050",
+        "standard_push": "https://assets.mubicdn.net/images/film/255497/image-w856_two_one.jpg?1753801050"
+      },
+      "still_focal_point": {
+        "x": 0.51,
+        "y": 0.63
+      },
+      "hd": true,
+      "average_colour_hex": "8C95A5",
+      "trailer_url": "https://trailers.mubicdn.net/255497/optimised/1080p-t-no-other-choice_en_us_1773366969.mp4",
+      "trailer_id": 137510,
+      "popularity": 8654,
+      "web_url": "https://mubi.com/films/no-other-choice",
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Drama"
+      ],
+      "average_rating": 4.4,
+      "average_rating_out_of_ten": 8.7,
+      "number_of_ratings": 27659,
+      "mubi_release": true,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/255497/cache-1074806-1753801050/image-w1280.jpg",
+      "critic_review_rating": 4.318181818181818,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "Looking for a job? When a happy family man is dismissed after twenty-five years of loyal service at a paper company, he finds the perfect solution to land his next role: truly eliminate the competition.",
+      "short_synopsis_html": "<p>Looking for a job? When a happy family man is dismissed after twenty-five years of loyal service at a paper company, he finds the perfect solution to land his next role: truly eliminate the competition.</p>",
+      "historic_countries": [
+        "South Korea"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/947983/cache-947983-1773255621/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Desperate times call for desperate measures in this wild satirical ride from Korean master Park Chan-wook, starring Lee Byung-hun as a trampled worker with nothing to lose. An unruly blend of ingenious visuals and twisted humor, No Other Choice delivers a brutal takedown of the cutthroat job market.",
+      "default_editorial_html": "<p>Desperate times call for desperate measures in this wild satirical ride from Korean master Park Chan-wook, starring Lee Byung-hun as a trampled worker with nothing to lose. An unruly blend of ingenious visuals and twisted humor, <em>No Other Choice</em> delivers a brutal takedown of the cutthroat job market.</p>",
+      "cast_members_count": 20,
+      "industry_events_count": 55,
+      "comments_count": 210,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/255497/optimised/240p-t-no-other-choice_en_us_1773366969.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/255497/optimised/720p-t-no-other-choice_en_us_1773366969.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/255497/optimised/1080p-t-no-other-choice_en_us_1773366969.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Park Chan-wook",
+          "name_upcase": "PARK CHAN-WOOK",
+          "slug": "park-chan-wook"
+        }
+      ],
+      "consumable": {
+        "film_id": 255497,
+        "available_at": "2026-03-13T00:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2041-01-09T00:00:00Z",
+        "expires_at": "2041-01-09T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": false,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Korean"
+          ],
+          "subtitle_options": [
+            "English (SDH)"
+          ],
+          "media_options": {
+            "duration": 8352,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "Korean (5.1)",
+            "Spanish (European) (5.1)"
+          ],
+          "original_audio_language": "Korean"
+        }
+      },
+      "press_quote": {
+        "quote": "A deliriously entertaining masterpiece",
+        "source": "BBC"
+      },
+      "star_rating": {
+        "star_rating": 5,
+        "source": "Time Out"
+      },
+      "award": {
+        "prize_image_url": "https://images.mubicdn.net/images/carousel_takeover/405/cache-1118170-1772835067/prize_image_en_us-original.png",
+        "prize_text": "Golden Globe Awards Nominee"
+      },
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 2,
+          "name": "domestic violence",
+          "key": "domestic_violence"
+        },
+        {
+          "id": 5,
+          "name": "strobe lighting",
+          "key": "strobe_lighting"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/846400/cache-846400-1753801081/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/846401/cache-846401-1753801084/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/846402/cache-846402-1753801088/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/846403/cache-846403-1753801091/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/846404/cache-846404-1765487791/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/846405/cache-846405-1764964398/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/846406/cache-846406-1764964429/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/846407/cache-846407-1753801105/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/846408/cache-846408-1753801108/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/947983/cache-947983-1773255621/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955938/cache-955938-1774008776/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955939/cache-955939-1774008796/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": {
+        "id": 572394,
+        "year": 2025,
+        "status": "won",
+        "display_text": "International People's Choice Award",
+        "full_display_text": "2025 | Winner: International People's Choice Award",
+        "industry_event": {
+          "id": 8,
+          "name": "Toronto International Film Festival",
+          "slug": "toronto",
+          "type": "festival",
+          "logo_url": "https://images.mubicdn.net/images/industry_event/8/cache-222796-1741107355/logo-small_black.png",
+          "white_logo_url": "https://images.mubicdn.net/images/industry_event/8/cache-222796-1741107355/logo-large_white.png",
+          "cover_url": "https://images.mubicdn.net/images/industry_event/8/cache-222966-1494432449/cover-original.jpg"
+        }
+      }
+    },
+    {
+      "id": 360569,
+      "slug": "die-my-love",
+      "title": "Die My Love",
+      "title_locale": "en-US",
+      "title_upcase": "DIE MY LOVE",
+      "original_title": "Die My Love",
+      "year": 2025,
+      "duration": 119,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/360569/image-w256.jpg?1778585747",
+        "medium": "https://assets.mubicdn.net/images/film/360569/image-w448.jpg?1778585747",
+        "standard": "https://assets.mubicdn.net/images/film/360569/image-w856.jpg?1778585747",
+        "retina": "https://assets.mubicdn.net/images/film/360569/image-w1280.jpg?1778585747",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/360569/image-w512_overlaid.jpg?1778585747",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/360569/image-w1504_overlaid.jpg?1778585747",
+        "standard_push": "https://assets.mubicdn.net/images/film/360569/image-w856_two_one.jpg?1778585747"
+      },
+      "still_focal_point": {
+        "x": 0.52,
+        "y": 0.22
+      },
+      "hd": true,
+      "average_colour_hex": "533924",
+      "trailer_url": "https://trailers.mubicdn.net/360569/optimised/1080p-t-die-my-love_en_us_1769161959.mp4",
+      "trailer_id": 133429,
+      "popularity": 6139,
+      "web_url": "https://mubi.com/films/die-my-love",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "average_rating": 3.7,
+      "average_rating_out_of_ten": 7.4,
+      "number_of_ratings": 44981,
+      "mubi_release": true,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/360569/cache-1013817-1778585747/image-w1280.jpg",
+      "critic_review_rating": 4.035714285714286,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "Grace and her partner Jackson move into an old country house. She pursues her dream of writing, and the couple welcome a baby soon after. However, with Jackson frequently absent, and the pressures of domestic life weighing on her, Grace begins to unravel, leaving a path of destruction in her wake.",
+      "short_synopsis_html": "<p>Grace and her partner Jackson move into an old country house. She pursues her dream of writing, and the couple welcome a baby soon after. However, with Jackson frequently absent, and the pressures of domestic life weighing on her, Grace begins to unravel, leaving a path of destruction in her wake.</p>",
+      "historic_countries": [
+        "United States",
+        "United Kingdom"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/886805/cache-886805-1767128125/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Instincts both maternal and carnal clatter like shards of glass in a blender in this uncompromising portrait of a woman on the edge from director Lynne Ramsay. Starring Jennifer Lawrence and Robert Pattinson in a frenzied pas de deux, Die My Love inflames the exposed nerves of delirium and desire.",
+      "default_editorial_html": "<p>Instincts both maternal and carnal clatter like shards of glass in a blender in this uncompromising portrait of a woman on the edge from director Lynne Ramsay. Starring Jennifer Lawrence and Robert Pattinson in a frenzied pas de deux, <em>Die My Love</em> inflames the exposed nerves of delirium and desire.</p>",
+      "cast_members_count": 29,
+      "industry_events_count": 33,
+      "comments_count": 384,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/360569/optimised/240p-t-die-my-love_en_us_1769161959.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/360569/optimised/720p-t-die-my-love_en_us_1769161959.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/360569/optimised/1080p-t-die-my-love_en_us_1769161959.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Lynne Ramsay",
+          "name_upcase": "LYNNE RAMSAY",
+          "slug": "lynne-ramsay"
+        }
+      ],
+      "consumable": {
+        "film_id": 360569,
+        "available_at": "2026-01-23T00:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2040-11-06T00:00:00Z",
+        "expires_at": "2040-11-06T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "English (Original)",
+            "French",
+            "German",
+            "Italian",
+            "Portuguese",
+            "Spanish (European)",
+            "Spanish (Latin America)"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Basque",
+            "Dutch (SDH)",
+            "French (SDH)",
+            "German (SDH)",
+            "Italian (SDH)",
+            "Portuguese (SDH)",
+            "Spanish (European) (SDH)",
+            "Spanish (Latin America) (SDH)",
+            "Turkish (SDH)"
+          ],
+          "media_options": {
+            "duration": 7162,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "English (5.1)",
+            "French (5.1)",
+            "German (5.1)",
+            "Italian (5.1)",
+            "Portuguese (5.1)",
+            "Spanish (European) (5.1)",
+            "Spanish (Latin America) (5.1)"
+          ],
+          "original_audio_language": "English"
+        }
+      },
+      "press_quote": {
+        "quote": "Robert Pattinson and Jennifer Lawrence are outstanding ",
+        "source": "The Wrap"
+      },
+      "star_rating": {
+        "star_rating": 5,
+        "source": "Little White Lies "
+      },
+      "award": {
+        "prize_image_url": "https://images.mubicdn.net/images/carousel_takeover/367/cache-1102289-1765370341/prize_image_en_us-original.png",
+        "prize_text": "Cannes 2025 Official Selection"
+      },
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 2,
+          "name": "domestic violence",
+          "key": "domestic_violence"
+        },
+        {
+          "id": 3,
+          "name": "self harm",
+          "key": "self_harm"
+        },
+        {
+          "id": 4,
+          "name": "animal cruelty",
+          "key": "animal_cruelty"
+        },
+        {
+          "id": 5,
+          "name": "strobe lighting",
+          "key": "strobe_lighting"
+        },
+        {
+          "id": 6,
+          "name": "graphic sexual content",
+          "key": "graphic_sexual_content"
+        },
+        {
+          "id": 17,
+          "name": "injury detail",
+          "key": "injury_detail"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/874505/cache-874505-1762372486/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/874526/cache-874526-1762372786/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/874542/cache-874542-1762373095/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/879972/cache-879972-1767128008/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/879973/cache-879973-1767128039/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/886805/cache-886805-1767128125/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955913/cache-955913-1774006532/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955914/cache-955914-1774006567/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/988817/cache-988817-1778660561/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/988818/cache-988818-1778660564/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/988822/cache-988822-1778660581/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/988831/cache-988831-1778660590/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 400360,
+      "slug": "sentimental-value",
+      "title": "Sentimental Value",
+      "title_locale": "en-US",
+      "title_upcase": "SENTIMENTAL VALUE",
+      "original_title": "Affeksjonsverdi",
+      "year": 2025,
+      "duration": 135,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/400360/image-w256.jpg?1757575671",
+        "medium": "https://assets.mubicdn.net/images/film/400360/image-w448.jpg?1757575671",
+        "standard": "https://assets.mubicdn.net/images/film/400360/image-w856.jpg?1757575671",
+        "retina": "https://assets.mubicdn.net/images/film/400360/image-w1280.jpg?1757575671",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/400360/image-w512_overlaid.jpg?1757575671",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/400360/image-w1504_overlaid.jpg?1757575671",
+        "standard_push": "https://assets.mubicdn.net/images/film/400360/image-w856_two_one.jpg?1757575671"
+      },
+      "still_focal_point": {
+        "x": 0.77,
+        "y": 0.4
+      },
+      "hd": true,
+      "average_colour_hex": "1A1C16",
+      "trailer_url": "https://trailers.mubicdn.net/400360/optimised/1080p-t-sentimental-value_en_us_1773933105.mp4",
+      "trailer_id": 127520,
+      "popularity": 17978,
+      "web_url": "https://mubi.com/films/sentimental-value",
+      "genres": [
+        "Drama"
+      ],
+      "average_rating": 4.6,
+      "average_rating_out_of_ten": 9.2,
+      "number_of_ratings": 47713,
+      "mubi_release": true,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/400360/cache-1048899-1757575671/image-w1280.jpg",
+      "critic_review_rating": 4.065217391304348,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "Nora, a successful stage actress, reunites with her estranged father, Gustav Borg—a once-renowned film director planning a comeback with a script based on their family. When Gustav offers Nora the lead role, which she promptly declines, he turns his attention to a rising Hollywood starlet instead.",
+      "short_synopsis_html": "<p>Nora, a successful stage actress, reunites with her estranged father, Gustav Borg&#8212;a once-renowned film director planning a comeback with a script based on their family. When Gustav offers Nora the lead role, which she promptly declines, he turns his attention to a rising Hollywood starlet instead.</p>",
+      "historic_countries": [
+        "Norway",
+        "Germany"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/920723/cache-920723-1770742695/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Eskil Vogt and Joachim Trier—the writer-director dream team behind The Worst Person in the World—return with this stunningly observed family drama. Winner of the Best International Feature Oscar®, and featuring an all-star cast, Sentimental Value traces the fault lines between vanity, art, and life.",
+      "default_editorial_html": "<p>Eskil Vogt and Joachim Trier&#8212;the writer-director dream team behind <em>The Worst Person in the World</em>&#8212;return with this stunningly observed family drama. Winner of the Best International Feature Oscar®, and featuring an all-star cast, <em>Sentimental Value</em> traces the fault lines between vanity, art, and life.</p>",
+      "cast_members_count": 36,
+      "industry_events_count": 136,
+      "comments_count": 351,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/400360/optimised/240p-t-sentimental-value_en_us_1773933105.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/400360/optimised/720p-t-sentimental-value_en_us_1773933105.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/400360/optimised/1080p-t-sentimental-value_en_us_1773933105.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Joachim Trier",
+          "name_upcase": "JOACHIM TRIER",
+          "slug": "joachim-trier"
+        }
+      ],
+      "consumable": {
+        "film_id": 400360,
+        "available_at": "2026-02-13T00:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2027-02-14T00:00:00Z",
+        "expires_at": "2027-02-14T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Norwegian"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Dutch",
+            "Portuguese (SDH)",
+            "Spanish (Latin America)",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 8083,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "Norwegian"
+          ],
+          "original_audio_language": "Norwegian"
+        }
+      },
+      "press_quote": {
+        "quote": "A masterpiece... Everything contemporary cinema ought to be",
+        "source": "Vogue"
+      },
+      "star_rating": {
+        "star_rating": 5,
+        "source": "The Telegraph"
+      },
+      "award": {
+        "prize_image_url": "https://images.mubicdn.net/images/carousel_takeover/391/cache-1111887-1770034391/prize_image_en_us-original.png",
+        "prize_text": "Cannes Gran Prix"
+      },
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 3,
+          "name": "self harm",
+          "key": "self_harm"
+        },
+        {
+          "id": 5,
+          "name": "strobe lighting",
+          "key": "strobe_lighting"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/885861/cache-885861-1763985103/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/885862/cache-885862-1763985107/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/885863/cache-885863-1763985111/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/885864/cache-885864-1763985115/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/885865/cache-885865-1765220772/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/885870/cache-885870-1765220790/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/885875/cache-885875-1765220811/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/885880/cache-885880-1763985190/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/885885/cache-885885-1763985196/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/920723/cache-920723-1770742695/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955909/cache-955909-1774006145/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955910/cache-955910-1774006177/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": {
+        "id": 540787,
+        "year": 2025,
+        "status": "won",
+        "display_text": "Grand Prix",
+        "full_display_text": "2025 | Winner: Grand Prix",
+        "industry_event": {
+          "id": 1,
+          "name": "Cannes Film Festival",
+          "slug": "cannes",
+          "type": "festival",
+          "logo_url": "https://images.mubicdn.net/images/industry_event/1/cache-222790-1494527057/logo-small_black.png",
+          "white_logo_url": "https://images.mubicdn.net/images/industry_event/1/cache-222790-1494527057/logo-large_white.png",
+          "cover_url": "https://images.mubicdn.net/images/industry_event/1/cache-222788-1494406355/cover-original.jpg"
+        }
+      }
+    },
+    {
+      "id": 437598,
+      "slug": "la-grazia",
+      "title": "La grazia",
+      "title_locale": "en-US",
+      "title_upcase": "LA GRAZIA",
+      "original_title": "La grazia",
+      "year": 2025,
+      "duration": 133,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/437598/image-w256.jpg?1751620976",
+        "medium": "https://assets.mubicdn.net/images/film/437598/image-w448.jpg?1751620976",
+        "standard": "https://assets.mubicdn.net/images/film/437598/image-w856.jpg?1751620976",
+        "retina": "https://assets.mubicdn.net/images/film/437598/image-w1280.jpg?1751620976",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/437598/image-w512_overlaid.jpg?1751620976",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/437598/image-w1504_overlaid.jpg?1751620976",
+        "standard_push": "https://assets.mubicdn.net/images/film/437598/image-w856_two_one.jpg?1751620976"
+      },
+      "still_focal_point": {
+        "x": 0.48,
+        "y": 0.49
+      },
+      "hd": true,
+      "average_colour_hex": "535556",
+      "trailer_url": "https://trailers.mubicdn.net/437598/optimised/1080p-t-la-grazia_en_us_1778235740.mp4",
+      "trailer_id": 139319,
+      "popularity": 6370,
+      "web_url": "https://mubi.com/films/la-grazia",
+      "genres": [
+        "Drama"
+      ],
+      "average_rating": 4.6,
+      "average_rating_out_of_ten": 9.1,
+      "number_of_ratings": 15765,
+      "mubi_release": true,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/437598/cache-1069167-1751620976/image-w1280.jpg",
+      "critic_review_rating": 3.606060606060606,
+      "content_rating": {
+        "label": "caution",
+        "rating_code": "CAUTION",
+        "description": "Contains material that may not be suitable for children or young adults.",
+        "icon_url": null,
+        "label_hex_color": "e05d04"
+      },
+      "episode": null,
+      "short_synopsis": "As his tenure as President of Italy nears its end, Mariano De Santis faces wrenching decisions—both political and deeply personal. Amid these moral quandaries, he must confront his own conscience and seek guidance from those closest to him, including his confidante and daughter, Dorotea.",
+      "short_synopsis_html": "<p>As his tenure as President of Italy nears its end, Mariano De Santis faces wrenching decisions&#8212;both political and deeply personal. Amid these moral quandaries, he must confront his own conscience and seek guidance from those closest to him, including his confidante and daughter, Dorotea.</p>",
+      "historic_countries": [
+        "Italy"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/901637/cache-901637-1767781959/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Unfolding within the splendorous walls of grand palaces and presidential homes, Paolo Sorrentino’s stylish drama ruminates on fatherhood, legacy, and doubt. Winner of the Best Actor prize at Venice, Toni Servillo captivates as a national leader shaken by the weight of an impossible moral dilemma.",
+      "default_editorial_html": "<p>Unfolding within the splendorous walls of grand palaces and presidential homes, Paolo Sorrentino&#8217;s stylish drama ruminates on fatherhood, legacy, and doubt. Winner of the Best Actor prize at Venice, Toni Servillo captivates as a national leader shaken by the weight of an impossible moral dilemma.</p>",
+      "cast_members_count": 21,
+      "industry_events_count": 43,
+      "comments_count": 108,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/437598/optimised/240p-t-la-grazia_en_us_1778235740.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/437598/optimised/720p-t-la-grazia_en_us_1778235740.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/437598/optimised/1080p-t-la-grazia_en_us_1778235740.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Paolo Sorrentino",
+          "name_upcase": "PAOLO SORRENTINO",
+          "slug": "paolo-sorrentino"
+        }
+      ],
+      "consumable": {
+        "film_id": 437598,
+        "available_at": "2026-05-07T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2045-02-01T00:00:00Z",
+        "expires_at": "2045-02-01T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Italian (Original)",
+            "German",
+            "Spanish (European)"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Dutch",
+            "French (SDH)",
+            "German",
+            "Portuguese (SDH)",
+            "Spanish (European)",
+            "Spanish (Latin America)",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 7976,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "German (5.1)",
+            "Italian (5.1)",
+            "Spanish (European) (5.1)"
+          ],
+          "original_audio_language": "Italian"
+        }
+      },
+      "press_quote": {
+        "quote": "Paolo Sorrentino is on irresistible form ",
+        "source": "The Times "
+      },
+      "star_rating": {
+        "star_rating": 4,
+        "source": "The Guardian "
+      },
+      "award": {
+        "prize_image_url": "https://images.mubicdn.net/images/carousel_takeover/449/cache-1129497-1777477831/prize_image_en_us-original.png",
+        "prize_text": "Venice Biennale 2025 Official Selection"
+      },
+      "series": null,
+      "content_warnings": [],
+      "artworks": [
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/889900/cache-889900-1767129360/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/889902/cache-889902-1767129381/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/889903/cache-889903-1765494025/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/889911/cache-889911-1765494247/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/889919/cache-889919-1765494430/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/901637/cache-901637-1767781959/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/934357/cache-934357-1772254350/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/934358/cache-934358-1772254353/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/934365/cache-934365-1772254379/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/934373/cache-934373-1772254391/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955931/cache-955931-1774008270/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/955932/cache-955932-1774008297/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 450009,
+      "slug": "phantoms-of-july",
+      "title": "Phantoms of July",
+      "title_locale": "en-US",
+      "title_upcase": "PHANTOMS OF JULY",
+      "original_title": "Sehnsucht in Sangerhausen",
+      "year": 2025,
+      "duration": 90,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/450009/image-w256.jpg?1781696311",
+        "medium": "https://assets.mubicdn.net/images/film/450009/image-w448.jpg?1781696311",
+        "standard": "https://assets.mubicdn.net/images/film/450009/image-w856.jpg?1781696311",
+        "retina": "https://assets.mubicdn.net/images/film/450009/image-w1280.jpg?1781696311",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/450009/image-w512_overlaid.jpg?1781696311",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/450009/image-w1504_overlaid.jpg?1781696311",
+        "standard_push": "https://assets.mubicdn.net/images/film/450009/image-w856_two_one.jpg?1781696311"
+      },
+      "still_focal_point": {
+        "x": 0.42,
+        "y": 0.5
+      },
+      "hd": true,
+      "average_colour_hex": "585D5F",
+      "trailer_url": "https://trailers.mubicdn.net/450009/optimised/1080p-t-phantoms-of-july_en_us_1782897010.mp4",
+      "trailer_id": 145228,
+      "popularity": 587,
+      "web_url": "https://mubi.com/films/phantoms-of-july",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "average_rating": 3.9,
+      "average_rating_out_of_ten": 7.9,
+      "number_of_ratings": 2335,
+      "mubi_release": false,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/450009/cache-1070098-1781696311/image-w1280.jpg",
+      "critic_review_rating": 4.0,
+      "content_rating": {
+        "label": "caution",
+        "rating_code": "CAUTION",
+        "description": "Contains material that may not be suitable for children or young adults.",
+        "icon_url": null,
+        "label_hex_color": "e05d04"
+      },
+      "episode": null,
+      "short_synopsis": "Ursula, an East German waitress, and Neda, an Iranian YouTuber, both feel stuck in lives of precarity and loneliness. On one summer evening in the whimsical town of Sangerhausen, chance encounters lead them toward the nearby Harz mountains, where mysteries continue to unfold.",
+      "short_synopsis_html": "<p>Ursula, an East German waitress, and Neda, an Iranian YouTuber, both feel stuck in lives of precarity and loneliness. On one summer evening in the whimsical town of Sangerhausen, chance encounters lead them toward the nearby Harz mountains, where mysteries continue to unfold.</p>",
+      "historic_countries": [
+        "Germany"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": null,
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Turquoise stones shimmer alongside the dream of unlikely community in Julian Radlmaier’s capacious and beguiling film. As interlocking stories illumine both the surreal frustrations and pleasurable delusions of romantic longing, this time-hopping fable stays satisfyingly bittersweet to the core.",
+      "default_editorial_html": "<p>Turquoise stones shimmer alongside the dream of unlikely community in Julian Radlmaier&#8217;s capacious and beguiling film. As interlocking stories illumine both the surreal frustrations and pleasurable delusions of romantic longing, this time-hopping fable stays satisfyingly bittersweet to the core.</p>",
+      "cast_members_count": 22,
+      "industry_events_count": 23,
+      "comments_count": 14,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/450009/optimised/240p-t-phantoms-of-july_en_us_1782897010.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/450009/optimised/720p-t-phantoms-of-july_en_us_1782897010.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/450009/optimised/1080p-t-phantoms-of-july_en_us_1782897010.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Julian Radlmaier",
+          "name_upcase": "JULIAN RADLMAIER",
+          "slug": "julian-radlmaier"
+        }
+      ],
+      "consumable": {
+        "film_id": 450009,
+        "available_at": "2026-07-02T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2028-07-02T23:00:00Z",
+        "expires_at": "2028-07-03T11:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "German"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "German",
+            "Italian",
+            "Portuguese",
+            "Spanish (Latin America)",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 5420,
+            "hd": true
+          },
+          "media_features": [
+            "HD",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "German (5.1)"
+          ],
+          "original_audio_language": "German"
+        }
+      },
+      "press_quote": null,
+      "star_rating": null,
+      "award": null,
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001192/cache-1001192-1781696526/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001193/cache-1001193-1781696530/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001194/cache-1001194-1781696535/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1001195/cache-1001195-1781696538/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001196/cache-1001196-1781696543/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001200/cache-1001200-1781696565/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001204/cache-1001204-1781696586/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001208/cache-1001208-1781696605/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1001212/cache-1001212-1781696610/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 440746,
+      "slug": "the-mysterious-gaze-of-the-flamingo",
+      "title": "The Mysterious Gaze of the Flamingo",
+      "title_locale": "en-US",
+      "title_upcase": "THE MYSTERIOUS GAZE OF THE FLAMINGO",
+      "original_title": "La misteriosa mirada del flamenco",
+      "year": 2025,
+      "duration": 108,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/440746/image-w256.jpg?1778689885",
+        "medium": "https://assets.mubicdn.net/images/film/440746/image-w448.jpg?1778689885",
+        "standard": "https://assets.mubicdn.net/images/film/440746/image-w856.jpg?1778689885",
+        "retina": "https://assets.mubicdn.net/images/film/440746/image-w1280.jpg?1778689885",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/440746/image-w512_overlaid.jpg?1778689885",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/440746/image-w1504_overlaid.jpg?1778689885",
+        "standard_push": "https://assets.mubicdn.net/images/film/440746/image-w856_two_one.jpg?1778689885"
+      },
+      "still_focal_point": {
+        "x": 0.49,
+        "y": 0.3
+      },
+      "hd": true,
+      "average_colour_hex": "4F4B45",
+      "trailer_url": "https://trailers.mubicdn.net/440746/optimised/1080p-t-the-mysterious-gaze-of-the-flamingo_en_us_1776844804.mp4",
+      "trailer_id": 143075,
+      "popularity": 2702,
+      "web_url": "https://mubi.com/films/the-mysterious-gaze-of-the-flamingo",
+      "genres": [
+        "Drama",
+        "LGBTQ+"
+      ],
+      "average_rating": 4.5,
+      "average_rating_out_of_ten": 8.9,
+      "number_of_ratings": 7960,
+      "mubi_release": false,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg",
+      "critic_review_rating": 3.9444444444444446,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "Northern Chile, 1982. In a small mining town in the desert, an unknown disease begins to afflict the local population. It is rumored to be spread through a single look. As fear of contagion stirs up paranoia, hate, and violence in the community, eleven-year-old Lidia sets out in search of the truth.",
+      "short_synopsis_html": "<p>Northern Chile, 1982. In a small mining town in the desert, an unknown disease begins to afflict the local population. It is rumored to be spread through a single look. As fear of contagion stirs up paranoia, hate, and violence in the community, eleven-year-old Lidia sets out in search of the truth.</p>",
+      "historic_countries": [
+        "Chile",
+        "France"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/989579/cache-989579-1778752646/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Winner of Un Certain Regard at Cannes, Diego Céspedes’s debut feature pays luminous tribute to human resilience in inhumane times. Equal parts Chilean Western, dark fairy tale, and chosen-family hangout movie, this gorgeous work of queer magical realism finds love thriving amid sickness and hatred.",
+      "default_editorial_html": "<p>Winner of Un Certain Regard at Cannes, Diego Céspedes&#8217;s debut feature pays luminous tribute to human resilience in inhumane times. Equal parts Chilean Western, dark fairy tale, and chosen-family hangout movie, this gorgeous work of queer magical realism finds love thriving amid sickness and hatred.</p>",
+      "cast_members_count": 18,
+      "industry_events_count": 49,
+      "comments_count": 49,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/440746/optimised/240p-t-the-mysterious-gaze-of-the-flamingo_en_us_1776844804.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/440746/optimised/720p-t-the-mysterious-gaze-of-the-flamingo_en_us_1776844804.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/440746/optimised/1080p-t-the-mysterious-gaze-of-the-flamingo_en_us_1776844804.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Diego Céspedes",
+          "name_upcase": "DIEGO CÉSPEDES",
+          "slug": "diego-cespedes"
+        }
+      ],
+      "consumable": {
+        "film_id": 440746,
+        "available_at": "2026-05-14T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2041-05-14T23:00:00Z",
+        "expires_at": "2041-05-15T11:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Spanish (Latin America)"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Dutch",
+            "Italian",
+            "Spanish (Latin America)",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 6496,
+            "hd": true
+          },
+          "media_features": [
+            "HD",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "Spanish (Latin America) (5.1)"
+          ],
+          "original_audio_language": "Spanish (Latin America)"
+        }
+      },
+      "press_quote": null,
+      "star_rating": null,
+      "award": null,
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 2,
+          "name": "domestic violence",
+          "key": "domestic_violence"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/967072/cache-967072-1776960294/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/967073/cache-967073-1776960329/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/989290/cache-989290-1778690054/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/989291/cache-989291-1778690057/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/989292/cache-989292-1778690062/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/989301/cache-989301-1778690108/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/989310/cache-989310-1778690145/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/989319/cache-989319-1778690184/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/989328/cache-989328-1778690199/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/989579/cache-989579-1778752646/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": {
+        "id": 540815,
+        "year": 2025,
+        "status": "won",
+        "display_text": "Un Certain Regard",
+        "full_display_text": "2025 | Winner: Un Certain Regard",
+        "industry_event": {
+          "id": 1,
+          "name": "Cannes Film Festival",
+          "slug": "cannes",
+          "type": "festival",
+          "logo_url": "https://images.mubicdn.net/images/industry_event/1/cache-222790-1494527057/logo-small_black.png",
+          "white_logo_url": "https://images.mubicdn.net/images/industry_event/1/cache-222790-1494527057/logo-large_white.png",
+          "cover_url": "https://images.mubicdn.net/images/industry_event/1/cache-222788-1494406355/cover-original.jpg"
+        }
+      }
+    },
+    {
+      "id": 440946,
+      "slug": "a-useful-ghost",
+      "title": "A Useful Ghost",
+      "title_locale": "en-US",
+      "title_upcase": "A USEFUL GHOST",
+      "original_title": "ผีใช้ได้ค่ะ",
+      "year": 2025,
+      "duration": 130,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/440946/image-w256.jpg?1786460100",
+        "medium": "https://assets.mubicdn.net/images/film/440946/image-w448.jpg?1786460100",
+        "standard": "https://assets.mubicdn.net/images/film/440946/image-w856.jpg?1786460100",
+        "retina": "https://assets.mubicdn.net/images/film/440946/image-w1280.jpg?1786460100",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/440946/image-w512_overlaid.jpg?1786460100",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/440946/image-w1504_overlaid.jpg?1786460100",
+        "standard_push": "https://assets.mubicdn.net/images/film/440946/image-w856_two_one.jpg?1786460100"
+      },
+      "still_focal_point": {
+        "x": 0.3,
+        "y": 0.36
+      },
+      "hd": true,
+      "average_colour_hex": "442F22",
+      "trailer_url": "https://trailers.mubicdn.net/440946/optimised/1080p-t-a-useful-ghost_en_us_674.386_1920_1080_1754730707.mp4",
+      "trailer_id": 132067,
+      "popularity": 461,
+      "web_url": "https://mubi.com/films/a-useful-ghost",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Comedy",
+        "LGBTQ+"
+      ],
+      "average_rating": 4.0,
+      "average_rating_out_of_ten": 8.0,
+      "number_of_ratings": 1615,
+      "mubi_release": false,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/440946/cache-1048391-1786460100/image-w1280.jpg",
+      "critic_review_rating": 3.909090909090909,
+      "content_rating": {
+        "label": "mature",
+        "rating_code": "MATURE",
+        "description": "Contains material and themes suitable only for mature audiences.",
+        "icon_url": null,
+        "label_hex_color": "dd2323"
+      },
+      "episode": null,
+      "short_synopsis": "One night, while cleaning his apartment, a man begins to suspect that his vacuum cleaner may be haunted. A local repairman tells him how the machine came to be possessed by the spirit of a female factory worker, who has vowed to thwart the vengeful ghost of a former colleague.",
+      "short_synopsis_html": "<p>One night, while cleaning his apartment, a man begins to suspect that his vacuum cleaner may be haunted. A local repairman tells him how the machine came to be possessed by the spirit of a female factory worker, who has vowed to thwart the vengeful ghost of a former colleague.</p>",
+      "historic_countries": [
+        "Thailand",
+        "France"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/1003871/cache-1003871-1782829807/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Melding a giddying range of tones with aplomb, Ratchapoom Boonbunchachoke’s one-of-a-kind debut feature is doggedly political, loopily cerebral, and deeply affecting—and has style to spare. Another success story of Thailand’s recent cinematic boom, this fascinating film won the Grand Prix at Cannes.",
+      "default_editorial_html": "<p>Melding a giddying range of tones with aplomb, Ratchapoom Boonbunchachoke&#8217;s one-of-a-kind debut feature is doggedly political, loopily cerebral, and deeply affecting&#8212;and has style to spare. Another success story of Thailand&#8217;s recent cinematic boom, this fascinating film won the Grand Prix at Cannes.</p>",
+      "cast_members_count": 20,
+      "industry_events_count": 52,
+      "comments_count": 19,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/440946/optimised/240p-t-a-useful-ghost_en_us_674.386_1920_1080_1754730707.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/440946/optimised/720p-t-a-useful-ghost_en_us_674.386_1920_1080_1754730707.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/440946/optimised/1080p-t-a-useful-ghost_en_us_674.386_1920_1080_1754730707.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Ratchapoom Boonbunchachoke",
+          "name_upcase": "RATCHAPOOM BOONBUNCHACHOKE",
+          "slug": "ratchapoom-boonbunchachoke"
+        }
+      ],
+      "consumable": {
+        "film_id": 440946,
+        "available_at": "2026-07-23T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2028-03-24T00:00:00Z",
+        "expires_at": "2028-03-24T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Thai"
+          ],
+          "subtitle_options": [
+            "English",
+            "Italian",
+            "Portuguese",
+            "Spanish (Latin America)",
+            "Turkish"
+          ],
+          "media_options": {
+            "duration": 7800,
+            "hd": true
+          },
+          "media_features": [
+            "HD",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "Thai (5.1)"
+          ],
+          "original_audio_language": "Thai"
+        }
+      },
+      "press_quote": null,
+      "star_rating": null,
+      "award": null,
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 5,
+          "name": "strobe lighting",
+          "key": "strobe_lighting"
+        },
+        {
+          "id": 6,
+          "name": "graphic sexual content",
+          "key": "graphic_sexual_content"
+        },
+        {
+          "id": 17,
+          "name": "injury detail",
+          "key": "injury_detail"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1003871/cache-1003871-1782829807/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1014783/cache-1014783-1786461800/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1014784/cache-1014784-1786461803/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1014785/cache-1014785-1786461808/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/1014786/cache-1014786-1786461811/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1014787/cache-1014787-1786461815/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1014796/cache-1014796-1786461856/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1014805/cache-1014805-1786461889/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1014814/cache-1014814-1786461927/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/1014823/cache-1014823-1786461942/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": null
+    },
+    {
+      "id": 411498,
+      "slug": "the-secret-agent-2025",
+      "title": "The Secret Agent",
+      "title_locale": "en-US",
+      "title_upcase": "THE SECRET AGENT",
+      "original_title": "O Agente Secreto",
+      "year": 2025,
+      "duration": 161,
+      "stills": {
+        "small": "https://assets.mubicdn.net/images/film/411498/image-w256.jpg?1771581654",
+        "medium": "https://assets.mubicdn.net/images/film/411498/image-w448.jpg?1771581654",
+        "standard": "https://assets.mubicdn.net/images/film/411498/image-w856.jpg?1771581654",
+        "retina": "https://assets.mubicdn.net/images/film/411498/image-w1280.jpg?1771581654",
+        "small_overlaid": "https://assets.mubicdn.net/images/film/411498/image-w512_overlaid.jpg?1771581654",
+        "large_overlaid": "https://assets.mubicdn.net/images/film/411498/image-w1504_overlaid.jpg?1771581654",
+        "standard_push": "https://assets.mubicdn.net/images/film/411498/image-w856_two_one.jpg?1771581654"
+      },
+      "still_focal_point": {
+        "x": 0.42,
+        "y": 0.34
+      },
+      "hd": true,
+      "average_colour_hex": "5B4A3A",
+      "trailer_url": "https://trailers.mubicdn.net/411498/optimised/1080p-t-the-secret-agent-2025_en_us_1776415007.mp4",
+      "trailer_id": 134760,
+      "popularity": 5509,
+      "web_url": "https://mubi.com/films/the-secret-agent-2025",
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
+      "average_rating": 4.4,
+      "average_rating_out_of_ten": 8.8,
+      "number_of_ratings": 15949,
+      "mubi_release": true,
+      "should_use_safe_still": false,
+      "still_url": "https://images.mubicdn.net/images/film/411498/cache-1051744-1771581654/image-w1280.jpg",
+      "critic_review_rating": 4.514285714285714,
+      "content_rating": {
+        "label": "caution",
+        "rating_code": "CAUTION",
+        "description": "Contains material that may not be suitable for children or young adults.",
+        "icon_url": null,
+        "label_hex_color": "e05d04"
+      },
+      "episode": null,
+      "short_synopsis": "Marcelo is a father on the run from a mysterious past. Arriving in Recife during Carnival, Marcelo is swept into a dizzying world of colour, noise, and unforgettable characters. As the city’s sights and sounds intensify, Marcelo’s true place within Recife’s intricate web of secrets begins to emerge.",
+      "short_synopsis_html": "<p>Marcelo is a father on the run from a mysterious past. Arriving in Recife during Carnival, Marcelo is swept into a dizzying world of colour, noise, and unforgettable characters. As the city&#8217;s sights and sounds intensify, Marcelo&#8217;s true place within Recife&#8217;s intricate web of secrets begins to emerge.</p>",
+      "historic_countries": [
+        "France",
+        "Brazil"
+      ],
+      "portrait_image": null,
+      "title_treatment_url": "https://images.mubicdn.net/images/artworks/951729/cache-951729-1773679193/images-original.png",
+      "experiment_stills": null,
+      "experiment_stills_multi": null,
+      "default_editorial": "Nominated for four Oscars® including Best Picture, Kleber Mendonça Filho’s anarchic political thriller stars Wagner Moura in a risky cat-and-mouse hunt. Mixing taut suspense with sly absurdism, this epoch-defining marvel reconstructs memories of the Brazilian military dictatorship in vivid colors.",
+      "default_editorial_html": "<p>Nominated for four Oscars® including Best Picture, Kleber Mendonça Filho&#8217;s anarchic political thriller stars Wagner Moura in a risky cat-and-mouse hunt. Mixing taut suspense with sly absurdism, this epoch-defining marvel reconstructs memories of the Brazilian military dictatorship in vivid colors.</p>",
+      "cast_members_count": 24,
+      "industry_events_count": 98,
+      "comments_count": 133,
+      "mubi_go_highlighted": false,
+      "optimised_trailers": [
+        {
+          "url": "https://trailers.mubicdn.net/411498/optimised/240p-t-the-secret-agent-2025_en_us_1776415007.mp4",
+          "profile": "240p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/411498/optimised/720p-t-the-secret-agent-2025_en_us_1776415007.mp4",
+          "profile": "720p"
+        },
+        {
+          "url": "https://trailers.mubicdn.net/411498/optimised/1080p-t-the-secret-agent-2025_en_us_1776415007.mp4",
+          "profile": "1080p"
+        }
+      ],
+      "directors": [
+        {
+          "name": "Kleber Mendonça Filho",
+          "name_upcase": "KLEBER MENDONÇA FILHO",
+          "slug": "kleber-mendonca-filho"
+        }
+      ],
+      "consumable": {
+        "film_id": 411498,
+        "available_at": "2026-04-16T23:00:00Z",
+        "availability": "live",
+        "availability_ends_at": "2041-02-20T00:00:00Z",
+        "expires_at": "2041-02-20T12:00:00Z",
+        "film_date_message": null,
+        "offered": [
+          {
+            "type": "catalogue",
+            "download_availability": null
+          }
+        ],
+        "exclusive": true,
+        "permit_download": true,
+        "playback_languages": {
+          "audio_options": [
+            "Portuguese"
+          ],
+          "subtitle_options": [
+            "English (SDH)",
+            "Dutch",
+            "Spanish (Latin America)"
+          ],
+          "media_options": {
+            "duration": 9651,
+            "hd": true
+          },
+          "media_features": [
+            "4K",
+            "5.1"
+          ],
+          "extended_audio_options": [
+            "Portuguese (5.1)"
+          ],
+          "original_audio_language": "Portuguese"
+        }
+      },
+      "press_quote": {
+        "quote": "An astonishing cinematic experience",
+        "source": "Empire"
+      },
+      "star_rating": {
+        "star_rating": 5,
+        "source": "The Guardian"
+      },
+      "award": {
+        "prize_image_url": "https://images.mubicdn.net/images/carousel_takeover/413/cache-1120083-1773762438/prize_image_en_us-original.png",
+        "prize_text": "Golden Globes"
+      },
+      "series": null,
+      "content_warnings": [
+        {
+          "id": 17,
+          "name": "injury detail",
+          "key": "injury_detail"
+        },
+        {
+          "id": 32,
+          "name": "discriminatory language",
+          "key": "discriminatory_language"
+        }
+      ],
+      "artworks": [
+        {
+          "format": "cover_artwork_horizontal",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/914052/cache-914052-1771606161/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_vertical",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/914061/cache-914061-1771606248/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/914070/cache-914070-1771606300/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tile_artwork",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/929117/cache-929117-1771829142/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_episode",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/929119/cache-929119-1771829146/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/929122/cache-929122-1771829151/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "centered_background_small",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/929124/cache-929124-1771829155/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "tvos_cover_artwork",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/929188/cache-929188-1771829263/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "cover_artwork_box_series",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/929207/cache-929207-1771829280/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "content_logo_monochromatic",
+          "locale": "en-US",
+          "image_url": "https://images.mubicdn.net/images/artworks/951729/cache-951729-1773679193/images-original.png",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_square",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/956003/cache-956003-1774013603/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        },
+        {
+          "format": "onboarding_horizontal",
+          "locale": null,
+          "image_url": "https://images.mubicdn.net/images/artworks/956004/cache-956004-1774013625/images-original.jpg",
+          "focal_point": {
+            "x": 0.5,
+            "y": 0.0
+          }
+        }
+      ],
+      "highlighted_industry_event_entry": {
+        "id": 540786,
+        "year": 2025,
+        "status": "won",
+        "display_text": "Best Director",
+        "full_display_text": "2025 | Winner: Best Director",
+        "industry_event": {
+          "id": 1,
+          "name": "Cannes Film Festival",
+          "slug": "cannes",
+          "type": "festival",
+          "logo_url": "https://images.mubicdn.net/images/industry_event/1/cache-222790-1494527057/logo-small_black.png",
+          "white_logo_url": "https://images.mubicdn.net/images/industry_event/1/cache-222790-1494527057/logo-large_white.png",
+          "cover_url": "https://images.mubicdn.net/images/industry_event/1/cache-222788-1494406355/cover-original.jpg"
+        }
+      }
+    }
+  ],
+  "film_group": null
+}
