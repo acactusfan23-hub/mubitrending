@@ -1,402 +1,671 @@
 {
-  "updated_at": "2026-08-19T10:46:22Z",
+  "updated_at": "2026-08-19T11:05:34Z",
   "source": "https://mubi.com/en/gb/collections/trending",
   "items": [
     {
-      "rank": 1,
       "title": "The Secret Agent",
+      "mubi_titles": [
+        "The Secret Agent",
+        "O Agente Secreto"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-secret-agent-2025",
       "url": "https://mubi.com/films/the-secret-agent-2025",
+      "rank": 1,
       "tmdb_id": 1220564,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 2,
       "title": "Carlito's Way",
+      "mubi_titles": [
+        "Carlito's Way"
+      ],
+      "mubi_year": 1993,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "carlito-s-way",
       "url": "https://mubi.com/films/carlito-s-way",
+      "rank": 2,
       "tmdb_id": 6075,
-      "year": "1993"
+      "year": "1993",
+      "match_method": "title-year"
     },
     {
-      "rank": 3,
       "title": "No Other Choice",
+      "mubi_titles": [
+        "No Other Choice"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "no-other-choice",
       "url": "https://mubi.com/films/no-other-choice",
+      "rank": 3,
       "tmdb_id": 639988,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 4,
       "title": "Perfect Days",
+      "mubi_titles": [
+        "Perfect Days"
+      ],
+      "mubi_year": 2023,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "perfect-days",
       "url": "https://mubi.com/films/perfect-days",
+      "rank": 4,
       "tmdb_id": 976893,
-      "year": "2023"
+      "year": "2023",
+      "match_method": "title-year"
     },
     {
-      "rank": 5,
       "title": "Sentimental Value",
+      "mubi_titles": [
+        "Sentimental Value",
+        "Affeksjonsverdi"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "sentimental-value",
       "url": "https://mubi.com/films/sentimental-value",
+      "rank": 5,
       "tmdb_id": 1124566,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 6,
       "title": "The Non-Actor",
+      "mubi_titles": [
+        "The Non-Actor"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-non-actor",
       "url": "https://mubi.com/films/the-non-actor",
+      "rank": 6,
       "tmdb_id": 1396608,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 7,
       "title": "Paris, Texas",
+      "mubi_titles": [
+        "Paris, Texas"
+      ],
+      "mubi_year": 1984,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "paris-texas",
       "url": "https://mubi.com/films/paris-texas",
+      "rank": 7,
       "tmdb_id": 655,
-      "year": "1984"
+      "year": "1984",
+      "match_method": "title-year"
     },
     {
-      "rank": 8,
       "title": "Amores Perros",
+      "mubi_titles": [
+        "Amores Perros"
+      ],
+      "mubi_year": 2000,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "amores-perros",
       "url": "https://mubi.com/films/amores-perros",
+      "rank": 8,
       "tmdb_id": 55,
-      "year": "2000"
+      "year": "2000",
+      "match_method": "title-year"
     },
     {
-      "rank": 9,
       "title": "Portrait of a Lady on Fire",
+      "mubi_titles": [
+        "Portrait of a Lady on Fire",
+        "Portrait de la jeune fille en feu"
+      ],
+      "mubi_year": 2019,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "portrait-de-la-jeune-fille-en-feu",
       "url": "https://mubi.com/films/portrait-de-la-jeune-fille-en-feu",
+      "rank": 9,
       "tmdb_id": 531428,
-      "year": "2019"
+      "year": "2019",
+      "match_method": "title-year"
     },
     {
-      "rank": 10,
       "title": "Lars and the Real Girl",
+      "mubi_titles": [
+        "Lars and the Real Girl"
+      ],
+      "mubi_year": 2007,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "lars-and-the-real-girl",
       "url": "https://mubi.com/films/lars-and-the-real-girl",
+      "rank": 10,
       "tmdb_id": 6615,
-      "year": "2007"
+      "year": "2007",
+      "match_method": "title-year"
     },
     {
-      "rank": 11,
       "title": "Drop Dead Gorgeous",
+      "mubi_titles": [
+        "Drop Dead Gorgeous"
+      ],
+      "mubi_year": 1999,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "drop-dead-gorgeous",
       "url": "https://mubi.com/films/drop-dead-gorgeous",
+      "rank": 11,
       "tmdb_id": 10490,
-      "year": "1999"
+      "year": "1999",
+      "match_method": "title-year"
     },
     {
-      "rank": 12,
       "title": "Father Mother Sister Brother",
+      "mubi_titles": [
+        "Father Mother Sister Brother"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "father-mother-sister-brother",
       "url": "https://mubi.com/films/father-mother-sister-brother",
+      "rank": 12,
       "tmdb_id": 1159206,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 13,
       "title": "A Useful Ghost",
+      "mubi_titles": [
+        "A Useful Ghost"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "a-useful-ghost",
       "url": "https://mubi.com/films/a-useful-ghost",
+      "rank": 13,
       "tmdb_id": 1364904,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 14,
       "title": "The Handmaiden",
+      "mubi_titles": [
+        "The Handmaiden",
+        "아가씨 | Agassi"
+      ],
+      "mubi_year": 2016,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-handmaiden",
       "url": "https://mubi.com/films/the-handmaiden",
+      "rank": 14,
       "tmdb_id": 290098,
-      "year": "2016"
+      "year": "2016",
+      "match_method": "title-year"
     },
     {
-      "rank": 15,
-      "title": "Northwest Passage",
-      "slug": "northwest-passage-david-lynch",
-      "url": "https://mubi.com/series/twin-peaks",
-      "tmdb_id": 43805,
-      "year": "1940"
-    },
-    {
-      "rank": 16,
       "title": "The Love That Remains",
+      "mubi_titles": [
+        "The Love That Remains",
+        "Ástin sem eftir er"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-love-that-remains",
       "url": "https://mubi.com/films/the-love-that-remains",
+      "rank": 15,
       "tmdb_id": 1258509,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 17,
       "title": "Moonage Daydream",
+      "mubi_titles": [
+        "Moonage Daydream"
+      ],
+      "mubi_year": 2022,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "moonage-daydream",
       "url": "https://mubi.com/films/moonage-daydream",
+      "rank": 16,
       "tmdb_id": 957457,
-      "year": "2022"
+      "year": "2022",
+      "match_method": "title-year"
     },
     {
-      "rank": 18,
       "title": "Blow Out",
+      "mubi_titles": [
+        "Blow Out"
+      ],
+      "mubi_year": 1981,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "blow-out",
       "url": "https://mubi.com/films/blow-out",
+      "rank": 17,
       "tmdb_id": 11644,
-      "year": "1981"
+      "year": "1981",
+      "match_method": "title-year"
     },
     {
-      "rank": 19,
       "title": "The Worst Person in the World",
+      "mubi_titles": [
+        "The Worst Person in the World",
+        "Verdens verste menneske"
+      ],
+      "mubi_year": 2021,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-worst-person-in-the-world",
       "url": "https://mubi.com/films/the-worst-person-in-the-world",
+      "rank": 18,
       "tmdb_id": 660120,
-      "year": "2021"
+      "year": "2021",
+      "match_method": "title-year"
     },
     {
-      "rank": 20,
       "title": "La Grazia",
+      "mubi_titles": [
+        "La grazia"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "la-grazia",
       "url": "https://mubi.com/films/la-grazia",
+      "rank": 19,
       "tmdb_id": 1397364,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 21,
       "title": "Sirāt",
+      "mubi_titles": [
+        "Sirât"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "sirat",
       "url": "https://mubi.com/films/sirat",
+      "rank": 20,
       "tmdb_id": 1151272,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 22,
       "title": "Dazed and Confused",
+      "mubi_titles": [
+        "Dazed and Confused"
+      ],
+      "mubi_year": 1993,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "dazed-and-confused",
       "url": "https://mubi.com/films/dazed-and-confused",
+      "rank": 21,
       "tmdb_id": 9571,
-      "year": "1993"
+      "year": "1993",
+      "match_method": "title-year"
     },
     {
-      "rank": 23,
       "title": "Ghost World",
+      "mubi_titles": [
+        "Ghost World"
+      ],
+      "mubi_year": 2001,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "ghost-world",
       "url": "https://mubi.com/films/ghost-world",
-      "tmdb_id": 769680,
-      "year": "2014"
+      "rank": 22,
+      "tmdb_id": 1548,
+      "year": "2001",
+      "match_method": "title-year"
     },
     {
-      "rank": 24,
       "title": "Shithouse",
+      "mubi_titles": [
+        "Shithouse"
+      ],
+      "mubi_year": 2020,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "shithouse",
       "url": "https://mubi.com/films/shithouse",
+      "rank": 23,
       "tmdb_id": 637053,
-      "year": "2020"
+      "year": "2020",
+      "match_method": "title-year"
     },
     {
-      "rank": 25,
       "title": "The Fall of Sir Douglas Weatherford",
+      "mubi_titles": [
+        "The Fall of Sir Douglas Weatherford"
+      ],
+      "mubi_year": 2026,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-fall-of-sir-douglas-weatherford",
       "url": "https://mubi.com/films/the-fall-of-sir-douglas-weatherford",
+      "rank": 24,
       "tmdb_id": 1471672,
-      "year": "2026"
+      "year": "2026",
+      "match_method": "title-year"
     },
     {
-      "rank": 26,
       "title": "Past Lives",
+      "mubi_titles": [
+        "Past Lives"
+      ],
+      "mubi_year": 2023,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "past-lives",
       "url": "https://mubi.com/films/past-lives",
+      "rank": 25,
       "tmdb_id": 666277,
-      "year": "2023"
+      "year": "2023",
+      "match_method": "title-year"
     },
     {
-      "rank": 27,
-      "title": "The President's Cake",
-      "slug": "the-president-s-cake",
-      "url": "https://mubi.com/films/the-president-s-cake",
-      "tmdb_id": 1464883,
-      "year": "2026"
-    },
-    {
-      "rank": 28,
       "title": "Alpha",
+      "mubi_titles": [
+        "Alpha"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "alpha",
       "url": "https://mubi.com/films/alpha",
-      "tmdb_id": 1122030,
-      "year": "2026"
+      "rank": 27,
+      "tmdb_id": 1284460,
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 29,
       "title": "The Fall",
+      "mubi_titles": [
+        "The Fall"
+      ],
+      "mubi_year": 2006,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-fall",
       "url": "https://mubi.com/films/the-fall",
+      "rank": 28,
       "tmdb_id": 14784,
-      "year": "2006"
+      "year": "2006",
+      "match_method": "title-year"
     },
     {
-      "rank": 30,
       "title": "To Wong Foo, Thanks for Everything! Julie Newmar",
+      "mubi_titles": [
+        "To Wong Foo, Thanks for Everything! Julie Newmar"
+      ],
+      "mubi_year": 1995,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "to-wong-foo-thanks-for-everything-julie-newmar",
       "url": "https://mubi.com/films/to-wong-foo-thanks-for-everything-julie-newmar",
+      "rank": 29,
       "tmdb_id": 9090,
-      "year": "1995"
+      "year": "1995",
+      "match_method": "title-year"
     },
     {
-      "rank": 31,
       "title": "It Was Just an Accident",
+      "mubi_titles": [
+        "It Was Just an Accident",
+        "Yek tasadof-e sadeh"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "it-was-just-an-accident",
       "url": "https://mubi.com/films/it-was-just-an-accident",
+      "rank": 30,
       "tmdb_id": 1456349,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 32,
       "title": "Carrie",
+      "mubi_titles": [
+        "Carrie"
+      ],
+      "mubi_year": 1976,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "carrie",
       "url": "https://mubi.com/films/carrie",
+      "rank": 31,
       "tmdb_id": 7340,
-      "year": "1976"
+      "year": "1976",
+      "match_method": "title-year"
     },
     {
-      "rank": 33,
       "title": "Do the Right Thing",
+      "mubi_titles": [
+        "Do the Right Thing"
+      ],
+      "mubi_year": 1989,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "do-the-right-thing",
       "url": "https://mubi.com/films/do-the-right-thing",
+      "rank": 32,
       "tmdb_id": 925,
-      "year": "1989"
+      "year": "1989",
+      "match_method": "title-year"
     },
     {
-      "rank": 34,
       "title": "Die My Love",
+      "mubi_titles": [
+        "Die My Love"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "die-my-love",
       "url": "https://mubi.com/films/die-my-love",
+      "rank": 33,
       "tmdb_id": 1033148,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 35,
       "title": "How to Have Sex",
+      "mubi_titles": [
+        "How to Have Sex"
+      ],
+      "mubi_year": 2023,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "how-to-have-sex",
       "url": "https://mubi.com/films/how-to-have-sex",
+      "rank": 34,
       "tmdb_id": 1075175,
-      "year": "2023"
+      "year": "2023",
+      "match_method": "title-year"
     },
     {
-      "rank": 36,
       "title": "The Substance",
+      "mubi_titles": [
+        "The Substance"
+      ],
+      "mubi_year": 2024,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "the-substance",
       "url": "https://mubi.com/films/the-substance",
+      "rank": 35,
       "tmdb_id": 933260,
-      "year": "2024"
+      "year": "2024",
+      "match_method": "title-year"
     },
     {
-      "rank": 37,
       "title": "Dressed to Kill",
+      "mubi_titles": [
+        "Dressed to Kill"
+      ],
+      "mubi_year": 1980,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "dressed-to-kill",
       "url": "https://mubi.com/films/dressed-to-kill",
+      "rank": 36,
       "tmdb_id": 11033,
-      "year": "1980"
+      "year": "1980",
+      "match_method": "title-year"
     },
     {
-      "rank": 39,
       "title": "My Father's Shadow",
+      "mubi_titles": [
+        "My Father's Shadow"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "my-father-s-shadow",
       "url": "https://mubi.com/films/my-father-s-shadow",
+      "rank": 37,
       "tmdb_id": 1432605,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 40,
       "title": "Good Time",
+      "mubi_titles": [
+        "Good Time"
+      ],
+      "mubi_year": 2017,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "good-time",
       "url": "https://mubi.com/films/good-time",
+      "rank": 38,
       "tmdb_id": 429200,
-      "year": "2017"
+      "year": "2017",
+      "match_method": "title-year"
     },
     {
-      "rank": 41,
-      "title": "Kes",
-      "slug": "kes",
-      "url": "https://mubi.com/films/kes",
-      "tmdb_id": 13384,
-      "year": "1970"
-    },
-    {
-      "rank": 42,
       "title": "God Is Shy",
+      "mubi_titles": [
+        "God is Shy",
+        "Dieu est timide"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "god-is-shy",
       "url": "https://mubi.com/films/god-is-shy",
+      "rank": 40,
       "tmdb_id": 1470480,
-      "year": "2025"
+      "year": "2025",
+      "match_method": "title-year"
     },
     {
-      "rank": 44,
       "title": "Swimming Pool",
+      "mubi_titles": [
+        "Swimming Pool"
+      ],
+      "mubi_year": 2003,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "swimming-pool",
       "url": "https://mubi.com/films/swimming-pool",
+      "rank": 41,
       "tmdb_id": 302,
-      "year": "2003"
+      "year": "2003",
+      "match_method": "title-year"
     },
     {
-      "rank": 45,
       "title": "Titane",
+      "mubi_titles": [
+        "Titane"
+      ],
+      "mubi_year": 2021,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "titane",
       "url": "https://mubi.com/films/titane",
+      "rank": 42,
       "tmdb_id": 630240,
-      "year": "2021"
+      "year": "2021",
+      "match_method": "title-year"
     },
     {
-      "rank": 46,
       "title": "Bird",
+      "mubi_titles": [
+        "Bird"
+      ],
+      "mubi_year": 2024,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "bird",
       "url": "https://mubi.com/films/bird",
+      "rank": 43,
       "tmdb_id": 1128752,
-      "year": "2024"
+      "year": "2024",
+      "match_method": "title-year"
     },
     {
-      "rank": 47,
       "title": "Group Marriage",
+      "mubi_titles": [
+        "Group Marriage"
+      ],
+      "mubi_year": 1973,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
       "slug": "group-marriage",
       "url": "https://mubi.com/films/group-marriage",
+      "rank": 44,
       "tmdb_id": 89744,
-      "year": "1973"
-    },
-    {
-      "rank": 49,
-      "title": "Thelma & Louise",
-      "slug": "thelma-louise",
-      "url": "https://mubi.com/films/thelma-louise",
-      "tmdb_id": 1541,
-      "year": "1991"
-    },
-    {
-      "rank": 50,
-      "title": "Dogma",
-      "slug": "dogma",
-      "url": "https://mubi.com/films/dogma",
-      "tmdb_id": 1832,
-      "year": "1999"
+      "year": "1973",
+      "match_method": "title-year"
     }
   ],
   "unmatched": [
     {
-      "rank": 38,
-      "title": "Zen, or the Skill to Catch a Killer",
-      "slug": "zen-or-the-skill-to-catch-a-killer",
-      "url": "https://mubi.com/series/twin-peaks"
+      "title": "The President's Cake",
+      "mubi_titles": [
+        "The President's Cake",
+        "Mamlaket Al-Qasab"
+      ],
+      "mubi_year": 2025,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
+      "slug": "the-president-s-cake",
+      "url": "https://mubi.com/films/the-president-s-cake",
+      "rank": 26
     },
     {
-      "rank": 43,
-      "title": "Traces to Nowhere",
-      "slug": "traces-to-nowhere",
-      "url": "https://mubi.com/series/twin-peaks"
-    },
-    {
-      "rank": 48,
-      "title": "Rest in Pain",
-      "slug": "rest-in-pain",
-      "url": "https://mubi.com/series/twin-peaks"
+      "title": "Kes",
+      "mubi_titles": [
+        "Kes"
+      ],
+      "mubi_year": 1969,
+      "mubi_tmdb_id": null,
+      "mubi_imdb_id": null,
+      "slug": "kes",
+      "url": "https://mubi.com/films/kes",
+      "rank": 39
     }
   ],
   "mdblist_list_id": "202378"
