@@ -1,7 +1,5 @@
 import re, html, urllib.parse
 from html.parser import HTMLParser
-from difflib import SequenceMatcher
-import requests
 import mubi_trending
 
 MAX_ITEMS = mubi_trending.MAX_ITEMS
@@ -58,25 +56,19 @@ def parse_jina_html(text):
         if len(out) >= MAX_ITEMS: break
     return out
 
+def dedupe(seq):
+    out=[]; seen=set()
+    for item in seq:
+        if item['slug'] in seen: continue
+        seen.add(item['slug']); out.append(item)
+    return out
+
 def merge_sources(html_items, md_items):
-    # Prefer HTML ordering because it is closest to the document/card order.
-    # Markdown fills any films that Jina omitted from its HTML representation.
-    by_slug = {}
-    for seq, weight in ((html_items, 0.78), (md_items, 0.22)):
-        n=max(len(seq),1)
-        for i,item in enumerate(seq):
-            slug=item['slug']
-            rec=by_slug.setdefault(slug, {'item':item.copy(),'positions':[]})
-            rec['positions'].append((i/(n-1) if n>1 else 0.0, weight))
-            if seq is html_items:
-                rec['item'].update(item)
-    ranked=[]
-    for slug,rec in by_slug.items():
-        positions=rec['positions']
-        weighted=sum(p*w for p,w in positions)/sum(w for _,w in positions)
-        ranked.append((weighted, slug, rec['item']))
-    ranked.sort(key=lambda x:x[0])
-    return [x[2] for x in ranked[:MAX_ITEMS]]
+    html_items=dedupe(html_items)
+    md_items=dedupe(md_items)
+    html_slugs={x['slug'] for x in html_items}
+    recovered=[x for x in md_items if x['slug'] not in html_slugs]
+    return html_items + recovered
 
 def improved_source():
     all_items=[]
@@ -84,28 +76,40 @@ def improved_source():
     for page_num in range(1,11):
         target=f'{MUBI_URL}?page={page_num}'
         reader=JINA_BASE.rstrip('/') + '/' + target
-        print(f'MUBI via Jina (dual format): page {page_num}: {target}')
+        print(f'MUBI via Jina (fresh browser): page {page_num}: {target}')
         print(f'  reader URL: {reader}')
 
-        # Existing Markdown representation, retained as the fallback/source we know works.
-        md_resp=S.get(reader,headers={'Accept':'text/markdown','X-Return-Format':'markdown'},timeout=90)
+        fresh_headers={
+            'X-No-Cache':'true',
+            'X-Engine':'browser',
+            'X-Return-Format':'markdown',
+            'X-Wait-For-Selector':'a[href*="/films/"]',
+            'Accept':'text/markdown',
+        }
+        md_resp=S.get(reader,headers=fresh_headers,timeout=120)
         md_resp.raise_for_status()
         md_text=md_resp.text or ''
         md_items=mubi_trending.parse_mubi_markdown(md_text)
 
-        # Ask Jina for HTML as a second independent representation of the same page.
         html_items=[]
         try:
-            html_resp=S.get(reader,headers={'Accept':'text/html','X-Return-Format':'html'},timeout=90)
+            html_headers={
+                'X-No-Cache':'true',
+                'X-Engine':'browser',
+                'X-Return-Format':'html',
+                'X-Wait-For-Selector':'a[href*="/films/"]',
+                'Accept':'text/html',
+            }
+            html_resp=S.get(reader,headers=html_headers,timeout=120)
             html_resp.raise_for_status()
             html_text=html_resp.text or ''
             html_items=parse_jina_html(html_text)
-            print(f'  markdown chars={len(md_text)}, markdown films={len(md_items)}; html chars={len(html_text)}, html films={len(html_items)}')
+            print(f'  fresh markdown chars={len(md_text)}, markdown films={len(md_items)}; fresh html chars={len(html_text)}, html films={len(html_items)}')
         except Exception as exc:
-            print(f'  HTML representation unavailable ({exc}); using Markdown only.')
-            print(f'  markdown chars={len(md_text)}, markdown films={len(md_items)}')
+            print(f'  HTML representation unavailable ({exc}); using fresh Markdown only.')
+            print(f'  fresh markdown chars={len(md_text)}, markdown films={len(md_items)}')
 
-        page_items=merge_sources(html_items,md_items) if html_items else [dict(x) for x in md_items]
+        page_items=merge_sources(html_items,md_items) if html_items else dedupe(md_items)
         before=len(all_items)
         for item in page_items:
             if item['slug'] in seen: continue
@@ -113,17 +117,16 @@ def improved_source():
             item['rank']=len(all_items)+1
             all_items.append(item)
             if len(all_items)>=MAX_ITEMS: break
-        print(f'  page {page_num}: reconciled {len(page_items)}; added {len(all_items)-before}; total {len(all_items)}')
+        print(f'  page {page_num}: extracted {len(page_items)}; added {len(all_items)-before}; total {len(all_items)}')
         if len(all_items)>=MAX_ITEMS or len(all_items)==before: break
 
     if not all_items:
-        raise RuntimeError('Dual-format MUBI extraction returned no film links.')
-    print('MUBI source ranking captured (dual-format):')
+        raise RuntimeError('Fresh MUBI extraction returned no film links.')
+    print('MUBI source ranking captured (fresh browser):')
     for item in all_items[:15]:
         print(f"  {item['rank']:02d}. {item['title']}")
     return all_items[:MAX_ITEMS]
 
-# Monkey-patch only the source extraction. Everything downstream remains the existing,
-# already-working matcher, unresolved resolver and MDBList updater.
+# Only replace source extraction. Everything downstream remains unchanged.
 mubi_trending.scrape_mubi_web = improved_source
 mubi_trending.main()
