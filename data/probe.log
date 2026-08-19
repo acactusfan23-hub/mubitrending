@@ -1,79 +1,72 @@
 
-=== list slug trending ===
-URL https://api.mubi.com/v4/lists/trending/list_films?page=1&per_page=48 STATUS 404 CT application/json; charset=utf-8
-BODY_PREFIX {"code":404,"message":"Missing List","user_message":"Can't find List with id trending"}
-
-=== browse lists ===
-URL https://api.mubi.com/v4/browse/lists?sort=popularity&page=1&per_page=100 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"lists":[{"id":138118,"title":"The MUBI Top 1000","slug":"the-top-1000","average_colour_hex":"797270","created_at":"2021-05-03T10:48:45Z","updated_at":"2026-08-19T10:46:20Z","comm
-TOP30 ["The MUBI Top 1000", "100 DIRECTORS' ESSENTIAL FILMS", "The Best Films of EVERY Year", "Edgar Wright's 1000 Favorite Movies", "ZYX Erotica & sex", "hysterical in a floral dress", "ESSENTIAL FILMS BY WOMEN", "Forget Filmschool! Learn from this...", "Fox and His (Queer) Friends", "Best LGBTQi+ films of all time", "THE PHENOMENOLOGICAL HEIRLOOMS OF GENEALOGICAL STRATA: an inflated inheritance ", "ESSENTIAL FRENCH FILMS", "of Asian Cinema", "What the fuck?!: Weird films.", "törkİŞ", "ESSENTIAL JAPANESE FILMS ", "Essential Movies for a Student of Philosophy", "I Love Scİ-Fİ", "Movies to trip/smoke/drink to!", "melancholy", "Films Directed By Women", "Feminist CINEMA", "ESSENTIAL SHORT FILMS & FEATURETTES", "Colors of the Brush: The Cinematography Collection"]
-ANCHORS {"the non-actor": null, "amores perros": null, "father mother sister brother": null, "dazed and confused": null, "alpha": null, "a useful ghost": null, "orphan": null}
-TRENDING_LIST_CANDIDATES []
-
-=== browse film groups ===
-URL https://api.mubi.com/v4/browse/film_groups?sort=title&page=1&per_page=100 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"film_groups":[{"id":864,"slug":"1920s-masterpieces","hide_title_on_splash":false,"double_bill":false,"full_title":"1920s Masterpieces","full_title_upcase":"1920S MASTERPIECES","t
-TOP30 ["1920s Masterpieces", "1960s Masterpieces", "1970s Masterpieces", "1980s Masterpieces", "1990s Masterpieces", "25 Years of the", "A New You: ", "A Piece of the Action", "A Place of Our Own:", "A Tender Age: ", "Adaptations", "Adèle Exarchopoulos:", "African Cinema at Cannes:", "After the End:", "Against the Grain:", "American Indies", "American Outsider: ", "And the Oscar Goes to...", "Animal, Vegetable, Mineral?: ", "Animated Desires", "Apocalypse Now:", "Around the World:", "Back in the Game", "Ban This Sick Filth!:", "Besties Only", "Between the Lines:", "Between Tides:", "Beyond Binaries:", "Brief Encounters", "British Cinema"]
-ANCHORS {"the non-actor": null, "amores perros": null, "father mother sister brother": null, "dazed and confused": null, "alpha": null, "a useful ghost": null, "orphan": null}
-GROUP_CANDIDATES []
-
-=== browse sort trending ===
-URL https://api.mubi.com/v4/browse/films?sort=trending&playable=true&page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"films":[{"id":391721,"slug":"rosebush-pruning","title":"Rosebush Pruning","title_locale":"en-US","title_upcase":"ROSEBUSH PRUNING","original_title":"Rosebush Pruning","year":2026
-TOP30 ["Rosebush Pruning", "The Fall of Sir Douglas Weatherford", "Teenage Sex and Death at Camp Miasma", "Pulp: What Do You Do for an Encore?", "7 piano sketches", "Discipline", "A Useful Ghost", "The Non-Actor", "Alpha", "Ancestral Visions of the Future", "Erupcja", "Phantoms of July", "Father Mother Sister Brother", "No Other Choice", "The Mysterious Gaze of the Flamingo", "The Secret Agent", "La grazia", "Sirât", "The Love That Remains", "God is Shy", "Sentimental Value", "It Was Just an Accident", "Die My Love", "The Mastermind", "My Father's Shadow", "Orphan", "Sound of Falling", "The President's Cake", "Endless Cookie", "Magic Farm"]
-ANCHORS {"the non-actor": 8, "amores perros": null, "father mother sister brother": 13, "dazed and confused": null, "alpha": 9, "a useful ghost": 7, "orphan": 26}
-
-=== browse collection trending ===
-URL https://api.mubi.com/v4/browse/films?sort=title&collection=trending&playable=true&page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"films":[{"id":243900,"slug":"21xoxo","title":"#21XOXO","title_locale":"en-US","title_upcase":"#21XOXO","original_title":"#21XOXO","year":2019,"duration":10,"stills":{"small":"htt
-TOP30 ["#21XOXO", "...A Valparaíso", "13 Tzameti", "2015", "The New Years", "36", "45 Years", "45365", "7 piano sketches", "A Cambodian Spring", "A Chiara", "A Dessert for Constance", "A Dog Called Money", "A Mysterious World", "A Natural History of the Studio", "Self-Portrait as a Coffee-Pot", "A Place Without Fear", "A Regular Woman", "A Summer's Tale", "A Useful Ghost", "Abouna", "Actual People", "Adaptation.", "Afire", "Afternoons of Solitude", "Aftersun", "Agon", "Alcarràs", "Ali & Ava", "AliEN0089"]
-ANCHORS {"the non-actor": null, "amores perros": 35, "father mother sister brother": null, "dazed and confused": null, "alpha": 31, "a useful ghost": 20, "orphan": null}
-
-=== browse list trending ===
-URL https://api.mubi.com/v4/browse/films?sort=title&list=trending&playable=true&page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"films":[{"id":243900,"slug":"21xoxo","title":"#21XOXO","title_locale":"en-US","title_upcase":"#21XOXO","original_title":"#21XOXO","year":2019,"duration":10,"stills":{"small":"htt
-TOP30 ["#21XOXO", "...A Valparaíso", "13 Tzameti", "2015", "The New Years", "36", "45 Years", "45365", "7 piano sketches", "A Cambodian Spring", "A Chiara", "A Dessert for Constance", "A Dog Called Money", "A Mysterious World", "A Natural History of the Studio", "Self-Portrait as a Coffee-Pot", "A Place Without Fear", "A Regular Woman", "A Summer's Tale", "A Useful Ghost", "Abouna", "Actual People", "Adaptation.", "Afire", "Afternoons of Solitude", "Aftersun", "Agon", "Alcarràs", "Ali & Ava", "AliEN0089"]
-ANCHORS {"the non-actor": null, "amores perros": 35, "father mother sister brother": null, "dazed and confused": null, "alpha": 31, "a useful ghost": 20, "orphan": null}
-
-=== browse film_group trending ===
-URL https://api.mubi.com/v4/browse/films?sort=title&film_group=trending&playable=true&page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"films":[{"id":243900,"slug":"21xoxo","title":"#21XOXO","title_locale":"en-US","title_upcase":"#21XOXO","original_title":"#21XOXO","year":2019,"duration":10,"stills":{"small":"htt
-TOP30 ["#21XOXO", "...A Valparaíso", "13 Tzameti", "2015", "The New Years", "36", "45 Years", "45365", "7 piano sketches", "A Cambodian Spring", "A Chiara", "A Dessert for Constance", "A Dog Called Money", "A Mysterious World", "A Natural History of the Studio", "Self-Portrait as a Coffee-Pot", "A Place Without Fear", "A Regular Woman", "A Summer's Tale", "A Useful Ghost", "Abouna", "Actual People", "Adaptation.", "Afire", "Afternoons of Solitude", "Aftersun", "Agon", "Alcarràs", "Ali & Ava", "AliEN0089"]
-ANCHORS {"the non-actor": null, "amores perros": 35, "father mother sister brother": null, "dazed and confused": null, "alpha": 31, "a useful ghost": 20, "orphan": null}
-
-=== browse popularity ===
-URL https://api.mubi.com/v4/browse/films?sort=popularity&playable=true&page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"films":[{"id":473938,"slug":"montserrat-2023","title":"Montserrat","title_locale":"en-US","title_upcase":"MONTSERRAT","original_title":"Capítulo 1: Montserrat","year":2023,"durat
-TOP30 ["Montserrat", "La Mesías", "Season 1", "Pulp: What Do You Do for an Encore?", "7 piano sketches", "Discipline", "Chapters 4-5 | My Undesirable Friends: Part I - Last Air in Moscow", "Chapters 1-3 | My Undesirable Friends: Part I - Last Air in Moscow", "Mitski: The Land", "Fragments for Venus", "Erupcja", "Bouchra", "Phantoms of July", "Agon", "2015", "The New Years", "The Piano Accident", "The Loneliness of Lizards", "God is Shy", "The President's Cake", "It Was Just an Accident", "A Useful Ghost", "The Mysterious Gaze of the Flamingo", "Pompei: Below the Clouds", "La grazia", "Sound of Falling", "Nervous Energy", "Ancestral Visions of the Future", "Part 1", "Twin Peaks: A Limited Event Series"]
-ANCHORS {"the non-actor": 35, "amores perros": null, "father mother sister brother": null, "dazed and confused": null, "alpha": null, "a useful ghost": 22, "orphan": null}
-
-=== historical group 490 ===
-URL https://api.mubi.com/v4/film_groups/490/film_group_items?page=1&per_page=48&include_upcoming=true STATUS 200 CT application/json; charset=utf-8
-BODY_PREFIX {"film_group_items":[{"film":{"id":411498,"slug":"the-secret-agent-2025","title":"The Secret Agent","title_locale":"en-US","title_upcase":"THE SECRET AGENT","original_title":"O Age
-TOP30 ["The Secret Agent", "Carlito's Way", "No Other Choice", "Perfect Days", "Sentimental Value", "The Non-Actor", "Paris, Texas", "Amores Perros", "Portrait of a Lady on Fire", "Lars and the Real Girl", "Drop Dead Gorgeous", "Father Mother Sister Brother", "A Useful Ghost", "The Handmaiden", "Northwest Passage", "Twin Peaks", "Season 1", "Season 2", "The Love That Remains", "Moonage Daydream", "Blow Out", "The Worst Person in the World", "La grazia", "Sirât", "Dazed and Confused", "Ghost World", "Shithouse", "The Fall of Sir Douglas Weatherford", "Past Lives", "The President's Cake"]
-ANCHORS {"the non-actor": 6, "amores perros": 8, "father mother sister brother": 12, "dazed and confused": 25, "alpha": 31, "a useful ghost": 13, "orphan": null}
-
-=== collections trending ===
-URL https://api.mubi.com/v4/collections/trending STATUS 200 CT application/json; charset=utf-8
+=== GB random anonymous 1 === 200 https://api.mubi.com/v4/collections/trending
 BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
-SAVED data/trending_collection.json
-TOP30 ["TRENDING", "The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
-ANCHORS {"the non-actor": 2, "amores perros": 3, "father mother sister brother": null, "dazed and confused": 4, "alpha": 5, "a useful ghost": 12, "orphan": null}
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
 
-=== collections trending page1 ===
-URL https://api.mubi.com/v4/collections/trending?page=1&per_page=48 STATUS 200 CT application/json; charset=utf-8
+=== GB random anonymous 2 === 200 https://api.mubi.com/v4/collections/trending
 BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
-SAVED data/trending_collection_page1.json
-TOP30 ["TRENDING", "The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
-ANCHORS {"the non-actor": 2, "amores perros": 3, "father mother sister brother": null, "dazed and confused": 4, "alpha": 5, "a useful ghost": 12, "orphan": null}
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
 
-=== collections trending page2 ===
-URL https://api.mubi.com/v4/collections/trending?page=2&per_page=48 STATUS 200 CT application/json; charset=utf-8
+=== GB no anonymous id === 200 https://api.mubi.com/v4/collections/trending
 BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
-SAVED data/trending_collection_page2.json
-TOP30 ["TRENDING", "The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
-ANCHORS {"the non-actor": 2, "amores perros": 3, "father mother sister brother": null, "dazed and confused": 4, "alpha": 5, "a useful ghost": 12, "orphan": null}
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
 
-=== collection trending items ===
-URL https://api.mubi.com/v4/collections/trending/items?page=1&per_page=48 STATUS 406 CT application/json; charset=UTF-8
-BODY_PREFIX {"status":406,"error":"Not Acceptable"}
+=== GB zero anonymous id === 200 https://api.mubi.com/v4/collections/trending
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
+
+=== GB fixed anonymous id === 200 https://api.mubi.com/v4/collections/trending
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
+
+=== GB page=1 per_page=48 === 200 https://api.mubi.com/v4/collections/trending?page=1&per_page=48
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
+
+=== GB page=2 per_page=48 === 200 https://api.mubi.com/v4/collections/trending?page=2&per_page=48
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
+
+=== GB plus country query === 200 https://api.mubi.com/v4/collections/trending?country=GB&country_code=GB
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/440746/cache-1057346-1778689885/image-w1280.jpg","links_to_details":t
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Dazed and Confused", "Alpha", "No Other Choice", "Die My Love", "Sentimental Value", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "A Useful Ghost", "The Secret Agent"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": null, "dazed and confused": 3, "alpha": 4, "phantoms of july": 9, "la grazia": 8, "sentimental value": 7, "die my love": 6, "no other choice": 5, "the mysterious gaze of the flamingo": 10, "a useful ghost": 11, "the secret agent": 12, "sirat": null, "the mastermind": null, "it was just an accident": null, "the fall": null, "group marriage": null, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
+
+=== US control === 200 https://api.mubi.com/v4/collections/trending
+BODY_PREFIX {"title":"TRENDING","total_items":100,"slug":"trending","header_image":"https://images.mubicdn.net/images/film/422583/cache-1054013-1765544027/image-w1280.jpg","links_to_details":t
+TOP_KEYS ['title', 'total_items', 'slug', 'header_image', 'links_to_details', 'description', 'description_html', 'web_url', 'type', 'automated', 'films', 'film_group']
+LIST_FIELDS {"films": {"count": 12, "sample": ["The Non-Actor", "Amores Perros", "Father Mother Sister Brother", "Die My Love", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "Group Marriage", "The Fall", "The Mastermind", "Northwest Passage", "Wasteman"]}}
+FILMS_COUNT 12
+FILMS_TOP30 ["The Non-Actor", "Amores Perros", "Father Mother Sister Brother", "Die My Love", "La grazia", "Phantoms of July", "The Mysterious Gaze of the Flamingo", "Group Marriage", "The Fall", "The Mastermind", "Northwest Passage", "Wasteman"]
+POSITIONS {"the non-actor": 1, "amores perros": 2, "father mother sister brother": 3, "dazed and confused": null, "alpha": null, "phantoms of july": 6, "la grazia": 5, "sentimental value": null, "die my love": 4, "no other choice": null, "the mysterious gaze of the flamingo": 7, "a useful ghost": null, "the secret agent": null, "sirat": null, "the mastermind": 10, "it was just an accident": null, "the fall": 9, "group marriage": 8, "aftersun": null, "perfect days": null, "orphan": null, "shiva baby": null}
