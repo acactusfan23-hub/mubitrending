@@ -221,303 +221,7 @@
       "shiva baby": null
     }
   },
-  "zero_anon": {
-    "status": 200,
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "lists": {
-      "films": {
-        "count": 12,
-        "sample": [
-          "The Non-Actor",
-          "Amores Perros",
-          "Dazed and Confused",
-          "Alpha",
-          "No Other Choice",
-          "Die My Love",
-          "Sentimental Value",
-          "La grazia",
-          "Phantoms of July",
-          "The Mysterious Gaze of the Flamingo",
-          "A Useful Ghost",
-          "The Secret Agent"
-        ]
-      }
-    },
-    "films": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "positions": {
-      "the non-actor": 1,
-      "amores perros": 2,
-      "father mother sister brother": null,
-      "dazed and confused": 3,
-      "alpha": 4,
-      "phantoms of july": 9,
-      "la grazia": 8,
-      "sentimental value": 7,
-      "die my love": 6,
-      "no other choice": 5,
-      "the mysterious gaze of the flamingo": 10,
-      "a useful ghost": 11,
-      "the secret agent": 12,
-      "sirat": null,
-      "the mastermind": null,
-      "it was just an accident": null,
-      "the fall": null,
-      "group marriage": null,
-      "aftersun": null,
-      "perfect days": null,
-      "orphan": null,
-      "shiva baby": null
-    }
-  },
   "fixed_anon": {
-    "status": 200,
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "lists": {
-      "films": {
-        "count": 12,
-        "sample": [
-          "The Non-Actor",
-          "Amores Perros",
-          "Dazed and Confused",
-          "Alpha",
-          "No Other Choice",
-          "Die My Love",
-          "Sentimental Value",
-          "La grazia",
-          "Phantoms of July",
-          "The Mysterious Gaze of the Flamingo",
-          "A Useful Ghost",
-          "The Secret Agent"
-        ]
-      }
-    },
-    "films": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "positions": {
-      "the non-actor": 1,
-      "amores perros": 2,
-      "father mother sister brother": null,
-      "dazed and confused": 3,
-      "alpha": 4,
-      "phantoms of july": 9,
-      "la grazia": 8,
-      "sentimental value": 7,
-      "die my love": 6,
-      "no other choice": 5,
-      "the mysterious gaze of the flamingo": 10,
-      "a useful ghost": 11,
-      "the secret agent": 12,
-      "sirat": null,
-      "the mastermind": null,
-      "it was just an accident": null,
-      "the fall": null,
-      "group marriage": null,
-      "aftersun": null,
-      "perfect days": null,
-      "orphan": null,
-      "shiva baby": null
-    }
-  },
-  "page1": {
-    "status": 200,
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "lists": {
-      "films": {
-        "count": 12,
-        "sample": [
-          "The Non-Actor",
-          "Amores Perros",
-          "Dazed and Confused",
-          "Alpha",
-          "No Other Choice",
-          "Die My Love",
-          "Sentimental Value",
-          "La grazia",
-          "Phantoms of July",
-          "The Mysterious Gaze of the Flamingo",
-          "A Useful Ghost",
-          "The Secret Agent"
-        ]
-      }
-    },
-    "films": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "positions": {
-      "the non-actor": 1,
-      "amores perros": 2,
-      "father mother sister brother": null,
-      "dazed and confused": 3,
-      "alpha": 4,
-      "phantoms of july": 9,
-      "la grazia": 8,
-      "sentimental value": 7,
-      "die my love": 6,
-      "no other choice": 5,
-      "the mysterious gaze of the flamingo": 10,
-      "a useful ghost": 11,
-      "the secret agent": 12,
-      "sirat": null,
-      "the mastermind": null,
-      "it was just an accident": null,
-      "the fall": null,
-      "group marriage": null,
-      "aftersun": null,
-      "perfect days": null,
-      "orphan": null,
-      "shiva baby": null
-    }
-  },
-  "page2": {
-    "status": 200,
-    "keys": [
-      "title",
-      "total_items",
-      "slug",
-      "header_image",
-      "links_to_details",
-      "description",
-      "description_html",
-      "web_url",
-      "type",
-      "automated",
-      "films",
-      "film_group"
-    ],
-    "lists": {
-      "films": {
-        "count": 12,
-        "sample": [
-          "The Non-Actor",
-          "Amores Perros",
-          "Dazed and Confused",
-          "Alpha",
-          "No Other Choice",
-          "Die My Love",
-          "Sentimental Value",
-          "La grazia",
-          "Phantoms of July",
-          "The Mysterious Gaze of the Flamingo",
-          "A Useful Ghost",
-          "The Secret Agent"
-        ]
-      }
-    },
-    "films": [
-      "The Non-Actor",
-      "Amores Perros",
-      "Dazed and Confused",
-      "Alpha",
-      "No Other Choice",
-      "Die My Love",
-      "Sentimental Value",
-      "La grazia",
-      "Phantoms of July",
-      "The Mysterious Gaze of the Flamingo",
-      "A Useful Ghost",
-      "The Secret Agent"
-    ],
-    "positions": {
-      "the non-actor": 1,
-      "amores perros": 2,
-      "father mother sister brother": null,
-      "dazed and confused": 3,
-      "alpha": 4,
-      "phantoms of july": 9,
-      "la grazia": 8,
-      "sentimental value": 7,
-      "die my love": 6,
-      "no other choice": 5,
-      "the mysterious gaze of the flamingo": 10,
-      "a useful ghost": 11,
-      "the secret agent": 12,
-      "sirat": null,
-      "the mastermind": null,
-      "it was just an accident": null,
-      "the fall": null,
-      "group marriage": null,
-      "aftersun": null,
-      "perfect days": null,
-      "orphan": null,
-      "shiva baby": null
-    }
-  },
-  "country_param": {
     "status": 200,
     "keys": [
       "title",
@@ -664,5 +368,31 @@
       "orphan": null,
       "shiva baby": null
     }
+  },
+  "film_group_id": null,
+  "film_group_titles": [],
+  "film_group_positions": {
+    "the non-actor": null,
+    "amores perros": null,
+    "father mother sister brother": null,
+    "dazed and confused": null,
+    "alpha": null,
+    "phantoms of july": null,
+    "la grazia": null,
+    "sentimental value": null,
+    "die my love": null,
+    "no other choice": null,
+    "the mysterious gaze of the flamingo": null,
+    "a useful ghost": null,
+    "the secret agent": null,
+    "sirat": null,
+    "the mastermind": null,
+    "it was just an accident": null,
+    "the fall": null,
+    "group marriage": null,
+    "aftersun": null,
+    "perfect days": null,
+    "orphan": null,
+    "shiva baby": null
   }
 }
