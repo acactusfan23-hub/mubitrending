@@ -1,7 +1,6 @@
 import os, re, json, time, html, unicodedata, uuid
 from difflib import SequenceMatcher
 import requests
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 MUBI_URL = os.getenv('MUBI_URL', 'https://mubi.com/en/gb/collections/trending')
 MUBI_COLLECTION_ID = os.getenv('MUBI_COLLECTION_ID', '490')
@@ -56,38 +55,12 @@ def get_mubi_films_api():
     for i,x in enumerate(films[:MAX_ITEMS],1): x['rank']=i
     return films[:MAX_ITEMS]
 
-def get_mubi_films_browser():
-    with sync_playwright() as p:
-        browser=p.chromium.launch(headless=True)
-        page=browser.new_page(locale='en-GB',extra_http_headers={'Accept-Language':'en-GB,en;q=0.9'})
-        page.goto(MUBI_URL,wait_until='domcontentloaded',timeout=90000)
-        try: page.wait_for_load_state('networkidle',timeout=30000)
-        except PlaywrightTimeoutError: pass
-        for selector in ['button:has-text("Accept all")','button:has-text("Accept")','button:has-text("Allow all")','button:has-text("I agree")']:
-            try: page.locator(selector).first.click(timeout=1500); break
-            except Exception: pass
-        for _ in range(15): page.mouse.wheel(0,5000); page.wait_for_timeout(1200)
-        links=page.locator('a[href*="/films/"]').evaluate_all("els=>els.map(a=>({href:a.href,title:a.getAttribute('aria-label')||a.getAttribute('title')||a.textContent.trim()}))")
-        browser.close()
-    films=[]; seen=set()
-    for x in links:
-        m=re.search(r'/films/([^/?#]+)',x.get('href',''))
-        if not m: continue
-        slug=m.group(1)
-        if slug in seen: continue
-        seen.add(slug); title=(x.get('title') or '').strip() or slug.replace('-',' ')
-        films.append({'rank':len(films)+1,'title':html.unescape(title),'slug':slug,'url':x['href']})
-        if len(films)>=MAX_ITEMS: break
-    return films
-
 def get_mubi_films():
     films=get_mubi_films_api()
-    if films:
-        print(f'MUBI Trending API: found {len(films)} ranked film links.'); return films
-    print('MUBI API returned no films; falling back to Playwright.')
-    films=get_mubi_films_browser()
-    if not films: raise RuntimeError('MUBI Trending returned no film URLs. Refusing to touch MDBList.')
-    print(f'MUBI Trending browser fallback: found {len(films)} ranked film links.'); return films
+    if not films:
+        raise RuntimeError('MUBI Trending API returned no film URLs. Refusing to modify MDBList.')
+    print(f'MUBI Trending API: found {len(films)} ranked film links.')
+    return films
 
 def tmdb_search(title):
     r=S.get('https://api.themoviedb.org/3/search/movie',params={'api_key':TMDB_API_KEY,'query':title,'language':'en-GB','include_adult':'false'},timeout=30); r.raise_for_status()
