@@ -1,225 +1,132 @@
-import os, re, json, time, html, unicodedata, uuid, math
+import os, re, json, time, html, unicodedata
 from difflib import SequenceMatcher
 import requests
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 MUBI_URL = os.getenv('MUBI_URL', 'https://mubi.com/en/gb/collections/trending')
-MUBI_COLLECTION_ID = os.getenv('MUBI_COLLECTION_ID', '490')
 TMDB_API_KEY = os.environ['TMDB_API_KEY']
 MDBLIST_API_KEY = os.environ['MDBLIST_API_KEY']
 MDBLIST_LIST_ID = os.getenv('MDBLIST_LIST_ID', '')
 MDBLIST_LIST_NAME = os.getenv('MDBLIST_LIST_NAME', 'MUBI UK Trending')
 MAX_ITEMS = int(os.getenv('MAX_ITEMS', '100'))
-MATCH_RATIO = float(os.getenv('MATCH_RATIO', '0.90'))
-MIN_MATCHES = int(os.getenv('MIN_MATCHES', '40'))
+MIN_MATCHES = int(os.getenv('MIN_MATCHES', '80'))
 MDB_API = 'https://api.mdblist.com'
-MUBI_API = 'https://api.mubi.com/v4'
 
 S = requests.Session()
-S.headers.update({
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
-    'Accept-Language': 'en-GB,en;q=0.9',
-})
+S.headers.update({'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36','Accept-Language':'en-GB,en;q=0.9'})
 
 def norm(s):
-    s = html.unescape(s or '')
-    s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode().lower()
-    return re.sub(r'\s+', ' ', re.sub(r'[^a-z0-9]+', ' ', s).strip())
+    s=html.unescape(s or '')
+    s=unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()
+    return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9]+',' ',s).strip())
 
-def variants_for_query(title):
-    raw = [title]
-    ascii_title = unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode()
-    raw.append(ascii_title)
-    raw.append(re.sub(r'[’‘]', "'", title))
-    raw.append(title.replace(':', ' '))
+def variants(title):
+    vals=[title, unicodedata.normalize('NFKD',title).encode('ascii','ignore').decode(), title.replace(':',' '), title.replace('’',"'")]
     out=[]; seen=set()
-    for x in raw:
-        x=' '.join(x.split()).strip()
-        k=norm(x)
-        if k and k not in seen:
-            seen.add(k); out.append(x)
+    for v in vals:
+        v=' '.join(v.split()).strip(); k=norm(v)
+        if k and k not in seen: seen.add(k); out.append(v)
     return out
 
-def mubi_headers():
-    return {
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36',
-        'Accept':'application/json, text/plain, */*',
-        'Accept-Language':'en-GB,en;q=0.9',
-        'Client':'web',
-        'Client-Country':'GB',
-        'Origin':'https://mubi.com',
-        'Referer':MUBI_URL,
-        'Anonymous_user_id':str(uuid.uuid4()),
-    }
+def scrape_mubi_web():
+    items=[]; seen=set()
+    with sync_playwright() as p:
+        browser=p.chromium.launch(channel='chrome',headless=True)
+        context=browser.new_context(locale='en-GB',extra_http_headers={'Accept-Language':'en-GB,en;q=0.9'})
+        page=context.new_page()
+        for page_num in range(1,11):
+            url=f'{MUBI_URL}?page={page_num}'
+            print(f'MUBI webpage: loading page {page_num}: {url}')
+            page.goto(url,wait_until='domcontentloaded',timeout=90000)
+            try: page.wait_for_load_state('networkidle',timeout=20000)
+            except PlaywrightTimeoutError: pass
+            page.wait_for_timeout(3000)
+            for selector in ['button:has-text("Accept all")','button:has-text("Accept")','button:has-text("Allow all")','button:has-text("I agree")']:
+                try: page.locator(selector).first.click(timeout=1200); break
+                except Exception: pass
+            for _ in range(8): page.mouse.wheel(0,4500); page.wait_for_timeout(500)
+            links=page.locator('a[href*="/films/"]').evaluate_all("""
+                els=>els.map(a=>({href:a.href,text:(a.innerText||a.textContent||'').trim(),aria:a.getAttribute('aria-label')||'',title:a.getAttribute('title')||'',visible:!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)})).filter(x=>x.visible)
+            """)
+            before=len(items)
+            for x in links:
+                m=re.search(r'https?://mubi\.com/(?:en/)?(?:[a-z]{2}/)?films/([^/?#]+)$',x.get('href',''))
+                if not m: continue
+                slug=m.group(1)
+                if slug in seen: continue
+                title=(x.get('aria') or x.get('title') or x.get('text') or '').strip() or slug.replace('-',' ')
+                seen.add(slug); items.append({'rank':len(items)+1,'title':html.unescape(title),'slug':slug,'url':x['href']})
+                if len(items)>=MAX_ITEMS: break
+            print(f'  page {page_num}: added {len(items)-before}; total {len(items)}')
+            if len(items)>=MAX_ITEMS or len(items)==before: break
+        browser.close()
+    if not items: raise RuntimeError('MUBI webpage returned no film links. Refusing to modify MDBList.')
+    print('MUBI webpage ranking captured:')
+    for x in items[:10]: print(f"  {x['rank']:02d}. {x['title']}")
+    return items[:MAX_ITEMS]
 
-def extract_titles(film, fallback_title):
-    variants=[]
-    for key in ('title','original_title','localized_title','english_title'):
-        v=film.get(key)
-        if isinstance(v,str) and v.strip(): variants.append(v.strip())
-    for key in ('titles','alternate_titles','alternative_titles'):
-        value=film.get(key)
-        if isinstance(value,list):
-            for item in value:
-                if isinstance(item,str) and item.strip(): variants.append(item.strip())
-                elif isinstance(item,dict):
-                    for k in ('title','name','value'):
-                        v=item.get(k)
-                        if isinstance(v,str) and v.strip(): variants.append(v.strip())
-        elif isinstance(value,dict):
-            for v in value.values():
-                if isinstance(v,str) and v.strip(): variants.append(v.strip())
-    variants.append(fallback_title)
-    out=[]; seen=set()
-    for title in variants:
-        key=norm(title)
-        if key and key not in seen: seen.add(key); out.append(title)
-    return out
+def tmdb_search(q):
+    r=S.get('https://api.themoviedb.org/3/search/movie',params={'api_key':TMDB_API_KEY,'query':q,'include_adult':'false'},timeout=30); r.raise_for_status(); return r.json().get('results',[])
 
-def extract_year(film):
-    for key in ('release_year','year','original_release_year'):
-        v=film.get(key)
-        if v:
-            m=re.search(r'(19|20)\d{2}',str(v))
-            if m:return int(m.group(0))
-    for key in ('release_date','released_at','release_date_display','released'):
-        v=film.get(key)
-        if isinstance(v,str):
-            m=re.search(r'(19|20)\d{2}',v)
-            if m:return int(m.group(0))
-    return None
+def tmdb_multi(q):
+    r=S.get('https://api.themoviedb.org/3/search/multi',params={'api_key':TMDB_API_KEY,'query':q,'include_adult':'false'},timeout=30); r.raise_for_status(); return [x for x in r.json().get('results',[]) if x.get('media_type')=='movie']
 
-def extract_ids(film):
-    ids=film.get('ids') if isinstance(film.get('ids'),dict) else {}
-    imdb = film.get('imdb_id') or film.get('imdb') or ids.get('imdb') or ids.get('imdbid')
-    tmdb = film.get('tmdb_id') or film.get('tmdb') or ids.get('tmdb') or ids.get('tmdbid')
-    for key in ('imdb_url','imdb_link'):
-        value=film.get(key)
-        if isinstance(value,str):
-            m=re.search(r'(tt\d{7,8})',value)
-            if m: imdb=m.group(1)
-    return tmdb, imdb
-
-def extract_films_from_group_payload(data):
-    candidates=[]
-    if isinstance(data,dict):
-        for key in ('film_group_items','items','films'):
-            value=data.get(key)
-            if isinstance(value,list): candidates.extend(value)
-    elif isinstance(data,list): candidates=data
-    films=[]; seen=set()
-    for item in candidates:
-        film=item.get('film') if isinstance(item,dict) and isinstance(item.get('film'),dict) else item
-        if not isinstance(film,dict): continue
-        slug=film.get('slug'); web_url=film.get('web_url') or film.get('url') or ''
-        if not slug and isinstance(web_url,str):
-            m=re.search(r'/films/([^/?#]+)',web_url); slug=m.group(1) if m else None
-        if not slug or slug in seen: continue
-        title=film.get('title') or film.get('original_title')
-        if not title: continue
-        if isinstance(web_url,str) and web_url and '/films/' not in web_url: continue
-        tmdb_id,imdb_id=extract_ids(film)
-        seen.add(slug)
-        films.append({
-            'title':html.unescape(title),
-            'mubi_titles':extract_titles(film,title),
-            'mubi_year':extract_year(film),
-            'mubi_tmdb_id':tmdb_id,
-            'mubi_imdb_id':imdb_id,
-            'slug':slug,
-            'url':web_url or f'https://mubi.com/en/gb/films/{slug}',
-        })
-    return films
-
-def get_mubi_films_api():
-    films=[]; seen=set()
-    for page in range(1,30):
-        r=S.get(
-            f'{MUBI_API}/film_groups/{MUBI_COLLECTION_ID}/film_group_items',
-            params={'page':page,'per_page':48,'include_upcoming':'true'},
-            headers=mubi_headers(), timeout=30)
-        if r.status_code>=400:
-            print(f'MUBI API returned {r.status_code}: {r.text[:300]}'); return []
-        batch=extract_films_from_group_payload(r.json())
-        if not batch: break
-        for item in batch:
-            if item['slug'] in seen: continue
-            seen.add(item['slug']); films.append(item)
-            if len(films)>=MAX_ITEMS: break
-        if len(films)>=MAX_ITEMS or len(batch)<48: break
-    for i,x in enumerate(films[:MAX_ITEMS],1): x['rank']=i
-    return films[:MAX_ITEMS]
-
-def get_mubi_films():
-    films=get_mubi_films_api()
-    if not films: raise RuntimeError('MUBI Trending API returned no film URLs. Refusing to modify MDBList.')
-    print(f'MUBI Trending API: found {len(films)} ranked MUBI films.')
-    return films
-
-def tmdb_search(query,year=None):
-    params={'api_key':TMDB_API_KEY,'query':query,'include_adult':'false'}
-    if year: params['year']=year
-    r=S.get('https://api.themoviedb.org/3/search/movie',params=params,timeout=30)
-    r.raise_for_status()
-    return r.json().get('results',[])
-
-def tmdb_multi_search(query):
-    r=S.get('https://api.themoviedb.org/3/search/multi',params={'api_key':TMDB_API_KEY,'query':query,'include_adult':'false'},timeout=30)
-    r.raise_for_status()
-    return [x for x in r.json().get('results',[]) if x.get('media_type')=='movie']
-
-def tmdb_find_imdb(imdb_id):
-    if not imdb_id:return None
-    r=S.get(f'https://api.themoviedb.org/3/find/{imdb_id}',params={'api_key':TMDB_API_KEY,'external_source':'imdb_id'},timeout=30)
+def tmdb_find_imdb(imdb):
+    if not imdb:return None
+    r=S.get(f'https://api.themoviedb.org/3/find/{imdb}',params={'api_key':TMDB_API_KEY,'external_source':'imdb_id'},timeout=30)
     if not r.ok:return None
-    results=r.json().get('movie_results',[])
-    return results[0] if results else None
+    rows=r.json().get('movie_results',[]); return rows[0] if rows else None
 
-def choose_tmdb_match(item):
-    mubi_year=item.get('mubi_year')
-    # 1. Exact external IDs from MUBI.
-    if item.get('mubi_tmdb_id'):
-        r=S.get(f'https://api.themoviedb.org/3/movie/{item["mubi_tmdb_id"]}',params={'api_key':TMDB_API_KEY},timeout=30)
-        if r.ok:
-            movie=r.json(); return {'tmdb_id':movie['id'],'title':movie.get('title'),'year':(movie.get('release_date') or '')[:4],'match_method':'mubi-tmdb-id'}
-    if item.get('mubi_imdb_id'):
-        found=tmdb_find_imdb(item['mubi_imdb_id'])
-        if found:
-            y=(found.get('release_date') or '')[:4]
-            if not mubi_year or not y.isdigit() or int(y)==mubi_year:
-                return {'tmdb_id':found['id'],'title':found.get('title'),'year':y,'match_method':'mubi-imdb-id'}
-    # 2. Broad title search. Year is a scoring signal, not a hard search filter.
-    variants=item.get('mubi_titles') or [item['title']]
+def choose_tmdb(item):
+    qs=[]
+    for t in variants(item['title']):
+        if t not in qs: qs.append(t)
     candidates={}
-    for title in variants:
-        for q in variants_for_query(title):
-            for result in tmdb_search(q): candidates[result['id']]=result
-            for result in tmdb_multi_search(q): candidates[result['id']]=result
-            if mubi_year:
-                for result in tmdb_search(q,mubi_year): candidates[result['id']]=result
+    for q in qs:
+        for r in tmdb_search(q): candidates[r['id']]=r
+        for r in tmdb_multi(q): candidates[r['id']]=r
     if not candidates:return None
-    query_norms=[norm(v) for v in variants if v]; scored=[]
-    for result in candidates.values():
-        names=[result.get('title',''),result.get('original_title','')]; names_norm=[norm(n) for n in names if n]
-        exact=max((1 if n in query_norms else 0 for n in names_norm),default=0)
-        similarity=max((SequenceMatcher(None,q,n).ratio() for q in query_norms for n in names_norm),default=0)
-        result_year=int((result.get('release_date') or '0000')[:4]) if (result.get('release_date') or '')[:4].isdigit() else None
-        year_diff=abs(result_year-mubi_year) if mubi_year and result_year else 99
-        year_exact=bool(mubi_year and result_year==mubi_year)
-        # Reject obvious wrong-year matches for exact-title candidates.
-        if mubi_year and result_year and year_diff>3 and exact:
-            continue
-        score=(15000 if year_exact else 0,8000 if exact else 0,similarity*1000,-year_diff if mubi_year and result_year else -99,result.get('popularity',0))
-        scored.append((score,result))
-    if not scored:return None
-    scored.sort(key=lambda x:x[0],reverse=True); best=scored[0][1]; best_year=(best.get('release_date') or '')[:4]
-    best_sim=scored[0][0][2]/1000
-    best_exact=scored[0][0][1]>0
-    if mubi_year and best_year.isdigit() and int(best_year)!=mubi_year and (best_exact or best_sim<0.92):
-        # For famous catalogue films, an exact year mismatch is more dangerous than a miss.
+    qnorm=[norm(x) for x in qs]; scored=[]
+    for r in candidates.values():
+        names=[r.get('title',''),r.get('original_title','')]; nn=[norm(x) for x in names if x]
+        exact=max((1 if n in qnorm else 0 for n in nn),default=0)
+        sim=max((SequenceMatcher(None,a,b).ratio() for a in qnorm for b in nn),default=0)
+        score=(5000 if exact else 0,sim*1000,r.get('popularity',0))
+        scored.append((score,r))
+    scored.sort(key=lambda x:x[0],reverse=True); best=scored[0][1]
+    return {'tmdb_id':best['id'],'title':best.get('title'),'year':(best.get('release_date') or '')[:4],'match_method':'title'}
+
+def enrich_mubi_page(item,page):
+    try:
+        page.goto(item['url'],wait_until='domcontentloaded',timeout=60000)
+        try: page.wait_for_load_state('networkidle',timeout=12000)
+        except PlaywrightTimeoutError: pass
+        page.wait_for_timeout(1000)
+        hrefs=page.locator('a[href*="imdb.com/title/"]').evaluate_all('els=>els.map(a=>a.href)')
+        for h in hrefs:
+            m=re.search(r'(tt\d{7,8})',h)
+            if m:
+                hit=tmdb_find_imdb(m.group(1))
+                if hit:return hit
         return None
-    if best_sim < 0.78 and not best_exact:
-        return None
-    return {'tmdb_id':best['id'],'title':best.get('title'),'year':best_year,'match_method':'title-year' if mubi_year else 'title'}
+    except Exception: return None
+
+def match_all(items):
+    matched=[]; unresolved=[]
+    with sync_playwright() as p:
+        browser=p.chromium.launch(channel='chrome',headless=True)
+        page=browser.new_page(locale='en-GB')
+        for item in items:
+            hit=choose_tmdb(item)
+            if hit:
+                item.update(hit); matched.append(item); print(f"{item['rank']:02d}. {item['title']} -> {hit['tmdb_id']} / {hit['title']} [{hit['match_method']}]"); continue
+            hit=enrich_mubi_page(item,page)
+            if hit:
+                item.update({'tmdb_id':hit['id'],'title':hit.get('title'),'year':(hit.get('release_date') or '')[:4],'match_method':'mubi-imdb'}); matched.append(item); print(f"{item['rank']:02d}. {item['title']} -> {hit['id']} / {hit.get('title')} [mubi-imdb]")
+            else:
+                unresolved.append(item); print(f"NO MATCH: {item['rank']:02d}. {item['title']}")
+        browser.close()
+    return matched,unresolved
 
 def mdb_params(): return {'apikey':MDBLIST_API_KEY}
 def resolve_list_id():
@@ -229,80 +136,58 @@ def resolve_list_id():
         if isinstance(x,dict) and (x.get('name') or x.get('title'))==MDBLIST_LIST_NAME:
             lid=x.get('id') or x.get('list_id')
             if lid is not None:return str(lid)
-    raise RuntimeError(f'Could not find an MDBList list named {MDBLIST_LIST_NAME!r}. Create one public static list with that exact name.')
+    raise RuntimeError(f'Could not find MDBList list {MDBLIST_LIST_NAME!r}.')
 
-def mdb_get_list():
+def mdb_get_items():
     global MDBLIST_LIST_ID
-    MDBLIST_LIST_ID=resolve_list_id(); all_movies=[]; all_shows=[]; cursor=None
+    MDBLIST_LIST_ID=resolve_list_id(); movies=[]; shows=[]; cursor=None
     for _ in range(20):
         params={**mdb_params(),'limit':1000}
         if cursor: params['cursor']=cursor
         r=S.get(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items',params=params,timeout=30); r.raise_for_status(); data=r.json()
         if not isinstance(data,dict): break
-        all_movies.extend(data.get('movies') or []); all_shows.extend(data.get('shows') or [])
-        pagination=data.get('pagination') or {}; next_cursor=pagination.get('next_cursor') or r.headers.get('X-Next-Cursor')
-        if not next_cursor or next_cursor==cursor: break
-        cursor=next_cursor
-    return {'movies':all_movies,'shows':all_shows}
+        movies.extend(data.get('movies') or []); shows.extend(data.get('shows') or [])
+        p=data.get('pagination') or {}; nxt=p.get('next_cursor') or r.headers.get('X-Next-Cursor')
+        if not nxt or nxt==cursor: break
+        cursor=nxt
+    return {'movies':movies,'shows':shows}
 
-def extract_existing_ids(data):
-    out=[]
-    for media_type in ('movies','shows'):
-        for x in data.get(media_type,[]) if isinstance(data,dict) else []:
-            if not isinstance(x,dict):continue
-            ids=x.get('ids') if isinstance(x.get('ids'),dict) else {}; tmdb=x.get('id') or x.get('tmdb_id') or ids.get('tmdb') or ids.get('tmdbid')
-            if tmdb: out.append({'tmdb_id':int(tmdb)})
-    return out
+def existing_ids(data):
+    return [int(x.get('id') or x.get('tmdb_id')) for x in (data.get('movies') or []) if isinstance(x,dict) and (x.get('id') or x.get('tmdb_id'))]
 
-def mdb_modify(action, tmdb_ids):
-    if not tmdb_ids:return
-    payload={'movies':[{'tmdb':int(x)} for x in tmdb_ids]}
-    r=S.post(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items/{action}',params=mdb_params(),json=payload,timeout=60)
+def mdb_modify(action,ids):
+    if not ids:return
+    r=S.post(f'{MDB_API}/lists/{MDBLIST_LIST_ID}/items/{action}',params=mdb_params(),json={'movies':[{'tmdb':int(i)} for i in ids]},timeout=60)
     if r.status_code>=400: raise RuntimeError(f'MDBList {action} failed: {r.status_code} {r.text[:500]}')
 
-def current_ranked_tmdb_ids(data):
+def get_rank_sequence(data):
     rows=[x for x in (data.get('movies') or []) if isinstance(x,dict)]
-    rows.sort(key=lambda x:x.get('rank',10**9))
-    return [int(x.get('id') or x.get('tmdb_id')) for x in rows if x.get('id') or x.get('tmdb_id')]
+    return [int(x.get('id') or x.get('tmdb_id')) for x in sorted(rows,key=lambda x:x.get('rank',10**9)) if x.get('id') or x.get('tmdb_id')]
 
-def rebuild_mdb_list(movies, reverse=False):
-    current=extract_existing_ids(mdb_get_list())
-    mdb_modify('remove',[x['tmdb_id'] for x in current])
-    ids=[m['tmdb_id'] for m in movies]
-    if reverse: ids=list(reversed(ids))
-    mdb_modify('add',ids)
-    verify=current_ranked_tmdb_ids(mdb_get_list())
+def rebuild(movies,reverse):
+    current=existing_ids(mdb_get_items())
+    if current:mdb_modify('remove',current)
     wanted=[m['tmdb_id'] for m in movies]
-    return verify==wanted,verify,wanted
+    ids=list(reversed(wanted)) if reverse else list(wanted)
+    mdb_modify('add',ids)
+    got=get_rank_sequence(mdb_get_items())
+    print('MDBList rank sample:',got[:10])
+    return got==wanted
 
 def replace_mdb_list(movies):
-    ok,verify,wanted=rebuild_mdb_list(movies,False)
-    if ok:
-        print('MDBList rank order verified.'); return
-    print('Forward bulk insertion produced the wrong order; retrying once in reverse.')
-    ok,verify,wanted=rebuild_mdb_list(movies,True)
-    if not ok:
-        raise RuntimeError(f'MDBList was updated but rank order could not be verified. Got {len(verify)} items, expected {len(wanted)}.')
-    print('MDBList rank order verified after reverse bulk insertion.')
+    if rebuild(movies,False): print('MDBList API reports source order.'); return
+    print('MDBList API reports reverse order; retrying reverse insertion.')
+    if rebuild(movies,True): print('MDBList API reports source order after reverse insertion.'); return
+    raise RuntimeError('MDBList did not report MUBI source order after either insertion direction.')
 
 def main():
-    raw=get_mubi_films(); matched=[]; unmatched=[]
-    for item in raw:
-        try:
-            hit=choose_tmdb_match(item)
-            if hit:
-                item.update(hit); matched.append(item); print(f"{item['rank']:02d}. {item['title']} ({item.get('mubi_year') or '?'}) -> {hit['tmdb_id']} / {hit['title']} ({hit.get('year') or '?'}) [{hit['match_method']}]")
-            else:
-                unmatched.append(item); print(f"NO MATCH: {item['rank']:02d}. {item['title']} ({item.get('mubi_year') or '?'}) variants={item.get('mubi_titles')}")
-        except Exception as e:
-            unmatched.append(item); print(f"MATCH ERROR: {item['title']}: {e}")
-    required=max(MIN_MATCHES, math.ceil(len(raw)*MATCH_RATIO))
-    if len(matched)<required:
-        raise RuntimeError(f'Only {len(matched)} of {len(raw)} MUBI films matched TMDB; need at least {required}. Refusing to modify MDBList.')
+    raw=scrape_mubi_web(); matched,unresolved=match_all(raw); matched.sort(key=lambda x:x['rank'])
+    if len(matched)<MIN_MATCHES or len(matched)/len(raw)<0.80:
+        raise RuntimeError(f'Only {len(matched)} of {len(raw)} MUBI Trending films matched TMDB. Refusing to modify MDBList. Unresolved: '+', '.join(x['title'] for x in unresolved[:20]))
+    for i,x in enumerate(matched,1): x['output_rank']=i
     replace_mdb_list(matched)
     os.makedirs('data',exist_ok=True)
-    with open('data/latest.json','w',encoding='utf-8') as f:
-        json.dump({'updated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'source':MUBI_URL,'items':matched,'unmatched':unmatched,'mdblist_list_id':MDBLIST_LIST_ID},f,ensure_ascii=False,indent=2)
-    print(f'Updated MDBList static list {MDBLIST_LIST_ID} with {len(matched)} films in MUBI rank order; {len(unmatched)} unresolved.')
+    with open('data/latest.json','w',encoding='utf-8') as f: json.dump({'updated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'source':'MUBI webpage','items':matched,'unmatched':unresolved,'mdblist_list_id':MDBLIST_LIST_ID},f,ensure_ascii=False,indent=2)
+    print(f'Updated MDBList static list {MDBLIST_LIST_ID} with {len(matched)} films from actual MUBI Trending webpage; {len(unresolved)} unresolved.')
 
 if __name__=='__main__': main()
