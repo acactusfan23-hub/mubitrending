@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T17:56:23Z",
+  "updated_at": "2026-11-09T06:16:08Z",
   "source": "MUBI webpage",
   "items": [
     {
@@ -33,20 +33,6 @@
     {
       "rank": 3,
       "source_rank": 3,
-      "title": "The Thing",
-      "raw_title": "The Thing",
-      "mubi_year": 1982,
-      "slug": "the-thing",
-      "mubi_id": 3643,
-      "url": "https://mubi.com/films/the-thing",
-      "tmdb_id": 1091,
-      "year": "1982",
-      "match_method": "title-year",
-      "output_rank": 3
-    },
-    {
-      "rank": 4,
-      "source_rank": 4,
       "title": "Junkmail",
       "raw_title": "Junk",
       "mubi_year": 2026,
@@ -56,25 +42,25 @@
       "tmdb_id": 1616538,
       "year": "2026",
       "match_method": "clean-title-year",
+      "output_rank": 3
+    },
+    {
+      "rank": 4,
+      "source_rank": 4,
+      "title": "The Thing",
+      "raw_title": "The Thing",
+      "mubi_year": 1982,
+      "slug": "the-thing",
+      "mubi_id": 3643,
+      "url": "https://mubi.com/films/the-thing",
+      "tmdb_id": 1091,
+      "year": "1982",
+      "match_method": "title-year",
       "output_rank": 4
     },
     {
       "rank": 5,
       "source_rank": 5,
-      "title": "Pulp: What Do You Do for an Encore?",
-      "raw_title": "Pulp: What Do You Do for an Encore?",
-      "mubi_year": 2026,
-      "slug": "pulp-what-do-you-do-for-an-encore",
-      "mubi_id": 469877,
-      "url": "https://mubi.com/films/pulp-what-do-you-do-for-an-encore",
-      "tmdb_id": 1715598,
-      "year": "2026",
-      "match_method": "title-year",
-      "output_rank": 5
-    },
-    {
-      "rank": 6,
-      "source_rank": 6,
       "title": "Rosebush Pruning",
       "raw_title": "Rosebush Pruning",
       "mubi_year": 2026,
@@ -82,6 +68,20 @@
       "mubi_id": 391721,
       "url": "https://mubi.com/films/rosebush-pruning",
       "tmdb_id": 1130948,
+      "year": "2026",
+      "match_method": "title-year",
+      "output_rank": 5
+    },
+    {
+      "rank": 6,
+      "source_rank": 6,
+      "title": "Pulp: What Do You Do for an Encore?",
+      "raw_title": "Pulp: What Do You Do for an Encore?",
+      "mubi_year": 2026,
+      "slug": "pulp-what-do-you-do-for-an-encore",
+      "mubi_id": 469877,
+      "url": "https://mubi.com/films/pulp-what-do-you-do-for-an-encore",
+      "tmdb_id": 1715598,
       "year": "2026",
       "match_method": "title-year",
       "output_rank": 6
@@ -229,6 +229,20 @@
     {
       "rank": 19,
       "source_rank": 21,
+      "title": "Making Marie Antoinette",
+      "raw_title": "Making Marie Antoinette",
+      "mubi_year": 2026,
+      "slug": "making-marie-antoinette",
+      "mubi_id": 476712,
+      "url": "https://mubi.com/films/making-marie-antoinette",
+      "tmdb_id": 1754364,
+      "year": "2026",
+      "match_method": "title-year",
+      "output_rank": 17
+    },
+    {
+      "rank": 20,
+      "source_rank": 22,
       "title": "Challengers",
       "raw_title": "Challengers",
       "mubi_year": 2024,
@@ -237,20 +251,6 @@
       "url": "https://mubi.com/films/challengers",
       "tmdb_id": 937287,
       "year": "2024",
-      "match_method": "title-year",
-      "output_rank": 17
-    },
-    {
-      "rank": 20,
-      "source_rank": 22,
-      "title": "Lady Bird",
-      "raw_title": "Lady Bird",
-      "mubi_year": 2017,
-      "slug": "lady-bird",
-      "mubi_id": 154518,
-      "url": "https://mubi.com/films/lady-bird",
-      "tmdb_id": 391713,
-      "year": "2017",
       "match_method": "title-year",
       "output_rank": 18
     },
@@ -271,6 +271,20 @@
     {
       "rank": 22,
       "source_rank": 24,
+      "title": "Lady Bird",
+      "raw_title": "Lady Bird",
+      "mubi_year": 2017,
+      "slug": "lady-bird",
+      "mubi_id": 154518,
+      "url": "https://mubi.com/films/lady-bird",
+      "tmdb_id": 391713,
+      "year": "2017",
+      "match_method": "title-year",
+      "output_rank": 20
+    },
+    {
+      "rank": 23,
+      "source_rank": 25,
       "title": "Perfect Days",
       "raw_title": "Perfect Days",
       "mubi_year": 2023,
@@ -279,20 +293,6 @@
       "url": "https://mubi.com/films/perfect-days",
       "tmdb_id": 976893,
       "year": "2023",
-      "match_method": "title-year",
-      "output_rank": 20
-    },
-    {
-      "rank": 23,
-      "source_rank": 25,
-      "title": "Aftersun",
-      "raw_title": "Aftersun",
-      "mubi_year": 2022,
-      "slug": "aftersun",
-      "mubi_id": 340287,
-      "url": "https://mubi.com/films/aftersun",
-      "tmdb_id": 965150,
-      "year": "2022",
       "match_method": "title-year",
       "output_rank": 21
     },
@@ -313,6 +313,20 @@
     {
       "rank": 25,
       "source_rank": 27,
+      "title": "Aftersun",
+      "raw_title": "Aftersun",
+      "mubi_year": 2022,
+      "slug": "aftersun",
+      "mubi_id": 340287,
+      "url": "https://mubi.com/films/aftersun",
+      "tmdb_id": 965150,
+      "year": "2022",
+      "match_method": "title-year",
+      "output_rank": 23
+    },
+    {
+      "rank": 26,
+      "source_rank": 28,
       "title": "The Mastermind",
       "raw_title": "The Mastermind",
       "mubi_year": 2025,
@@ -322,11 +336,11 @@
       "tmdb_id": 1352624,
       "year": "2025",
       "match_method": "title-year",
-      "output_rank": 23
+      "output_rank": 24
     },
     {
-      "rank": 26,
-      "source_rank": 28,
+      "rank": 27,
+      "source_rank": 29,
       "title": "The Secret Agent",
       "raw_title": "The Secret Agent",
       "mubi_year": 2025,
@@ -336,11 +350,11 @@
       "tmdb_id": 1220564,
       "year": "2025",
       "match_method": "title-year",
-      "output_rank": 24
+      "output_rank": 25
     },
     {
-      "rank": 27,
-      "source_rank": 29,
+      "rank": 28,
+      "source_rank": 30,
       "title": "La Grazia",
       "raw_title": "La grazia",
       "mubi_year": 2025,
@@ -350,39 +364,11 @@
       "tmdb_id": 1397364,
       "year": "2025",
       "match_method": "title-year",
-      "output_rank": 25
-    },
-    {
-      "rank": 28,
-      "source_rank": 30,
-      "title": "Shot Reverse Shot",
-      "raw_title": "Shot Reverse Shot",
-      "mubi_year": 2026,
-      "slug": "shot-reverse-shot-2026",
-      "mubi_id": 464112,
-      "url": "https://mubi.com/films/shot-reverse-shot-2026",
-      "tmdb_id": 1614709,
-      "year": "2026",
-      "match_method": "title-year",
       "output_rank": 26
     },
     {
       "rank": 29,
       "source_rank": 31,
-      "title": "Sirāt",
-      "raw_title": "Sirât",
-      "mubi_year": 2025,
-      "slug": "sirat",
-      "mubi_id": 301059,
-      "url": "https://mubi.com/films/sirat",
-      "tmdb_id": 1151272,
-      "year": "2025",
-      "match_method": "title-year",
-      "output_rank": 27
-    },
-    {
-      "rank": 30,
-      "source_rank": 32,
       "title": "It Was Just an Accident",
       "raw_title": "It Was Just an Accident",
       "mubi_year": 2025,
@@ -392,39 +378,39 @@
       "tmdb_id": 1456349,
       "year": "2025",
       "match_method": "title-year",
+      "output_rank": 27
+    },
+    {
+      "rank": 30,
+      "source_rank": 32,
+      "title": "Shot Reverse Shot",
+      "raw_title": "Shot Reverse Shot",
+      "mubi_year": 2026,
+      "slug": "shot-reverse-shot-2026",
+      "mubi_id": 464112,
+      "url": "https://mubi.com/films/shot-reverse-shot-2026",
+      "tmdb_id": 1614709,
+      "year": "2026",
+      "match_method": "title-year",
       "output_rank": 28
     },
     {
       "rank": 31,
-      "source_rank": 34,
-      "title": "Dogtooth",
-      "raw_title": "Dogtooth",
-      "mubi_year": 2009,
-      "slug": "dogtooth",
-      "mubi_id": 2740,
-      "url": "https://mubi.com/films/dogtooth",
-      "tmdb_id": 38810,
-      "year": "2009",
+      "source_rank": 33,
+      "title": "Sirāt",
+      "raw_title": "Sirât",
+      "mubi_year": 2025,
+      "slug": "sirat",
+      "mubi_id": 301059,
+      "url": "https://mubi.com/films/sirat",
+      "tmdb_id": 1151272,
+      "year": "2025",
       "match_method": "title-year",
       "output_rank": 29
     },
     {
       "rank": 32,
-      "source_rank": 35,
-      "title": "The Non-Actor",
-      "raw_title": "The Non-Actor",
-      "mubi_year": 2025,
-      "slug": "the-non-actor",
-      "mubi_id": 432956,
-      "url": "https://mubi.com/films/the-non-actor",
-      "tmdb_id": 1396608,
-      "year": "2025",
-      "match_method": "title-year",
-      "output_rank": 30
-    },
-    {
-      "rank": 33,
-      "source_rank": 36,
+      "source_rank": 34,
       "title": "Carlito's Way",
       "raw_title": "Carlito's Way",
       "mubi_year": 1993,
@@ -434,19 +420,33 @@
       "tmdb_id": 6075,
       "year": "1993",
       "match_method": "title-year",
+      "output_rank": 30
+    },
+    {
+      "rank": 33,
+      "source_rank": 36,
+      "title": "Dogtooth",
+      "raw_title": "Dogtooth",
+      "mubi_year": 2009,
+      "slug": "dogtooth",
+      "mubi_id": 2740,
+      "url": "https://mubi.com/films/dogtooth",
+      "tmdb_id": 38810,
+      "year": "2009",
+      "match_method": "title-year",
       "output_rank": 31
     },
     {
       "rank": 34,
       "source_rank": 37,
-      "title": "The Night of the Hunter",
-      "raw_title": "The Night of the Hunter",
-      "mubi_year": 1955,
-      "slug": "the-night-of-the-hunter",
-      "mubi_id": 176,
-      "url": "https://mubi.com/films/the-night-of-the-hunter",
-      "tmdb_id": 3112,
-      "year": "1955",
+      "title": "The Non-Actor",
+      "raw_title": "The Non-Actor",
+      "mubi_year": 2025,
+      "slug": "the-non-actor",
+      "mubi_id": 432956,
+      "url": "https://mubi.com/films/the-non-actor",
+      "tmdb_id": 1396608,
+      "year": "2025",
       "match_method": "title-year",
       "output_rank": 32
     },
@@ -467,6 +467,20 @@
     {
       "rank": 36,
       "source_rank": 39,
+      "title": "The Night of the Hunter",
+      "raw_title": "The Night of the Hunter",
+      "mubi_year": 1955,
+      "slug": "the-night-of-the-hunter",
+      "mubi_id": 176,
+      "url": "https://mubi.com/films/the-night-of-the-hunter",
+      "tmdb_id": 3112,
+      "year": "1955",
+      "match_method": "title-year",
+      "output_rank": 34
+    },
+    {
+      "rank": 37,
+      "source_rank": 40,
       "title": "Carrie",
       "raw_title": "Carrie",
       "mubi_year": 1976,
@@ -476,11 +490,11 @@
       "tmdb_id": 7340,
       "year": "1976",
       "match_method": "title-year",
-      "output_rank": 34
+      "output_rank": 35
     },
     {
-      "rank": 37,
-      "source_rank": 40,
+      "rank": 38,
+      "source_rank": 41,
       "title": "Torment is a Woman",
       "raw_title": "A Woman's Torment",
       "mubi_year": 1977,
@@ -490,11 +504,11 @@
       "tmdb_id": 514080,
       "year": "1977",
       "match_method": "clean-title-year",
-      "output_rank": 35
+      "output_rank": 36
     },
     {
-      "rank": 38,
-      "source_rank": 41,
+      "rank": 39,
+      "source_rank": 42,
       "title": "Close",
       "raw_title": "Close",
       "mubi_year": 2022,
@@ -504,11 +518,11 @@
       "tmdb_id": 901563,
       "year": "2022",
       "match_method": "title-year",
-      "output_rank": 36
+      "output_rank": 37
     },
     {
-      "rank": 39,
-      "source_rank": 42,
+      "rank": 40,
+      "source_rank": 43,
       "title": "Heathers",
       "raw_title": "Heathers",
       "mubi_year": 1988,
@@ -518,11 +532,11 @@
       "tmdb_id": 2640,
       "year": "1989",
       "match_method": "clean-title-year",
-      "output_rank": 37
+      "output_rank": 38
     },
     {
-      "rank": 40,
-      "source_rank": 43,
+      "rank": 41,
+      "source_rank": 44,
       "title": "Paris, Texas",
       "raw_title": "Paris, Texas",
       "mubi_year": 1984,
@@ -532,11 +546,11 @@
       "tmdb_id": 655,
       "year": "1984",
       "match_method": "title-year",
-      "output_rank": 38
+      "output_rank": 39
     },
     {
-      "rank": 41,
-      "source_rank": 44,
+      "rank": 42,
+      "source_rank": 45,
       "title": "To Wong Foo, Thanks for Everything! Julie Newmar",
       "raw_title": "To Wong Foo, Thanks for Everything! Julie Newmar",
       "mubi_year": 1995,
@@ -546,11 +560,11 @@
       "tmdb_id": 9090,
       "year": "1995",
       "match_method": "title-year",
-      "output_rank": 39
+      "output_rank": 40
     },
     {
-      "rank": 42,
-      "source_rank": 45,
+      "rank": 43,
+      "source_rank": 46,
       "title": "The Mysterious Gaze of the Flamingo",
       "raw_title": "The Mysterious Gaze of the Flamingo",
       "mubi_year": 2025,
@@ -560,11 +574,11 @@
       "tmdb_id": 896096,
       "year": "2025",
       "match_method": "title-year",
-      "output_rank": 40
+      "output_rank": 41
     },
     {
-      "rank": 43,
-      "source_rank": 46,
+      "rank": 44,
+      "source_rank": 47,
       "title": "Flow",
       "raw_title": "Flow",
       "mubi_year": 2024,
@@ -572,20 +586,6 @@
       "mubi_id": 410692,
       "url": "https://mubi.com/films/flow-2024",
       "tmdb_id": 823219,
-      "year": "2024",
-      "match_method": "title-year",
-      "output_rank": 41
-    },
-    {
-      "rank": 44,
-      "source_rank": 47,
-      "title": "The Girl with the Needle",
-      "raw_title": "The Girl with the Needle",
-      "mubi_year": 2024,
-      "slug": "the-girl-with-the-needle",
-      "mubi_id": 401325,
-      "url": "https://mubi.com/films/the-girl-with-the-needle",
-      "tmdb_id": 1232827,
       "year": "2024",
       "match_method": "title-year",
       "output_rank": 42
@@ -607,6 +607,20 @@
     {
       "rank": 46,
       "source_rank": 49,
+      "title": "The Girl with the Needle",
+      "raw_title": "The Girl with the Needle",
+      "mubi_year": 2024,
+      "slug": "the-girl-with-the-needle",
+      "mubi_id": 401325,
+      "url": "https://mubi.com/films/the-girl-with-the-needle",
+      "tmdb_id": 1232827,
+      "year": "2024",
+      "match_method": "title-year",
+      "output_rank": 44
+    },
+    {
+      "rank": 47,
+      "source_rank": 50,
       "title": "Bouchra",
       "raw_title": "Bouchra",
       "mubi_year": 2025,
@@ -616,11 +630,11 @@
       "tmdb_id": 1517206,
       "year": "2026",
       "match_method": "clean-title-year",
-      "output_rank": 44
+      "output_rank": 45
     },
     {
-      "rank": 47,
-      "source_rank": 50,
+      "rank": 48,
+      "source_rank": 51,
       "title": "Donnie Darko",
       "raw_title": "Donnie Darko",
       "mubi_year": 2001,
@@ -630,11 +644,11 @@
       "tmdb_id": 141,
       "year": "2001",
       "match_method": "title-year",
-      "output_rank": 45
+      "output_rank": 46
     },
     {
-      "rank": 48,
-      "source_rank": 51,
+      "rank": 49,
+      "source_rank": 52,
       "title": "Witches",
       "raw_title": "Witches",
       "mubi_year": 2024,
@@ -644,11 +658,11 @@
       "tmdb_id": 1276031,
       "year": "2024",
       "match_method": "title-year",
-      "output_rank": 46
+      "output_rank": 47
     },
     {
-      "rank": 49,
-      "source_rank": 52,
+      "rank": 50,
+      "source_rank": 53,
       "title": "My Father's Shadow",
       "raw_title": "My Father's Shadow",
       "mubi_year": 2025,
@@ -658,11 +672,11 @@
       "tmdb_id": 1432605,
       "year": "2025",
       "match_method": "title-year",
-      "output_rank": 47
+      "output_rank": 48
     },
     {
-      "rank": 50,
-      "source_rank": 53,
+      "rank": 51,
+      "source_rank": 54,
       "title": "The Worst Person in the World",
       "raw_title": "The Worst Person in the World",
       "mubi_year": 2021,
@@ -672,11 +686,11 @@
       "tmdb_id": 660120,
       "year": "2021",
       "match_method": "title-year",
-      "output_rank": 48
+      "output_rank": 49
     },
     {
-      "rank": 51,
-      "source_rank": 54,
+      "rank": 52,
+      "source_rank": 55,
       "title": "Hellraiser",
       "raw_title": "Hellraiser",
       "mubi_year": 1987,
@@ -686,11 +700,11 @@
       "tmdb_id": 9003,
       "year": "1987",
       "match_method": "title-year",
-      "output_rank": 49
+      "output_rank": 50
     },
     {
-      "rank": 52,
-      "source_rank": 56,
+      "rank": 53,
+      "source_rank": 57,
       "title": "How to Have Sex",
       "raw_title": "How to Have Sex",
       "mubi_year": 2023,
@@ -699,20 +713,6 @@
       "url": "https://mubi.com/films/how-to-have-sex",
       "tmdb_id": 1075175,
       "year": "2023",
-      "match_method": "title-year",
-      "output_rank": 50
-    },
-    {
-      "rank": 53,
-      "source_rank": 57,
-      "title": "Making Marie Antoinette",
-      "raw_title": "Making Marie Antoinette",
-      "mubi_year": 2026,
-      "slug": "making-marie-antoinette",
-      "mubi_id": 476712,
-      "url": "https://mubi.com/films/making-marie-antoinette",
-      "tmdb_id": 1754364,
-      "year": "2026",
       "match_method": "title-year",
       "output_rank": 51
     },
@@ -733,20 +733,6 @@
     {
       "rank": 55,
       "source_rank": 60,
-      "title": "Sometimes I Think About Dying",
-      "raw_title": "Sometimes I Think About Dying",
-      "mubi_year": 2023,
-      "slug": "sometimes-i-think-about-dying-2023",
-      "mubi_id": 364298,
-      "url": "https://mubi.com/films/sometimes-i-think-about-dying-2023",
-      "tmdb_id": 891933,
-      "year": "2024",
-      "match_method": "clean-title-year",
-      "output_rank": 53
-    },
-    {
-      "rank": 56,
-      "source_rank": 61,
       "title": "Hot Milk",
       "raw_title": "Hot Milk",
       "mubi_year": 2025,
@@ -756,11 +742,11 @@
       "tmdb_id": 933490,
       "year": "2025",
       "match_method": "title-year",
-      "output_rank": 54
+      "output_rank": 53
     },
     {
-      "rank": 57,
-      "source_rank": 62,
+      "rank": 56,
+      "source_rank": 61,
       "title": "Decision to Leave",
       "raw_title": "Decision to Leave",
       "mubi_year": 2022,
@@ -770,6 +756,20 @@
       "tmdb_id": 705996,
       "year": "2022",
       "match_method": "title-year",
+      "output_rank": 54
+    },
+    {
+      "rank": 57,
+      "source_rank": 62,
+      "title": "Sometimes I Think About Dying",
+      "raw_title": "Sometimes I Think About Dying",
+      "mubi_year": 2023,
+      "slug": "sometimes-i-think-about-dying-2023",
+      "mubi_id": 364298,
+      "url": "https://mubi.com/films/sometimes-i-think-about-dying-2023",
+      "tmdb_id": 891933,
+      "year": "2024",
+      "match_method": "clean-title-year",
       "output_rank": 55
     },
     {
@@ -789,20 +789,6 @@
     {
       "rank": 59,
       "source_rank": 64,
-      "title": "A Useful Ghost",
-      "raw_title": "A Useful Ghost",
-      "mubi_year": 2025,
-      "slug": "a-useful-ghost",
-      "mubi_id": 440946,
-      "url": "https://mubi.com/films/a-useful-ghost",
-      "tmdb_id": 1364904,
-      "year": "2025",
-      "match_method": "title-year",
-      "output_rank": 57
-    },
-    {
-      "rank": 60,
-      "source_rank": 65,
       "title": "Blow Out",
       "raw_title": "Blow Out",
       "mubi_year": 1981,
@@ -811,6 +797,20 @@
       "url": "https://mubi.com/films/blow-out",
       "tmdb_id": 11644,
       "year": "1981",
+      "match_method": "title-year",
+      "output_rank": 57
+    },
+    {
+      "rank": 60,
+      "source_rank": 65,
+      "title": "A Useful Ghost",
+      "raw_title": "A Useful Ghost",
+      "mubi_year": 2025,
+      "slug": "a-useful-ghost",
+      "mubi_id": 440946,
+      "url": "https://mubi.com/films/a-useful-ghost",
+      "tmdb_id": 1364904,
+      "year": "2025",
       "match_method": "title-year",
       "output_rank": 58
     },
@@ -859,20 +859,6 @@
     {
       "rank": 64,
       "source_rank": 69,
-      "title": "The Neon Demon",
-      "raw_title": "The Neon Demon",
-      "mubi_year": 2016,
-      "slug": "the-neon-demon",
-      "mubi_id": 132568,
-      "url": "https://mubi.com/films/the-neon-demon",
-      "tmdb_id": 301365,
-      "year": "2016",
-      "match_method": "title-year",
-      "output_rank": 62
-    },
-    {
-      "rank": 65,
-      "source_rank": 70,
       "title": "Orphan",
       "raw_title": "Orphan",
       "mubi_year": 2025,
@@ -882,11 +868,39 @@
       "tmdb_id": 803208,
       "year": "2025",
       "match_method": "title-year",
+      "output_rank": 62
+    },
+    {
+      "rank": 65,
+      "source_rank": 70,
+      "title": "The Neon Demon",
+      "raw_title": "The Neon Demon",
+      "mubi_year": 2016,
+      "slug": "the-neon-demon",
+      "mubi_id": 132568,
+      "url": "https://mubi.com/films/the-neon-demon",
+      "tmdb_id": 301365,
+      "year": "2016",
+      "match_method": "title-year",
       "output_rank": 63
     },
     {
       "rank": 66,
       "source_rank": 71,
+      "title": "Reprise",
+      "raw_title": "Reprise",
+      "mubi_year": 2006,
+      "slug": "reprise",
+      "mubi_id": 3197,
+      "url": "https://mubi.com/films/reprise",
+      "tmdb_id": 12197,
+      "year": "2006",
+      "match_method": "title-year",
+      "output_rank": 64
+    },
+    {
+      "rank": 67,
+      "source_rank": 72,
       "title": "The Edge of Heaven",
       "raw_title": "The Edge of Heaven",
       "mubi_year": 2007,
@@ -895,20 +909,6 @@
       "url": "https://mubi.com/films/the-edge-of-heaven",
       "tmdb_id": 2014,
       "year": "2007",
-      "match_method": "title-year",
-      "output_rank": 64
-    },
-    {
-      "rank": 67,
-      "source_rank": 72,
-      "title": "Magic Farm",
-      "raw_title": "Magic Farm",
-      "mubi_year": 2025,
-      "slug": "magic-farm",
-      "mubi_id": 418722,
-      "url": "https://mubi.com/films/magic-farm",
-      "tmdb_id": 1309962,
-      "year": "2025",
       "match_method": "title-year",
       "output_rank": 65
     },
@@ -929,20 +929,34 @@
     {
       "rank": 69,
       "source_rank": 74,
-      "title": "Reprise",
-      "raw_title": "Reprise",
-      "mubi_year": 2006,
-      "slug": "reprise",
-      "mubi_id": 3197,
-      "url": "https://mubi.com/films/reprise",
-      "tmdb_id": 12197,
-      "year": "2006",
+      "title": "Magic Farm",
+      "raw_title": "Magic Farm",
+      "mubi_year": 2025,
+      "slug": "magic-farm",
+      "mubi_id": 418722,
+      "url": "https://mubi.com/films/magic-farm",
+      "tmdb_id": 1309962,
+      "year": "2025",
       "match_method": "title-year",
       "output_rank": 67
     },
     {
       "rank": 70,
       "source_rank": 75,
+      "title": "Memento",
+      "raw_title": "Memento",
+      "mubi_year": 2000,
+      "slug": "memento",
+      "mubi_id": 142,
+      "url": "https://mubi.com/films/memento",
+      "tmdb_id": 77,
+      "year": "2000",
+      "match_method": "title-year",
+      "output_rank": 68
+    },
+    {
+      "rank": 71,
+      "source_rank": 76,
       "title": "Group Marriage",
       "raw_title": "Group Marriage",
       "mubi_year": 1973,
@@ -952,11 +966,11 @@
       "tmdb_id": 89744,
       "year": "1973",
       "match_method": "title-year",
-      "output_rank": 68
+      "output_rank": 69
     },
     {
-      "rank": 71,
-      "source_rank": 76,
+      "rank": 72,
+      "source_rank": 77,
       "title": "Revanche",
       "raw_title": "Revanche",
       "mubi_year": 2008,
@@ -966,20 +980,6 @@
       "tmdb_id": 15451,
       "year": "2008",
       "match_method": "title-year",
-      "output_rank": 69
-    },
-    {
-      "rank": 72,
-      "source_rank": 77,
-      "title": "Erupcja",
-      "raw_title": "Erupcja",
-      "mubi_year": 2025,
-      "slug": "erupcja",
-      "mubi_id": 452907,
-      "url": "https://mubi.com/films/erupcja",
-      "tmdb_id": 1337592,
-      "year": "2026",
-      "match_method": "clean-title-year",
       "output_rank": 70
     },
     {
@@ -999,29 +999,29 @@
     {
       "rank": 74,
       "source_rank": 79,
-      "title": "Memento",
-      "raw_title": "Memento",
-      "mubi_year": 2000,
-      "slug": "memento",
-      "mubi_id": 142,
-      "url": "https://mubi.com/films/memento",
-      "tmdb_id": 77,
-      "year": "2000",
+      "title": "The Handmaiden",
+      "raw_title": "The Handmaiden",
+      "mubi_year": 2016,
+      "slug": "the-handmaiden",
+      "mubi_id": 149904,
+      "url": "https://mubi.com/films/the-handmaiden",
+      "tmdb_id": 290098,
+      "year": "2016",
       "match_method": "title-year",
       "output_rank": 72
     },
     {
       "rank": 75,
       "source_rank": 80,
-      "title": "Alpha",
-      "raw_title": "Alpha",
+      "title": "Erupcja",
+      "raw_title": "Erupcja",
       "mubi_year": 2025,
-      "slug": "alpha",
-      "mubi_id": 411747,
-      "url": "https://mubi.com/films/alpha",
-      "tmdb_id": 1284460,
-      "year": "2025",
-      "match_method": "title-year",
+      "slug": "erupcja",
+      "mubi_id": 452907,
+      "url": "https://mubi.com/films/erupcja",
+      "tmdb_id": 1337592,
+      "year": "2026",
+      "match_method": "clean-title-year",
       "output_rank": 73
     },
     {
@@ -1041,14 +1041,14 @@
     {
       "rank": 77,
       "source_rank": 82,
-      "title": "The Handmaiden",
-      "raw_title": "The Handmaiden",
-      "mubi_year": 2016,
-      "slug": "the-handmaiden",
-      "mubi_id": 149904,
-      "url": "https://mubi.com/films/the-handmaiden",
-      "tmdb_id": 290098,
-      "year": "2016",
+      "title": "Alpha",
+      "raw_title": "Alpha",
+      "mubi_year": 2025,
+      "slug": "alpha",
+      "mubi_id": 411747,
+      "url": "https://mubi.com/films/alpha",
+      "tmdb_id": 1284460,
+      "year": "2025",
       "match_method": "title-year",
       "output_rank": 75
     },
@@ -1069,48 +1069,6 @@
     {
       "rank": 79,
       "source_rank": 84,
-      "title": "Wetlands",
-      "raw_title": "Wetlands",
-      "mubi_year": 2013,
-      "slug": "wetlands-2013",
-      "mubi_id": 108516,
-      "url": "https://mubi.com/films/wetlands-2013",
-      "tmdb_id": 208277,
-      "year": "2013",
-      "match_method": "title-year",
-      "output_rank": 77
-    },
-    {
-      "rank": 80,
-      "source_rank": 85,
-      "title": "The Golden Glove",
-      "raw_title": "The Golden Glove",
-      "mubi_year": 2019,
-      "slug": "the-golden-glove",
-      "mubi_id": 209655,
-      "url": "https://mubi.com/films/the-golden-glove",
-      "tmdb_id": 505706,
-      "year": "2019",
-      "match_method": "title-year",
-      "output_rank": 78
-    },
-    {
-      "rank": 81,
-      "source_rank": 86,
-      "title": "Queer",
-      "raw_title": "Queer",
-      "mubi_year": 2024,
-      "slug": "queer",
-      "mubi_id": 391610,
-      "url": "https://mubi.com/films/queer",
-      "tmdb_id": 1059128,
-      "year": "2024",
-      "match_method": "title-year",
-      "output_rank": 79
-    },
-    {
-      "rank": 82,
-      "source_rank": 87,
       "title": "Priscilla",
       "raw_title": "Priscilla",
       "mubi_year": 2023,
@@ -1120,11 +1078,67 @@
       "tmdb_id": 1020006,
       "year": "2023",
       "match_method": "title-year",
+      "output_rank": 77
+    },
+    {
+      "rank": 80,
+      "source_rank": 85,
+      "title": "Queer",
+      "raw_title": "Queer",
+      "mubi_year": 2024,
+      "slug": "queer",
+      "mubi_id": 391610,
+      "url": "https://mubi.com/films/queer",
+      "tmdb_id": 1059128,
+      "year": "2024",
+      "match_method": "title-year",
+      "output_rank": 78
+    },
+    {
+      "rank": 81,
+      "source_rank": 86,
+      "title": "The Golden Glove",
+      "raw_title": "The Golden Glove",
+      "mubi_year": 2019,
+      "slug": "the-golden-glove",
+      "mubi_id": 209655,
+      "url": "https://mubi.com/films/the-golden-glove",
+      "tmdb_id": 505706,
+      "year": "2019",
+      "match_method": "title-year",
+      "output_rank": 79
+    },
+    {
+      "rank": 82,
+      "source_rank": 87,
+      "title": "Wetlands",
+      "raw_title": "Wetlands",
+      "mubi_year": 2013,
+      "slug": "wetlands-2013",
+      "mubi_id": 108516,
+      "url": "https://mubi.com/films/wetlands-2013",
+      "tmdb_id": 208277,
+      "year": "2013",
+      "match_method": "title-year",
       "output_rank": 80
     },
     {
       "rank": 83,
       "source_rank": 88,
+      "title": "Rotting in the Sun",
+      "raw_title": "Rotting in the Sun",
+      "mubi_year": 2023,
+      "slug": "rotting-in-the-sun",
+      "mubi_id": 364307,
+      "url": "https://mubi.com/films/rotting-in-the-sun",
+      "tmdb_id": 1058696,
+      "year": "2023",
+      "match_method": "title-year",
+      "output_rank": 81
+    },
+    {
+      "rank": 84,
+      "source_rank": 89,
       "title": "Blue Heron",
       "raw_title": "Blue Heron",
       "mubi_year": 2025,
@@ -1134,11 +1148,11 @@
       "tmdb_id": 1184941,
       "year": "2026",
       "match_method": "clean-title-year",
-      "output_rank": 81
+      "output_rank": 82
     },
     {
-      "rank": 84,
-      "source_rank": 89,
+      "rank": 85,
+      "source_rank": 90,
       "title": "Crossing",
       "raw_title": "Crossing",
       "mubi_year": 2024,
@@ -1147,20 +1161,6 @@
       "url": "https://mubi.com/films/crossing-2023-levan-akin",
       "tmdb_id": 765421,
       "year": "2024",
-      "match_method": "title-year",
-      "output_rank": 82
-    },
-    {
-      "rank": 85,
-      "source_rank": 90,
-      "title": "Rotting in the Sun",
-      "raw_title": "Rotting in the Sun",
-      "mubi_year": 2023,
-      "slug": "rotting-in-the-sun",
-      "mubi_id": 364307,
-      "url": "https://mubi.com/films/rotting-in-the-sun",
-      "tmdb_id": 1058696,
-      "year": "2023",
       "match_method": "title-year",
       "output_rank": 83
     },
@@ -1181,6 +1181,20 @@
     {
       "rank": 87,
       "source_rank": 92,
+      "title": "Bird",
+      "raw_title": "Bird",
+      "mubi_year": 2024,
+      "slug": "bird",
+      "mubi_id": 391623,
+      "url": "https://mubi.com/films/bird",
+      "tmdb_id": 1128752,
+      "year": "2024",
+      "match_method": "title-year",
+      "output_rank": 85
+    },
+    {
+      "rank": 88,
+      "source_rank": 93,
       "title": "La Ciénaga",
       "raw_title": "La ciénaga",
       "mubi_year": 2001,
@@ -1190,11 +1204,11 @@
       "tmdb_id": 58429,
       "year": "2001",
       "match_method": "title-year",
-      "output_rank": 85
+      "output_rank": 86
     },
     {
-      "rank": 88,
-      "source_rank": 93,
+      "rank": 89,
+      "source_rank": 94,
       "title": "Soul Kitchen",
       "raw_title": "Soul Kitchen",
       "mubi_year": 2009,
@@ -1203,20 +1217,6 @@
       "url": "https://mubi.com/films/soul-kitchen",
       "tmdb_id": 31175,
       "year": "2009",
-      "match_method": "title-year",
-      "output_rank": 86
-    },
-    {
-      "rank": 89,
-      "source_rank": 94,
-      "title": "Bird",
-      "raw_title": "Bird",
-      "mubi_year": 2024,
-      "slug": "bird",
-      "mubi_id": 391623,
-      "url": "https://mubi.com/films/bird",
-      "tmdb_id": 1128752,
-      "year": "2024",
       "match_method": "title-year",
       "output_rank": 87
     },
@@ -1265,20 +1265,6 @@
     {
       "rank": 93,
       "source_rank": 98,
-      "title": "Boiling Point",
-      "raw_title": "Boiling Point",
-      "mubi_year": 2021,
-      "slug": "boiling-point-2021",
-      "mubi_id": 310716,
-      "url": "https://mubi.com/films/boiling-point-2021",
-      "tmdb_id": 807196,
-      "year": "2021",
-      "match_method": "title-year",
-      "output_rank": 91
-    },
-    {
-      "rank": 94,
-      "source_rank": 99,
       "title": "Phoenix",
       "raw_title": "Phoenix",
       "mubi_year": 2014,
@@ -1288,11 +1274,11 @@
       "tmdb_id": 254578,
       "year": "2014",
       "match_method": "title-year",
-      "output_rank": 92
+      "output_rank": 91
     },
     {
-      "rank": 95,
-      "source_rank": 100,
+      "rank": 94,
+      "source_rank": 99,
       "title": "Pleasure",
       "raw_title": "Pleasure",
       "mubi_year": 2021,
@@ -1301,6 +1287,20 @@
       "url": "https://mubi.com/films/pleasure-2020",
       "tmdb_id": 592695,
       "year": "2021",
+      "match_method": "title-year",
+      "output_rank": 92
+    },
+    {
+      "rank": 95,
+      "source_rank": 100,
+      "title": "Silvia Prieto",
+      "raw_title": "Silvia Prieto",
+      "mubi_year": 1999,
+      "slug": "silvia-prieto",
+      "mubi_id": 23535,
+      "url": "https://mubi.com/films/silvia-prieto",
+      "tmdb_id": 49984,
+      "year": "1999",
       "match_method": "title-year",
       "output_rank": 93
     }
